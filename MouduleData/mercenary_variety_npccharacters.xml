@@ -162,7 +162,6 @@
   		is_hero="false"
   		level="26"
   		name="{=MVSisLR5}Sisterhood Lance Rider"
-  		upgrade_requires="ItemCategory.horse"
   		occupation="Mercenary"
   		culture="Culture.neutral_culture">
   		<face>
@@ -245,7 +244,6 @@
   		is_hero="false"
   		level="31"
   		name="{=MVSisBan6}Sisterhood Banneret"
-  		upgrade_requires="ItemCategory.war_horse"
   		occupation="Mercenary"
   		culture="Culture.neutral_culture">
   		<face>
@@ -292,7 +290,7 @@
   					id="Item.vlandia_sword_4_t4" />
   				<equipment
   					slot="Head"
-  					id="Item.imperial_goggled_helmet" />
+  					id="Item.empire_helmet_with_metal_strips" />
   				<equipment
   					slot="Cape"
   					id="Item.imperial_lamellar_shoulders" />
@@ -301,10 +299,10 @@
   					id="Item.imperial_scale_armor" />
   				<equipment
   					slot="Gloves"
-  					id="Item.decorated_imperial_gauntlets" />
+  					id="Item.lordly_mail_mitten" />
   				<equipment
   					slot="Leg"
-  					id="Item.decorated_imperial_boots" />
+  					id="Item.mail_chausses" />
   			</EquipmentRoster>
   			<EquipmentSet
   				id="empire_troop_civilian_template_t3"
@@ -883,26 +881,27 @@
         <face_key_template value="BodyProperty.fighter_aserai" />
       </face>
       <skills>
-        <skill id="Athletics" value="170" />
+        <skill id="Athletics" value="180" />
         <skill id="Riding" value="60" />
-        <skill id="OneHanded" value="180" />
-        <skill id="TwoHanded" value="150" />
-        <skill id="Polearm" value="80" />
+        <skill id="OneHanded" value="210" />
+        <skill id="TwoHanded" value="80" />
+        <skill id="Polearm" value="150" />
         <skill id="Bow" value="40" />
         <skill id="Crossbow" value="20" />
-        <skill id="Throwing" value="90" />
+        <skill id="Throwing" value="120" />
       </skills>
       <upgrade_targets />
       <Equipments>
         <EquipmentRoster>
           <equipment slot="Item0" id="Item.khuzait_mace_4_t5" />
-          <equipment slot="Item1" id="Item.steppe_guardian_shield" />
-          <equipment slot="Item2" id="Item.battania_2hsword_5_t5" />
-          <equipment slot="Head" id="Item.closed_desert_helmet" />
-          <equipment slot="Body" id="Item.khuzait_lamellar_strapped" />
-          <equipment slot="Leg" id="Item.reinforced_suede_boots" />
-          <equipment slot="Gloves" id="Item.studded_vambraces" />
-          <equipment slot="Cape" id="Item.a_aserai_scale_b_shoulder_b" />
+          <equipment slot="Item1" id="Item.southern_oval_shield" />
+          <equipment slot="Item2" id="Item.aserai_sword_7_t5" />
+          <equipment slot="Item3" id="Item.eastern_throwing_spear_2_t4" />
+          <equipment slot="Head" id="Item.closed_desert_helmet_with_mail" />
+          <equipment slot="Body" id="Item.desert_lamellar" />
+          <equipment slot="Leg" id="Item.plated_strip_boots" />
+          <equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+          <equipment slot="Cape" id="Item.a_aserai_scale_b_shoulder_c" />
         </EquipmentRoster>
         <EquipmentSet id="khuzait_troop_civilian_template_t2" equipmentType="Civilian" />
       </Equipments>
@@ -920,29 +919,30 @@
       </face>
       <skills>
         <skill id="Athletics" value="80" />
-        <skill id="Riding" value="180" />
-        <skill id="OneHanded" value="170" />
+        <skill id="Riding" value="210" />
+        <skill id="OneHanded" value="130" />
         <skill id="TwoHanded" value="80" />
-        <skill id="Polearm" value="150" />
-        <skill id="Bow" value="180" />
+        <skill id="Polearm" value="80" />
+        <skill id="Bow" value="220" />
         <skill id="Crossbow" value="30" />
         <skill id="Throwing" value="60" />
       </skills>
       <upgrade_targets />
       <Equipments>
         <EquipmentRoster>
-          <equipment slot="Item0" id="Item.khuzait_noble_sword_1_t5" />
+          <equipment slot="Item0" id="Item.composite_steppe_bow" />
           <equipment slot="Item1" id="Item.steppe_arrows" />
-          <equipment slot="Item2" id="Item.steppe_war_bow" />
-          <equipment slot="Item3" id="Item.sturgia_lance_2_t5" />
-          <equipment slot="Head" id="Item.nordic_fur_cap" />
-          <equipment slot="Body" id="Item.sturgian_chainmale_shortsleeve" />
-          <equipment slot="Leg" id="Item.reinforced_suede_boots" />
-          <equipment slot="Gloves" id="Item.highland_gloves" />
+          <equipment slot="Item2" id="Item.steppe_arrows" />
+          <equipment slot="Item3" id="Item.khuzait_noble_sword_3_t5" />
+          <equipment slot="Head" id="Item.khuzait_noble_helmet_with_neckguard" />
+          <equipment slot="Body" id="Item.brass_lamellar_over_mail" />
+          <equipment slot="Leg" id="Item.khuzait_curved_boots" />
+          <equipment slot="Gloves" id="Item.eastern_plated_leather_vambraces" />
+          <equipment slot="Cape" id="Item.brass_lamellar_shoulder_white" />
         </EquipmentRoster>
-        <EquipmentSet id="sturgia_troop_civilian_template_t3" equipmentType="Civilian" />
-        <equipment slot="Horse" id="Item.noble_horse_eastern" />
-        <equipment slot="HorseHarness" id="Item.steppe_fur_harness" />
+        <EquipmentSet id="khuzait_troop_civilian_template_t3" equipmentType="Civilian" />
+        <equipment slot="Horse" id="Item.t3_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
       </Equipments>
     </NPCCharacter>
 
@@ -957,11 +957,11 @@
         <face_key_template value="BodyProperty.fighter_vlandia" />
       </face>
       <skills>
-        <skill id="Athletics" value="170" />
+        <skill id="Athletics" value="180" />
         <skill id="Riding" value="70" />
-        <skill id="OneHanded" value="150" />
+        <skill id="OneHanded" value="170" />
         <skill id="TwoHanded" value="160" />
-        <skill id="Polearm" value="190" />
+        <skill id="Polearm" value="220" />
         <skill id="Bow" value="30" />
         <skill id="Crossbow" value="80" />
         <skill id="Throwing" value="100" />
@@ -969,13 +969,14 @@
       <upgrade_targets />
       <Equipments>
         <EquipmentRoster>
-          <equipment slot="Item0" id="Item.vlandia_pike_1_t5" />
+          <equipment slot="Item0" id="Item.vlandia_polearm_1_t5" />
           <equipment slot="Item1" id="Item.vlandia_sword_5_t5" />
-          <equipment slot="Head" id="Item.kettle_helmet_over_mail" />
-          <equipment slot="Body" id="Item.hauberk" />
+          <equipment slot="Item2" id="Item.heavy_heater_shield" />
+          <equipment slot="Head" id="Item.visored_helmet_over_laced_coif" />
+          <equipment slot="Body" id="Item.white_coat_over_mail" />
           <equipment slot="Leg" id="Item.mail_chausses" />
-          <equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
-          <equipment slot="Cape" id="Item.padded_leather_shoulders" />
+          <equipment slot="Gloves" id="Item.lordly_mail_mitten" />
+          <equipment slot="Cape" id="Item.scale_shoulder_armor" />
         </EquipmentRoster>
         <EquipmentSet id="vlandia_troop_civilian_template_t2" equipmentType="Civilian" />
       </Equipments>
@@ -992,27 +993,27 @@
         <face_key_template value="BodyProperty.fighter_empire" />
       </face>
       <skills>
-        <skill id="Athletics" value="140" />
+        <skill id="Athletics" value="170" />
         <skill id="Riding" value="40" />
-        <skill id="OneHanded" value="150" />
+        <skill id="OneHanded" value="180" />
         <skill id="TwoHanded" value="80" />
         <skill id="Polearm" value="80" />
-        <skill id="Bow" value="80" />
-        <skill id="Crossbow" value="190" />
-        <skill id="Throwing" value="70" />
+        <skill id="Bow" value="20" />
+        <skill id="Crossbow" value="220" />
+        <skill id="Throwing" value="60" />
       </skills>
       <upgrade_targets />
       <Equipments>
         <EquipmentRoster>
           <equipment slot="Item0" id="Item.crossbow_f" />
-          <equipment slot="Item1" id="Item.bolt_a" />
+          <equipment slot="Item1" id="Item.bolt_c" />
           <equipment slot="Item2" id="Item.empire_sword_6_t5" />
-          <equipment slot="Item3" id="Item.fortified_kite_shield" />
-          <equipment slot="Head" id="Item.kettle_helmet_over_mail" />
-          <equipment slot="Body" id="Item.hauberk" />
-          <equipment slot="Leg" id="Item.mail_chausses" />
-          <equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
-          <equipment slot="Cape" id="Item.scarf" />
+          <equipment slot="Item3" id="Item.pavise_shield" />
+          <equipment slot="Head" id="Item.kettle_hat_over_mail_coif" />
+          <equipment slot="Body" id="Item.white_coat_over_mail" />
+          <equipment slot="Leg" id="Item.strapped_mail_chausses" />
+          <equipment slot="Gloves" id="Item.lordly_mail_mitten" />
+          <equipment slot="Cape" id="Item.scale_shoulder_armor" />
         </EquipmentRoster>
         <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
       </Equipments>
