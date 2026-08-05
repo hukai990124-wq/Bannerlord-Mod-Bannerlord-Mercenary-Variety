@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <Name value="Mercenary Variety" />
+  <Id value="MercenaryVariety" />
+  <Version value="v1.0.0" />
+  <ModuleCategory value="Singleplayer" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <DependedModules>
+    <DependedModule Id="Native" DependentVersion="v1.4.7" Optional="false" />
+    <DependedModule Id="SandBoxCore" DependentVersion="v1.4.7" Optional="false" />
+    <DependedModule Id="Sandbox" DependentVersion="v1.4.7" Optional="false" />
+    <DependedModule Id="CustomBattle" DependentVersion="v1.4.7" Optional="false" />
+    <DependedModule Id="StoryMode" DependentVersion="v1.4.7" Optional="true" />
+  </DependedModules>
+  <SubModules />
+  <Xmls>
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="mercenary_variety_npccharacters" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+  </Xmls>
+</Module>
