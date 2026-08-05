@@ -1,6 +1,479 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NPCCharacters>
   <NPCCharacter
+  		id="sword_sisters_sister_t3"
+  		is_female="true"
+  		default_group="Ranged"
+  		is_hero="false"
+  		is_basic_troop="true"
+  		level="16"
+  		name="{=r8npO8hG}Sisterhood Follower"
+  		occupation="Mercenary"
+  		culture="Culture.neutral_culture">
+  		<face>
+  			<face_key_template
+  				value="BodyProperty.townswoman_empire" />
+  		</face>
+  		<skills>
+  			<skill
+  				id="Athletics"
+  				value="70" />
+  			<skill
+  				id="Riding"
+  				value="20" />
+  			<skill
+  				id="OneHanded"
+  				value="70" />
+  			<skill
+  				id="TwoHanded"
+  				value="30" />
+  			<skill
+  				id="Polearm"
+  				value="40" />
+  			<skill
+  				id="Bow"
+  				value="10" />
+  			<skill
+  				id="Crossbow"
+  				value="70" />
+  			<skill
+  				id="Throwing"
+  				value="30" />
+  		</skills>
+  		<upgrade_targets>
+  			<upgrade_target
+  				id="NPCCharacter.sword_sisters_sister_t4" />
+  		</upgrade_targets>
+  		<Equipments>
+  			<EquipmentRoster>
+  				<equipment
+  					slot="Item0"
+  					id="Item.narrow_sword_t3" />
+  				<equipment
+  					slot="Item1"
+  					id="Item.crossbow_a" />
+  				<equipment
+  					slot="Item2"
+  					id="Item.bolt_b" />
+  				<equipment
+  					slot="Cape"
+  					id="Item.wrapped_scarf" />
+  				<equipment
+  					slot="Body"
+  					id="Item.layered_leather_tunic" />
+  				<equipment
+  					slot="Leg"
+  					id="Item.wrapped_leather_boots" />
+  				<equipment
+  					slot="Gloves"
+  					id="Item.leather_gloves" />
+  			</EquipmentRoster>
+  			<EquipmentSet
+  				id="empire_troop_civilian_template_t3"
+  				equipmentType="Civilian" />
+  		</Equipments>
+ 	</NPCCharacter>
+
+  <NPCCharacter
+  		id="sword_sisters_sister_t4"
+  		is_female="true"
+  		default_group="Ranged"
+  		is_hero="false"
+  		level="21"
+  		name="{=ZK0GXYCx}Sword Sister"
+  		occupation="Mercenary"
+  		culture="Culture.neutral_culture">
+  		<face>
+  			<face_key_template
+  				value="BodyProperty.townswoman_empire" />
+  		</face>
+  		<skills>
+  			<skill
+  				id="Athletics"
+  				value="110" />
+  			<skill
+  				id="Riding"
+  				value="60" />
+  			<skill
+  				id="OneHanded"
+  				value="110" />
+  			<skill
+  				id="TwoHanded"
+  				value="45" />
+  			<skill
+  				id="Polearm"
+  				value="45" />
+  			<skill
+  				id="Bow"
+  				value="15" />
+  			<skill
+  				id="Crossbow"
+  				value="110" />
+  			<skill
+  				id="Throwing"
+  				value="20" />
+  		</skills>
+  		<upgrade_targets>
+  			<upgrade_target
+  				id="NPCCharacter.sword_sisters_sister_t5" />
+  			<upgrade_target
+  				id="NPCCharacter.sword_sisters_sister_infantry_t5" />
+  		</upgrade_targets>
+  		<Equipments>
+  			<EquipmentRoster>
+  				<equipment
+  					slot="Item0"
+  					id="Item.narrow_sword_t3" />
+  				<equipment
+  					slot="Item1"
+  					id="Item.crossbow_d" />
+  				<equipment
+  					slot="Item2"
+  					id="Item.bolt_b" />
+  				<equipment
+  					slot="Item3"
+  					id="Item.bracketed_heater_shield" />
+  				<equipment
+  					slot="Head"
+  					id="Item.kettle_helmet_with_leather" />
+  				<equipment
+  					slot="Cape"
+  					id="Item.padded_leather_shoulders" />
+  				<equipment
+  					slot="Body"
+  					id="Item.banded_leather_over_mail" />
+  				<equipment
+  					slot="Leg"
+  					id="Item.mail_chausses" />
+  				<equipment
+  					slot="Gloves"
+  					id="Item.reinforced_leather_vambraces" />
+  			</EquipmentRoster>
+  			<EquipmentSet
+  				id="empire_troop_civilian_template_t3"
+  				equipmentType="Civilian" />
+  		</Equipments>
+ 	</NPCCharacter>
+
+  <NPCCharacter
+  		id="sword_sisters_sister_t5"
+  		is_female="true"
+  		default_group="Cavalry"
+  		is_hero="false"
+  		level="26"
+  		name="{=MVSisLR5}Sisterhood Lance Rider"
+  		upgrade_requires="ItemCategory.horse"
+  		occupation="Mercenary"
+  		culture="Culture.neutral_culture">
+  		<face>
+  			<face_key_template
+  				value="BodyProperty.townswoman_empire" />
+  		</face>
+  		<skills>
+  			<skill
+  				id="Athletics"
+  				value="80" />
+  			<skill
+  				id="Riding"
+  				value="160" />
+  			<skill
+  				id="OneHanded"
+  				value="140" />
+  			<skill
+  				id="TwoHanded"
+  				value="45" />
+  			<skill
+  				id="Polearm"
+  				value="170" />
+  			<skill
+  				id="Bow"
+  				value="15" />
+  			<skill
+  				id="Crossbow"
+  				value="20" />
+  			<skill
+  				id="Throwing"
+  				value="20" />
+  		</skills>
+  		<upgrade_targets>
+  			<upgrade_target
+  				id="NPCCharacter.mv_sisterhood_banneret_t6" />
+  		</upgrade_targets>
+  		<Equipments>
+  			<EquipmentRoster>
+  				<equipment
+  					slot="Item0"
+  					id="Item.vlandia_lance_3_t5" />
+  				<equipment
+  					slot="Item1"
+  					id="Item.empire_sword_4_t4" />
+  				<equipment
+  					slot="Item2"
+  					id="Item.heavy_horsemans_kite_shield" />
+  				<equipment
+  					slot="Head"
+  					id="Item.kettle_helmet_over_mail" />
+  				<equipment
+  					slot="Cape"
+  					id="Item.padded_leather_shoulders" />
+  				<equipment
+  					slot="Body"
+  					id="Item.hauberk" />
+  				<equipment
+  					slot="Leg"
+  					id="Item.mail_chausses" />
+  				<equipment
+  					slot="Gloves"
+  					id="Item.reinforced_leather_vambraces" />
+  			</EquipmentRoster>
+  			<EquipmentSet
+  				id="empire_troop_civilian_template_t3"
+  				equipmentType="Civilian" />
+  			<equipment
+  				slot="Horse"
+  				id="Item.t3_empire_horse" />
+  			<equipment
+  				slot="HorseHarness"
+  				id="Item.imperial_riding_harness" />
+  		</Equipments>
+ 	</NPCCharacter>
+
+  <NPCCharacter
+  		id="mv_sisterhood_banneret_t6"
+  		is_female="true"
+  		default_group="Cavalry"
+  		is_hero="false"
+  		level="31"
+  		name="{=MVSisBan6}Sisterhood Banneret"
+  		upgrade_requires="ItemCategory.war_horse"
+  		occupation="Mercenary"
+  		culture="Culture.neutral_culture">
+  		<face>
+  			<face_key_template
+  				value="BodyProperty.townswoman_empire" />
+  		</face>
+  		<skills>
+  			<skill
+  				id="Athletics"
+  				value="80" />
+  			<skill
+  				id="Riding"
+  				value="200" />
+  			<skill
+  				id="OneHanded"
+  				value="220" />
+  			<skill
+  				id="TwoHanded"
+  				value="60" />
+  			<skill
+  				id="Polearm"
+  				value="260" />
+  			<skill
+  				id="Bow"
+  				value="25" />
+  			<skill
+  				id="Crossbow"
+  				value="60" />
+  			<skill
+  				id="Throwing"
+  				value="30" />
+  		</skills>
+  		<upgrade_targets />
+  		<Equipments>
+  			<EquipmentRoster>
+  				<equipment
+  					slot="Item0"
+  					id="Item.vlandia_lance_2_t4" />
+  				<equipment
+  					slot="Item1"
+  					id="Item.vlandia_infantry_shield_a" />
+  				<equipment
+  					slot="Item2"
+  					id="Item.vlandia_sword_4_t4" />
+  				<equipment
+  					slot="Head"
+  					id="Item.imperial_goggled_helmet" />
+  				<equipment
+  					slot="Cape"
+  					id="Item.imperial_lamellar_shoulders" />
+  				<equipment
+  					slot="Body"
+  					id="Item.imperial_scale_armor" />
+  				<equipment
+  					slot="Gloves"
+  					id="Item.decorated_imperial_gauntlets" />
+  				<equipment
+  					slot="Leg"
+  					id="Item.decorated_imperial_boots" />
+  			</EquipmentRoster>
+  			<EquipmentSet
+  				id="empire_troop_civilian_template_t3"
+  				equipmentType="Civilian" />
+  			<equipment
+  				slot="Horse"
+  				id="Item.t3_vlandia_horse" />
+  			<equipment
+  				slot="HorseHarness"
+  				id="Item.imperial_scale_barding" />
+  		</Equipments>
+  	</NPCCharacter>
+
+  <NPCCharacter
+  		id="sword_sisters_sister_infantry_t5"
+  		is_female="true"
+  		default_group="Ranged"
+  		is_hero="false"
+  		level="26"
+  		name="{=0gi5Fp8c}Veteran Sword Sister"
+  		occupation="Mercenary"
+  		culture="Culture.neutral_culture">
+  		<face>
+  			<face_key_template
+  				value="BodyProperty.townswoman_empire" />
+  		</face>
+  		<skills>
+  			<skill
+  				id="Athletics"
+  				value="140" />
+  			<skill
+  				id="Riding"
+  				value="50" />
+  			<skill
+  				id="OneHanded"
+  				value="150" />
+  			<skill
+  				id="TwoHanded"
+  				value="45" />
+  			<skill
+  				id="Polearm"
+  				value="60" />
+  			<skill
+  				id="Bow"
+  				value="15" />
+  			<skill
+  				id="Crossbow"
+  				value="160" />
+  			<skill
+  				id="Throwing"
+  				value="20" />
+  		</skills>
+  		<upgrade_targets>
+  			<upgrade_target
+  				id="NPCCharacter.mv_sisterhood_arbalest_t6" />
+  		</upgrade_targets>
+  		<Equipments>
+  			<EquipmentRoster>
+  				<equipment
+  					slot="Item0"
+  					id="Item.empire_sword_4_t4" />
+  				<equipment
+  					slot="Item1"
+  					id="Item.crossbow_f" />
+  				<equipment
+  					slot="Item2"
+  					id="Item.bolt_b" />
+  				<equipment
+  					slot="Item3"
+  					id="Item.wide_heater_shield" />
+  				<equipment
+  					slot="Head"
+  					id="Item.kettle_hat_over_mail_coif" />
+  				<equipment
+  					slot="Cape"
+  					id="Item.padded_leather_shoulders" />
+  				<equipment
+  					slot="Body"
+  					id="Item.hauberk" />
+  				<equipment
+  					slot="Leg"
+  					id="Item.mail_chausses" />
+  				<equipment
+  					slot="Gloves"
+  					id="Item.reinforced_leather_vambraces" />
+  			</EquipmentRoster>
+  			<EquipmentSet
+  				id="empire_troop_civilian_template_t3"
+  				equipmentType="Civilian" />
+  		</Equipments>
+ 	</NPCCharacter>
+
+  <NPCCharacter
+  		id="mv_sisterhood_arbalest_t6"
+  		is_female="true"
+  		default_group="Ranged"
+  		is_hero="false"
+  		level="31"
+  		name="{=MVSisArb6}Sisterhood Arbalest"
+  		occupation="Mercenary"
+  		culture="Culture.neutral_culture">
+  		<face>
+  			<face_key_template
+  				value="BodyProperty.townswoman_empire" />
+  		</face>
+  		<skills>
+  			<skill
+  				id="Athletics"
+  				value="170" />
+  			<skill
+  				id="Riding"
+  				value="50" />
+  			<skill
+  				id="OneHanded"
+  				value="180" />
+  			<skill
+  				id="TwoHanded"
+  				value="60" />
+  			<skill
+  				id="Polearm"
+  				value="60" />
+  			<skill
+  				id="Bow"
+  				value="20" />
+  			<skill
+  				id="Crossbow"
+  				value="220" />
+  			<skill
+  				id="Throwing"
+  				value="30" />
+  		</skills>
+  		<upgrade_targets />
+  		<Equipments>
+  			<EquipmentRoster>
+  				<equipment
+  					slot="Item0"
+  					id="Item.vlandia_noble_sword_4_t5" />
+  				<equipment
+  					slot="Item1"
+  					id="Item.crossbow_f" />
+  				<equipment
+  					slot="Item2"
+  					id="Item.bolt_c" />
+  				<equipment
+  					slot="Item3"
+  					id="Item.vlandia_infantry_shield_a" />
+  				<equipment
+  					slot="Head"
+  					id="Item.empire_helmet_with_metal_strips" />
+  				<equipment
+  					slot="Cape"
+  					id="Item.scale_shoulder_armor" />
+  				<equipment
+  					slot="Body"
+  					id="Item.imperial_lamellar" />
+  				<equipment
+  					slot="Leg"
+  					id="Item.plated_strip_boots" />
+  				<equipment
+  					slot="Gloves"
+  					id="Item.lordly_mail_mitten" />
+  			</EquipmentRoster>
+  			<EquipmentSet
+  				id="empire_troop_civilian_template_t3"
+  				equipmentType="Civilian" />
+  		</Equipments>
+  	</NPCCharacter>
+
+  <NPCCharacter
   		id="eastern_mercenary_t5"
   		default_group="Infantry"
   		level="26"
