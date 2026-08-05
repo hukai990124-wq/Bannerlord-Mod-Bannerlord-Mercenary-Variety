@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <NPCCharacter
+    id="mv_hodophylakes_leader_0"
+    name="{=MVTheodora}Theodora"
+    age="24"
+    voice="earnest"
+    is_female="true"
+    is_hero="true"
+    default_group="Cavalry"
+    culture="Culture.empire"
+    occupation="Lord"
+    face_mesh_cache="true">
+    <face>
+      <BodyProperties
+        version="4"
+        age="24.01"
+        weight="0"
+        build="0.5047"
+        key="0002C4001200100EF07003000004128723000009067905348605088183350000010800130000000600000000000000000000000000000000000000007E0010C4" />
+      <hair_tags>
+        <hair_tag
+          name="empire" />
+      </hair_tags>
+      <tattoo_tags>
+        <tattoo_tag
+          name="Cleanface" />
+      </tattoo_tags>
+    </face>
+    <skills>
+      <skill id="Riding" value="150" />
+      <skill id="OneHanded" value="200" />
+      <skill id="Leadership" value="180" />
+      <skill id="Charm" value="220" />
+      <skill id="Steward" value="220" />
+      <skill id="Athletics" value="150" />
+      <skill id="Engineering" value="120" />
+    </skills>
+    <Traits>
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Mercy" value="1" />
+      <Trait id="Commander" value="10" />
+      <Trait id="Manager" value="10" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_mace_5_t5" />
+        <equipment slot="Item1" id="Item.fortified_kite_shield" />
+        <equipment slot="Head" id="Item.empire_battle_crown_west" />
+        <equipment slot="Cape" id="Item.imperial_lamellar_shoulders" />
+        <equipment slot="Body" id="Item.imperial_scale_armor" />
+        <equipment slot="Gloves" id="Item.decorated_imperial_gauntlets" />
+        <equipment slot="Leg" id="Item.decorated_imperial_boots" />
+        <equipment slot="Horse" id="Item.noble_horse_western" />
+        <equipment slot="HorseHarness" id="Item.imperial_scale_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster
+        civilian="true">
+        <equipment slot="Item0" id="Item.empire_sword_3_t3" />
+        <equipment slot="Body" id="Item.imperial_robes" />
+        <equipment slot="Leg" id="Item.fine_town_boots" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="mv_hodophylakes_leader_1"
+    name="{=MVLeontiosHodophylax}Leontios Hodophylax"
+    age="41"
+    voice="curt"
+    is_female="false"
+    is_hero="true"
+    default_group="Infantry"
+    culture="Culture.empire"
+    occupation="Lord"
+    face_mesh_cache="true">
+    <face>
+      <face_key_template
+        value="BodyProperty.fighter_empire" />
+      <hair_tags>
+        <hair_tag
+          name="empire" />
+      </hair_tags>
+      <beard_tags>
+        <beard_tag
+          name="empire" />
+      </beard_tags>
+      <tattoo_tags>
+        <tattoo_tag
+          name="Cleanface" />
+      </tattoo_tags>
+    </face>
+    <skills>
+      <skill id="OneHanded" value="170" />
+      <skill id="TwoHanded" value="90" />
+      <skill id="Polearm" value="180" />
+      <skill id="Crossbow" value="140" />
+      <skill id="Riding" value="90" />
+      <skill id="Athletics" value="180" />
+      <skill id="Tactics" value="150" />
+      <skill id="Leadership" value="150" />
+      <skill id="Steward" value="120" />
+      <skill id="Engineering" value="80" />
+    </skills>
+    <Traits>
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Commander" value="8" />
+      <Trait id="Manager" value="6" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_sword_5_t4" />
+        <equipment slot="Item1" id="Item.fortified_kite_shield" />
+        <equipment slot="Item2" id="Item.vlandia_polearm_1_t5" />
+        <equipment slot="Head" id="Item.empire_helmet_with_metal_strips" />
+        <equipment slot="Cape" id="Item.scale_shoulder_armor" />
+        <equipment slot="Body" id="Item.imperial_lamellar" />
+        <equipment slot="Gloves" id="Item.lordly_mail_mitten" />
+        <equipment slot="Leg" id="Item.plated_strip_boots" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="empire_troop_civilian_template_t3"
+        equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="mv_hodophylakes_leader_2"
+    name="{=MVIreneDromophylax}Irene Dromophylax"
+    age="29"
+    voice="softspoken"
+    is_female="true"
+    is_hero="true"
+    default_group="Ranged"
+    culture="Culture.empire"
+    occupation="Lord"
+    face_mesh_cache="true">
+    <face>
+      <face_key_template
+        value="BodyProperty.fighter_empire" />
+      <hair_tags>
+        <hair_tag
+          name="empire" />
+      </hair_tags>
+      <tattoo_tags>
+        <tattoo_tag
+          name="Cleanface" />
+      </tattoo_tags>
+    </face>
+    <skills>
+      <skill id="OneHanded" value="150" />
+      <skill id="Crossbow" value="210" />
+      <skill id="Bow" value="80" />
+      <skill id="Riding" value="120" />
+      <skill id="Athletics" value="170" />
+      <skill id="Scouting" value="180" />
+      <skill id="Tactics" value="120" />
+      <skill id="Leadership" value="130" />
+      <skill id="Charm" value="150" />
+      <skill id="Steward" value="100" />
+    </skills>
+    <Traits>
+      <Trait id="Valor" value="1" />
+      <Trait id="Mercy" value="1" />
+      <Trait id="Calculating" value="1" />
+      <Trait id="Commander" value="6" />
+      <Trait id="Manager" value="4" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.crossbow_f" />
+        <equipment slot="Item1" id="Item.bolt_c" />
+        <equipment slot="Item2" id="Item.empire_sword_4_t4" />
+        <equipment slot="Item3" id="Item.vlandia_infantry_shield_a" />
+        <equipment slot="Head" id="Item.kettle_hat_over_mail_coif" />
+        <equipment slot="Cape" id="Item.scale_shoulder_armor" />
+        <equipment slot="Body" id="Item.imperial_lamellar" />
+        <equipment slot="Gloves" id="Item.lordly_mail_mitten" />
+        <equipment slot="Leg" id="Item.plated_strip_boots" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="empire_troop_civilian_template_t3"
+        equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

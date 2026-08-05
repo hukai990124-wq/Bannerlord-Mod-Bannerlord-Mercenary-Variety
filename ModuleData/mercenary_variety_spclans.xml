@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Factions>
+  <Faction
+    id="mv_hodophylakes_patrol"
+    initial_home_settlement="Settlement.town_ES4"
+    owner="Hero.mv_hodophylakes_leader_0"
+    banner_key="1.8.8.2189.1985.764.781.1.0.0.528.144.4.408.310.764.863.0.1.0.435.144.4.408.310.764.764.0.1.0"
+    color="FF6B1E1E"
+    color2="FF0B0C11"
+    culture="Culture.empire"
+    default_party_template="PartyTemplate.mv_hodophylakes_patrol_party_template"
+    settlement_banner_mesh="encounter_flag_f"
+    is_minor_faction="true"
+    name="{=MVHodoPatrol}Hodophylakes Patrol"
+    short_name="{=MVHodophylakes}Hodophylakes"
+    tier="3"
+    text="{=MVHodoPatrolText}The Hodophylakes Patrol is a fellowship of road-wardens, trackers, and bounty hunters active along the southern imperial roads between Lycaron and Danustica. They take coin from merchants, village elders, and town magistrates to hunt looters, forest bandits, and other predators who prey upon caravans and pilgrims. Though many of them once served in imperial armies or town watches, the Hodophylakes swear no oath to any claimant of the throne. They refuse contracts in wars between realms, claiming that kings already have armies enough, while the roads are left to bleed. Their captains are judged by the safety of the routes they patrol, not by banners captured in battle.">
+    <minor_faction_character_templates>
+      <template id="NPCCharacter.mv_hodophylakes_leader_0" />
+      <template id="NPCCharacter.mv_hodophylakes_leader_1" />
+      <template id="NPCCharacter.mv_hodophylakes_leader_2" />
+    </minor_faction_character_templates>
+  </Faction>
+</Factions>
