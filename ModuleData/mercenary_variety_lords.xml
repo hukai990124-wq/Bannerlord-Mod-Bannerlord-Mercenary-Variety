@@ -75,8 +75,12 @@
     occupation="Lord"
     face_mesh_cache="true">
     <face>
-      <face_key_template
-        value="BodyProperty.fighter_empire" />
+      <BodyProperties
+        version="4"
+        age="25.84"
+        weight="0"
+        build="0"
+        key="0002CC081200301777834388213477737286853A87674A19267B2D2273B8413501400613040010220000000000000000000000000000000000000000587C1004" />
       <hair_tags>
         <hair_tag
           name="empire" />
