@@ -65,7 +65,7 @@
   </NPCCharacter>
   <NPCCharacter
     id="mv_hodophylakes_leader_1"
-    name="{=MVLeontiosHodophylax}Leontios Hodophylax"
+    name="{=MVLeontios}Leontios"
     age="41"
     voice="curt"
     is_female="false"
@@ -75,8 +75,12 @@
     occupation="Lord"
     face_mesh_cache="true">
     <face>
-      <face_key_template
-        value="BodyProperty.fighter_empire" />
+      <BodyProperties
+        version="4"
+        age="41.1"
+        weight="0.2454"
+        build="0.7022"
+        key="0010D80D00001345508001000000110002208011A26340005007000177A00503038B403508020000000000000000000000000000000000000000000010F81005" />
       <hair_tags>
         <hair_tag
           name="empire" />
@@ -185,6 +189,326 @@
       <EquipmentSet
         id="empire_troop_civilian_template_t3"
         equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="mv_hodophylakes_leader_3"
+    name="{=MVNiketasDromophylax}Niketas Dromophylax"
+    age="34"
+    voice="curt"
+    is_female="false"
+    is_hero="true"
+    default_group="Ranged"
+    culture="Culture.empire"
+    occupation="Lord"
+    face_mesh_cache="true">
+    <face>
+      <BodyProperties
+        version="4"
+        age="34.18"
+        weight="0.18"
+        build="0.42"
+        key="000AC40D0000134E778014000001700022208011A26340005007000177A005030276302407010002000000000000000000000000000000000000000010F81005" />
+      <hair_tags>
+        <hair_tag
+          name="empire" />
+      </hair_tags>
+      <beard_tags>
+        <beard_tag
+          name="empire" />
+      </beard_tags>
+      <tattoo_tags>
+        <tattoo_tag
+          name="Cleanface" />
+      </tattoo_tags>
+    </face>
+    <skills>
+      <skill id="OneHanded" value="190" />
+      <skill id="Crossbow" value="260" />
+      <skill id="Bow" value="90" />
+      <skill id="Riding" value="130" />
+      <skill id="Athletics" value="200" />
+      <skill id="Scouting" value="210" />
+      <skill id="Tactics" value="190" />
+      <skill id="Leadership" value="175" />
+      <skill id="Charm" value="120" />
+      <skill id="Steward" value="140" />
+      <skill id="Engineering" value="125" />
+    </skills>
+    <Traits>
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Calculating" value="1" />
+      <Trait id="Commander" value="9" />
+      <Trait id="Manager" value="6" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.crossbow_f" />
+        <equipment slot="Item1" id="Item.bolt_c" />
+        <equipment slot="Item2" id="Item.empire_sword_5_t4" />
+        <equipment slot="Item3" id="Item.fortified_kite_shield" />
+        <equipment slot="Head" id="Item.empire_helmet_with_metal_strips" />
+        <equipment slot="Cape" id="Item.scale_shoulder_armor" />
+        <equipment slot="Body" id="Item.imperial_lamellar" />
+        <equipment slot="Gloves" id="Item.lordly_mail_mitten" />
+        <equipment slot="Leg" id="Item.plated_strip_boots" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="empire_troop_civilian_template_t3"
+        equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="mv_old_vaegir_guards_leader_0"
+    name="{=MVOldVaegirVasevolod}Vasevolod"
+    age="50"
+    voice="curt"
+    default_group="Infantry"
+    is_hero="true"
+    is_female="false"
+    culture="Culture.sturgia"
+    occupation="Lord">
+    <face>
+      <BodyProperties
+        version="4"
+        age="50.03"
+        weight="0.1867"
+        build="0.7886"
+        key="0000440000000409A73AC79833A189FE5891763943C458D1111110017344366504BC30460B112000000000000000000000000000000000000000000001781000" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="120" />
+      <skill id="TwoHanded" value="240" />
+      <skill id="Polearm" value="90" />
+      <skill id="Bow" value="45" />
+      <skill id="Crossbow" value="45" />
+      <skill id="Throwing" value="145" />
+      <skill id="Riding" value="65" />
+      <skill id="Athletics" value="185" />
+      <skill id="Crafting" value="55" />
+      <skill id="Scouting" value="80" />
+      <skill id="Tactics" value="170" />
+      <skill id="Roguery" value="40" />
+      <skill id="Charm" value="95" />
+      <skill id="Leadership" value="190" />
+      <skill id="Trade" value="65" />
+      <skill id="Steward" value="160" />
+      <skill id="Medicine" value="65" />
+      <skill id="Engineering" value="80" />
+    </skills>
+    <Traits>
+      <Trait id="Valor" value="2" />
+      <Trait id="Honor" value="2" />
+      <Trait id="Calculating" value="-2" />
+      <Trait id="Commander" value="14" />
+      <Trait id="Manager" value="10" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sturgia_2haxe_2_t5" />
+        <equipment slot="Item1" id="Item.northern_throwing_axe_1_t1" />
+        <equipment slot="Head" id="Item.closed_goggled_helmet" />
+        <equipment slot="Cape" id="Item.nord_king_shoulder_armor_b" />
+        <equipment slot="Body" id="Item.nord_king_armor_b" />
+        <equipment slot="Gloves" id="Item.hybrid_armor_gloves_b" />
+        <equipment slot="Leg" id="Item.hybrid_armor_boots_b" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.sturgia_noble_sword_2_t5" />
+        <equipment slot="Head" id="Item.nordic_civilian_hat_fur_brim" />
+        <equipment slot="Cape" id="Item.nord_casual_cloak" />
+        <equipment slot="Body" id="Item.nord_casual_tunic" />
+        <equipment slot="Leg" id="Item.sturgia_boots_a" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="mv_old_vaegir_guards_leader_1"
+    name="{=MVOldVaegirMiroslav}Miroslav"
+    age="30"
+    voice="earnest"
+    default_group="Infantry"
+    is_hero="true"
+    is_female="false"
+    culture="Culture.sturgia"
+    occupation="Lord">
+    <face>
+      <BodyProperties
+        version="4"
+        age="30.23"
+        weight="0.2947"
+        build="0.7485"
+        key="000004000000200F2A826100010110633364801750500020111600008741644502BB40240B040336000000000000000000000000000000000000000001682000" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="80" />
+      <skill id="TwoHanded" value="180" />
+      <skill id="Polearm" value="50" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="80" />
+      <skill id="Riding" value="30" />
+      <skill id="Athletics" value="130" />
+      <skill id="Crafting" value="25" />
+      <skill id="Scouting" value="35" />
+      <skill id="Tactics" value="80" />
+      <skill id="Roguery" value="20" />
+      <skill id="Charm" value="50" />
+      <skill id="Leadership" value="80" />
+      <skill id="Trade" value="25" />
+      <skill id="Steward" value="70" />
+      <skill id="Medicine" value="20" />
+      <skill id="Engineering" value="15" />
+    </skills>
+    <Traits>
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="2" />
+      <Trait id="Calculating" value="-1" />
+      <Trait id="Commander" value="6" />
+      <Trait id="Manager" value="3" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.northern_axe_t3" />
+        <equipment slot="Item1" id="Item.northern_throwing_axe_1_t1" />
+        <equipment slot="Head" id="Item.nord_helmet_ea" />
+        <equipment slot="Cape" id="Item.fur_cape_b" />
+        <equipment slot="Body" id="Item.nord_chainmail_armor" />
+        <equipment slot="Gloves" id="Item.northman_wrist_armor" />
+        <equipment slot="Leg" id="Item.northman_raider_boot" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.sturgia_noble_sword_2_t5" />
+        <equipment slot="Head" id="Item.nordic_civilian_hat" />
+        <equipment slot="Body" id="Item.nord_casual_tunic" />
+        <equipment slot="Leg" id="Item.nord_casual_boots" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="mv_old_vaegir_guards_leader_2"
+    name="{=MVOldVaegirDobromir}Dobromir"
+    age="34"
+    voice="softspoken"
+    default_group="Infantry"
+    is_hero="true"
+    is_female="false"
+    culture="Culture.sturgia"
+    occupation="Lord">
+    <face>
+      <BodyProperties
+        version="4"
+        age="34.01"
+        weight="0.0848"
+        build="0.4923"
+        key="000044000000190BA686927A5397BA2833598CCA73C3854735A63C86BA4767520287102408498663000000000000000000000000000000000000000031181005" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="90" />
+      <skill id="TwoHanded" value="195" />
+      <skill id="Polearm" value="60" />
+      <skill id="Bow" value="25" />
+      <skill id="Crossbow" value="25" />
+      <skill id="Throwing" value="95" />
+      <skill id="Riding" value="40" />
+      <skill id="Athletics" value="145" />
+      <skill id="Crafting" value="30" />
+      <skill id="Scouting" value="45" />
+      <skill id="Tactics" value="100" />
+      <skill id="Roguery" value="25" />
+      <skill id="Charm" value="60" />
+      <skill id="Leadership" value="105" />
+      <skill id="Trade" value="35" />
+      <skill id="Steward" value="90" />
+      <skill id="Medicine" value="30" />
+      <skill id="Engineering" value="25" />
+    </skills>
+    <Traits>
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Commander" value="8" />
+      <Trait id="Manager" value="5" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.bearded_axe_t3" />
+        <equipment slot="Item1" id="Item.northern_throwing_axe_1_t1" />
+        <equipment slot="Head" id="Item.nord_helmet_fa" />
+        <equipment slot="Cape" id="Item.nord_fur_shoulder" />
+        <equipment slot="Body" id="Item.nordic_chainmail_a" />
+        <equipment slot="Gloves" id="Item.mail_mitten_d" />
+        <equipment slot="Leg" id="Item.northman_raider_boot" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.sturgia_noble_sword_2_t5" />
+        <equipment slot="Head" id="Item.nordic_civilian_hat_fur_brim" />
+        <equipment slot="Body" id="Item.nord_casual_tunic" />
+        <equipment slot="Leg" id="Item.nord_casual_boots" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="mv_old_vaegir_guards_leader_3"
+    name="{=MVOldVaegirYaropolk}Yaropolk"
+    age="40"
+    voice="ironic"
+    default_group="Infantry"
+    is_hero="true"
+    is_female="false"
+    culture="Culture.sturgia"
+    occupation="Lord">
+    <face>
+      <BodyProperties
+        version="4"
+        age="40.11"
+        weight="0.162"
+        build="0.7176"
+        key="00004C0000000403BC7771588B454456796979B8262843C61111100175A669B6039B203509112000000000000000000000000000000000000000000001389000" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="105" />
+      <skill id="TwoHanded" value="215" />
+      <skill id="Polearm" value="75" />
+      <skill id="Bow" value="35" />
+      <skill id="Crossbow" value="35" />
+      <skill id="Throwing" value="115" />
+      <skill id="Riding" value="50" />
+      <skill id="Athletics" value="165" />
+      <skill id="Crafting" value="40" />
+      <skill id="Scouting" value="60" />
+      <skill id="Tactics" value="130" />
+      <skill id="Roguery" value="30" />
+      <skill id="Charm" value="75" />
+      <skill id="Leadership" value="135" />
+      <skill id="Trade" value="45" />
+      <skill id="Steward" value="115" />
+      <skill id="Medicine" value="45" />
+      <skill id="Engineering" value="45" />
+    </skills>
+    <Traits>
+      <Trait id="Valor" value="2" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Commander" value="10" />
+      <Trait id="Manager" value="7" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sturgia_2haxe_1_t4" />
+        <equipment slot="Item1" id="Item.northern_throwing_axe_1_t1" />
+        <equipment slot="Head" id="Item.nordic_helmet" />
+        <equipment slot="Cape" id="Item.chainmail_shoulder_armor_b" />
+        <equipment slot="Body" id="Item.nordic_chainmail_c" />
+        <equipment slot="Gloves" id="Item.mail_mitten_g" />
+        <equipment slot="Leg" id="Item.strapped_jackboots" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.sturgia_noble_sword_2_t5" />
+        <equipment slot="Head" id="Item.nordic_civilian_hat_fur_brim" />
+        <equipment slot="Cape" id="Item.nord_casual_cloak" />
+        <equipment slot="Body" id="Item.nord_casual_tunic" />
+        <equipment slot="Leg" id="Item.nord_casual_boots" />
+      </EquipmentRoster>
     </Equipments>
   </NPCCharacter>
 </NPCCharacters>
