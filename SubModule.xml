@@ -10,10 +10,21 @@
     <DependedModule Id="Native" DependentVersion="v1.4.7" Optional="false" />
     <DependedModule Id="SandBoxCore" DependentVersion="v1.4.7" Optional="false" />
     <DependedModule Id="Sandbox" DependentVersion="v1.4.7" Optional="false" />
+    <DependedModule Id="NavalDLC" DependentVersion="v1.4.7" Optional="false" />
     <DependedModule Id="CustomBattle" DependentVersion="v1.4.7" Optional="false" />
     <DependedModule Id="StoryMode" DependentVersion="v1.4.7" Optional="true" />
   </DependedModules>
-  <SubModules />
+  <SubModules>
+    <SubModule>
+      <Name value="MercenaryVariety" />
+      <DLLName value="MercenaryVariety.dll" />
+      <SubModuleClassType value="MercenaryVariety.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
   <Xmls>
     <XmlNode>
       <XmlName id="NPCCharacters" path="mercenary_variety_npccharacters" />
