@@ -5,20 +5,40 @@
     initial_home_settlement="Settlement.town_ES4"
     owner="Hero.mv_hodophylakes_leader_0"
     banner_key="1.8.8.2189.1985.764.781.1.0.0.528.144.4.408.310.764.863.0.1.0.435.144.4.408.310.764.764.0.1.0"
-    color="FF6B1E1E"
-    color2="FF0B0C11"
     culture="Culture.empire"
     default_party_template="PartyTemplate.mv_hodophylakes_patrol_party_template"
     settlement_banner_mesh="encounter_flag_f"
     is_minor_faction="true"
     name="{=MVHodoPatrol}Hodophylakes Patrol"
     short_name="{=MVHodophylakes}Hodophylakes"
-    tier="3"
+    tier="1"
     text="{=MVHodoPatrolText}The Hodophylakes Patrol is a fellowship of road-wardens, trackers, and bounty hunters active along the southern imperial roads between Lycaron and Danustica. They take coin from merchants, village elders, and town magistrates to hunt looters, forest bandits, and other predators who prey upon caravans and pilgrims. Though many of them once served in imperial armies or town watches, the Hodophylakes swear no oath to any claimant of the throne. They refuse contracts in wars between realms, claiming that kings already have armies enough, while the roads are left to bleed. Their captains are judged by the safety of the routes they patrol, not by banners captured in battle.">
     <minor_faction_character_templates>
       <template id="NPCCharacter.mv_hodophylakes_leader_0" />
       <template id="NPCCharacter.mv_hodophylakes_leader_1" />
       <template id="NPCCharacter.mv_hodophylakes_leader_2" />
+      <template id="NPCCharacter.mv_hodophylakes_leader_3" />
+    </minor_faction_character_templates>
+  </Faction>
+  <Faction
+    id="mv_old_vaegir_guards"
+    initial_home_settlement="Settlement.town_S3"
+    owner="Hero.mv_old_vaegir_guards_leader_0"
+    banner_key="16.149.8.1790.1408.764.764.1.0.0.301.144.4.463.546.764.954.0.1.-60.301.144.4.463.546.764.954.0.1.60.347.32.4.408.310.764.764.0.1.0"
+    culture="Culture.sturgia"
+    default_party_template="PartyTemplate.kingdom_hero_party_mercenary_sturgia_template"
+    settlement_banner_mesh="encounter_flag_f"
+    is_minor_faction="true"
+    is_clan_type_mercenary="true"
+    name="{=MVOldVaegirGuards}The Old Vaegir Guards"
+    short_name="{=MVOldVaegirGuardsShort}Vaegir Guards"
+    tier="1"
+    text="{=MVOldVaegirGuardsText}The Old Vaegir Guards were once an elite household force directly commanded by Emperor Arenicos. When the emperor died unexpectedly, the guard was blamed for failing to protect him and dismissed from Imperial service. Stripped of their old banners and without a place in the reorganized armies, they now wander between Sturgia and the northern Empire in search of new employers and worthy wars. They retain the discipline of a palace guard, the pride of veterans, and a bitter memory of the court that cast them aside.">
+    <minor_faction_character_templates>
+      <template id="NPCCharacter.mv_old_vaegir_guards_leader_0" />
+      <template id="NPCCharacter.mv_old_vaegir_guards_leader_1" />
+      <template id="NPCCharacter.mv_old_vaegir_guards_leader_2" />
+      <template id="NPCCharacter.mv_old_vaegir_guards_leader_3" />
     </minor_faction_character_templates>
   </Faction>
 </Factions>
