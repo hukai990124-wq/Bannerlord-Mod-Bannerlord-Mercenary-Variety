@@ -22,7 +22,7 @@ namespace MercenaryVariety
                 "mv_hodophylakes_ask_identity",
                 "lord_talk_speak_diplomacy_2",
                 "mv_hodophylakes_identity_answer",
-                "{=MVHodophylakesAskIdentity}你们是什么样的组织？",
+                "{=MVHodophylakesAskIdentity}What kind of company are you?",
                 IsTalkingToHodophylakes,
                 null,
                 120);
@@ -31,7 +31,7 @@ namespace MercenaryVariety
                 "mv_hodophylakes_identity_answer",
                 "mv_hodophylakes_identity_answer",
                 "lord_talk_speak_diplomacy_2",
-                "{=MVHodophylakesIdentityAnswer}我们是霍多菲拉克斯巡逻队，南帝国道路上的赏金猎人与护路人。我们的职责是追捕劫匪、绿林强盗和袭击旅人的亡命之徒，保护吕卡隆到达努斯提卡之间的村庄、商队与行人。我们不向任何王位宣誓，也不接受国家战争的雇佣契约；王公们自有军队，而道路上的百姓需要有人守望。",
+                "{=MVHodophylakesIdentityAnswer}We are the Hodophylakes Patrol, road-wardens and bounty hunters of the southern Imperial roads. Our charge is to hunt looters, forest bandits, and every cutthroat who preys upon travelers, villages, and caravans between Lycaron and Danustica. We swear no oath to any throne, and we take no contract in wars between realms. Princes have armies enough. The common folk on the roads need someone to watch over them.",
                 null,
                 null,
                 120);
