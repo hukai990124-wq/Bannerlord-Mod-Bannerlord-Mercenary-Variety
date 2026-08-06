@@ -11,5 +11,25 @@
   <Hero
     id="mv_hodophylakes_leader_2"
     faction="Faction.mv_hodophylakes_patrol"
-    text="{=MVIreneDromophylaxText}Irene Dromophylax was once a tracker hired by caravans to read hoofprints, camp ash, and the signs of ambush. She joined the Hodophylakes after guiding survivors out of the woods near Danustica, where forest bandits had preyed on refugees for weeks. Quiet and precise, Irene is trusted to find the enemy before the enemy finds the road." />
+    text="{=MVIreneDromophylaxText}Irene Dromophylax is Theodora's cousin and the younger sister of Niketas. Before the Hodophylakes Patrol became her household's duty, she worked as a tracker for caravans, reading hoofprints, camp ash, and the signs of ambush along the southern imperial roads. Quiet and precise, Irene is trusted to find the enemy before the enemy finds the road." />
+  <Hero
+    id="mv_hodophylakes_leader_3"
+    faction="Faction.mv_hodophylakes_patrol"
+    text="{=MVNiketasDromophylaxText}Niketas Dromophylax is Theodora's cousin and Irene's elder brother. A veteran arbalist and road-captain, he learned to break bandit charges with disciplined volleys before closing with sword and shield. Though less courtly than Theodora and less subtle than Irene, Niketas gives the Hodophylakes Patrol the hard, practical backbone of a soldier who has spent his life keeping frightened travelers alive." />
+  <Hero
+    id="mv_old_vaegir_guards_leader_0"
+    faction="Faction.mv_old_vaegir_guards"
+    text="{=MVOldVaegirVasevolodText}Vasevolod was Emperor Arenicos's personal guard and the captain of the Old Vaegir Guards. He stood close to the emperor through court ceremonies, frontier inspections, and the long campaigns that kept the northern roads open. When Arenicos died unexpectedly, Vasevolod accepted the charge that the guard had failed in its duty, even though he believed the blame had been placed on tired soldiers and ambitious courtiers alike. Dismissed with the rest of the guard, he could have taken service alone. Instead, responsibility bound him to the men who had followed him. He now leads them from Sturgia to the northern Empire, determined to keep them together until they find a cause worthy of the oath they once swore." />
+  <Hero
+    id="mv_old_vaegir_guards_leader_1"
+    faction="Faction.mv_old_vaegir_guards"
+    text="{=MVOldVaegirMiroslavText}Miroslav was the youngest member of the Old Vaegir Guards when the emperor fell. He had entered the household as a page and standard-bearer's apprentice, then earned his place in the line by carrying the banner through a winter retreat without letting it touch the snow. The dismissal left him with little experience of court and no desire to return to it. Miroslav stayed with Vasevolod because the captain had raised him from a boy into a soldier. He is still quick to anger and eager to prove himself, but his loyalty to the old guard is absolute." />
+  <Hero
+    id="mv_old_vaegir_guards_leader_2"
+    faction="Faction.mv_old_vaegir_guards"
+    text="{=MVOldVaegirDobromirText}Dobromir served as the guard's quartermaster and armorer, a quiet man who could remember every spear, mail shirt, and sack of grain in the company. He was never the loudest warrior in the hall, but he kept the veterans fed when officers spent their time arguing over blame. After the guard was dismissed, Dobromir sold what remained of their stores, paid their debts, and rebuilt their equipment one piece at a time. He follows Vasevolod because he knows that a company without supplies is only a memory. Among the Old Vaegir Guards, his ledger is treated with nearly the same respect as their captain's sword." />
+  <Hero
+    id="mv_old_vaegir_guards_leader_3"
+    faction="Faction.mv_old_vaegir_guards"
+    text="{=MVOldVaegirYaropolkText}Yaropolk is one of the oldest field soldiers still marching beneath the old banner. He served as a line sergeant before Arenicos became emperor and spent decades teaching recruits how to hold a shield wall when the first rank began to break. He distrusts courtly explanations and has no patience for officers who confuse ceremony with protection. Yaropolk believes the guard's disgrace was decided before the inquiry began, but he also believes that surviving the disgrace is a duty in itself. He remains beside Vasevolod as the company's sternest voice, reminding the younger men that an old oath can outlast the ruler who received it." />
 </Heroes>
