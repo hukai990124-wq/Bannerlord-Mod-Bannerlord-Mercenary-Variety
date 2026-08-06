@@ -14,6 +14,7 @@ namespace MercenaryVariety
             if (game.GameType is Campaign && campaignGameStarter != null)
             {
                 campaignGameStarter.AddBehavior(new HodophylakesDialogBehavior());
+                campaignGameStarter.AddBehavior(new OldVaegirGuardsDialogBehavior());
             }
         }
     }
