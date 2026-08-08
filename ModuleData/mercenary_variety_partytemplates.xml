@@ -13,4 +13,11 @@
       <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.mv_sisterhood_banneret_t6" />
     </stacks>
   </MBPartyTemplate>
+  <MBPartyTemplate id="mv_old_vaegir_guards_party_template">
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.mv_old_vaegir_guard" />
+      <PartyTemplateStack min_value="10" max_value="10" troop="NPCCharacter.mv_old_vaegir_warrior" />
+      <PartyTemplateStack min_value="14" max_value="14" troop="NPCCharacter.mv_old_vaegir_recruit" />
+    </stacks>
+  </MBPartyTemplate>
 </partyTemplates>

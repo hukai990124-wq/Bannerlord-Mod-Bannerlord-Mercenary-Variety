@@ -35,6 +35,24 @@ namespace MercenaryVariety
                 null,
                 null,
                 120);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_offer_help",
+                "lord_talk_speak_diplomacy_2",
+                "mv_old_vaegir_offer_help_answer",
+                "{=MVOldVaegirOfferHelp}Is there anything I can help with?",
+                IsTalkingToOldVaegirGuards,
+                null,
+                110);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_offer_help_answer",
+                "mv_old_vaegir_offer_help_answer",
+                "lord_talk_speak_diplomacy_2",
+                "{=MVOldVaegirOfferHelpAnswer}We don't need your help with anything.",
+                null,
+                null,
+                120);
         }
 
         private static bool IsTalkingToOldVaegirGuards()

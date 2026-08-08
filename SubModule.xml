@@ -27,11 +27,34 @@
   </SubModules>
   <Xmls>
     <XmlNode>
+      <XmlName id="NPCCharacters" path="mercenary_variety_valkyrie_npccharacters" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="BodyProperties" path="mercenary_variety_bodyproperties" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
       <XmlName id="NPCCharacters" path="mercenary_variety_npccharacters" />
       <IncludedGameTypes>
         <GameType value="Campaign" />
         <GameType value="CampaignStoryMode" />
         <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="SPCultures" path="mercenary_variety_spcultures" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
       </IncludedGameTypes>
     </XmlNode>
     <XmlNode>

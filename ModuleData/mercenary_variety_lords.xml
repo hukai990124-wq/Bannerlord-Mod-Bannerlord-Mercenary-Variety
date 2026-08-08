@@ -131,7 +131,7 @@
   <NPCCharacter
     id="mv_hodophylakes_leader_2"
     name="{=MVIreneDromophylax}Irene Dromophylax"
-    age="29"
+    age="26"
     voice="softspoken"
     is_female="true"
     is_hero="true"
@@ -142,10 +142,10 @@
     <face>
       <BodyProperties
         version="4"
-        age="25.84"
+        age="26"
         weight="0"
         build="0"
-        key="0002CC081200301777834388213477737286853A87674A19267B2D2273B8413501400613040010220000000000000000000000000000000000000000587C1004" />
+        key="0002CC081200301077834388213477737286853A87674A19267B2D2273B8413501400613040010220000000000000000000000000000000000000000587C1004" />
       <hair_tags>
         <hair_tag
           name="empire" />
