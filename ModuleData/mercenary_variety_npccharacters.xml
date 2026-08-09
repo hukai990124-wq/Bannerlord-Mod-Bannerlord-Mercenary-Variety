@@ -12,7 +12,7 @@
   		culture="Culture.neutral_culture">
   		<face>
   			<face_key_template
-  				value="BodyProperty.townswoman_empire" />
+  				value="BodyProperty.mv_sword_sister_face_01" />
   		</face>
   		<skills>
   			<skill
@@ -85,7 +85,7 @@
   		culture="Culture.neutral_culture">
   		<face>
   			<face_key_template
-  				value="BodyProperty.townswoman_empire" />
+  				value="BodyProperty.mv_sword_sister_face_01" />
   		</face>
   		<skills>
   			<skill
@@ -166,7 +166,7 @@
   		culture="Culture.neutral_culture">
   		<face>
   			<face_key_template
-  				value="BodyProperty.townswoman_empire" />
+  				value="BodyProperty.mv_sword_sister_face_01" />
   		</face>
   		<skills>
   			<skill
@@ -248,7 +248,7 @@
   		culture="Culture.neutral_culture">
   		<face>
   			<face_key_template
-  				value="BodyProperty.townswoman_empire" />
+  				value="BodyProperty.mv_sword_sister_face_01" />
   		</face>
   		<skills>
   			<skill
@@ -327,7 +327,7 @@
   		culture="Culture.neutral_culture">
   		<face>
   			<face_key_template
-  				value="BodyProperty.townswoman_empire" />
+  				value="BodyProperty.mv_sword_sister_face_01" />
   		</face>
   		<skills>
   			<skill
@@ -406,7 +406,7 @@
   		culture="Culture.neutral_culture">
   		<face>
   			<face_key_template
-  				value="BodyProperty.townswoman_empire" />
+  				value="BodyProperty.mv_sword_sister_face_01" />
   		</face>
   		<skills>
   			<skill
@@ -1018,5 +1018,788 @@
         <EquipmentSet id="empire_troop_civilian_template_t3" equipmentType="Civilian" />
       </Equipments>
     </NPCCharacter>
+  <NPCCharacter
+    id="mv_old_vaegir_villager"
+    default_group="Infantry"
+    level="6"
+    name="{=Vaegir Villager}Vaegir Villager"
+    occupation="Soldier"
+    is_female="false"
+    culture="Culture.sturgia">
+    <face>
+      <face_key_template
+        value="BodyProperty.villager_nord" />
+    </face>
+    <skills>
+      <skill
+        id="Athletics"
+        value="25" />
+      <skill
+        id="Riding"
+        value="0" />
+      <skill
+        id="OneHanded"
+        value="25" />
+      <skill
+        id="TwoHanded"
+        value="0" />
+      <skill
+        id="Polearm"
+        value="0" />
+      <skill
+        id="Bow"
+        value="0" />
+      <skill
+        id="Crossbow"
+        value="0" />
+      <skill
+        id="Throwing"
+        value="0" />
+    </skills>
+    <Traits>
+      <Trait
+        id="NavalSoldier"
+        value="1" />
+    </Traits>
+    <upgrade_targets>
+      <upgrade_target
+        id="NPCCharacter.mv_old_vaegir_recruit" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment
+          slot="Item0"
+          id="Item.sturgia_axe_2_t2" />
+        <equipment
+          slot="Head"
+          id="Item.nordic_civilian_hat" />
+        <equipment
+          slot="Body"
+          id="Item.bandit_envelope_dress_v1" />
+        <equipment
+          slot="Leg"
+          id="Item.strapped_leather_boots" />
+      </EquipmentRoster>
+      <EquipmentRoster
+        civilian="true">
+        <equipment
+          slot="Item0"
+          id="Item.peasant_2haxe_1_t1" />
+        <equipment
+          slot="Item2"
+          id="Item.throwing_stone" />
+        <equipment
+          slot="Body"
+          id="Item.bandit_envelope_dress_v1" />
+        <equipment
+          slot="Leg"
+          id="Item.wrapped_shoes" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter
+    id="mv_old_vaegir_recruit"
+    default_group="Infantry"
+    level="11"
+    name="{=Vaegir Recruit}Vaegir Recruit"
+    occupation="Mercenary"
+    is_basic_troop="true"
+    is_female="false"
+    culture="Culture.sturgia">
+    <face>
+      <face_key_template
+        value="BodyProperty.villager_nord" />
+    </face>
+    <skills>
+      <skill
+        id="Athletics"
+        value="50" />
+      <skill
+        id="Riding"
+        value="0" />
+      <skill
+        id="OneHanded"
+        value="50" />
+      <skill
+        id="TwoHanded"
+        value="0" />
+      <skill
+        id="Polearm"
+        value="0" />
+      <skill
+        id="Bow"
+        value="0" />
+      <skill
+        id="Crossbow"
+        value="0" />
+      <skill
+        id="Throwing"
+        value="0" />
+    </skills>
+    <Traits>
+      <Trait
+        id="NavalSoldier"
+        value="1" />
+    </Traits>
+    <upgrade_targets>
+      <upgrade_target
+        id="NPCCharacter.mv_old_vaegir_warrior" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment
+          slot="Item0"
+          id="Item.northern_battle_axe_t3" />
+        <equipment
+          slot="Item1"
+          id="Item.sturgia_old_shield_b" />
+        <equipment
+          slot="Head"
+          id="Item.nordic_civilian_hat_fur_brim" />
+        <equipment
+          slot="Cape"
+          id="Item.nord_casual_cloak" />
+        <equipment
+          slot="Body"
+          id="Item.heavy_gambeson_armor_plain" />
+        <equipment
+          slot="Leg"
+          id="Item.strapped_jackboots" />
+      </EquipmentRoster>
+      <EquipmentRoster
+        civilian="true">
+        <equipment
+          slot="Item0"
+          id="Item.peasant_2haxe_1_t1" />
+        <equipment
+          slot="Item2"
+          id="Item.throwing_stone" />
+        <equipment
+          slot="Body"
+          id="Item.bandit_envelope_dress_v1" />
+        <equipment
+          slot="Leg"
+          id="Item.wrapped_shoes" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter
+    id="mv_old_vaegir_warrior"
+    default_group="Infantry"
+    level="16"
+    name="{=Vaegir Warrior}Vaegir Warrior"
+    occupation="Mercenary"
+    is_female="false"
+    culture="Culture.sturgia">
+    <face>
+      <face_key_template
+        value="BodyProperty.villager_nord" />
+    </face>
+    <skills>
+      <skill
+        id="Athletics"
+        value="90" />
+      <skill
+        id="Riding"
+        value="0" />
+      <skill
+        id="OneHanded"
+        value="90" />
+      <skill
+        id="TwoHanded"
+        value="0" />
+      <skill
+        id="Polearm"
+        value="0" />
+      <skill
+        id="Bow"
+        value="0" />
+      <skill
+        id="Crossbow"
+        value="0" />
+      <skill
+        id="Throwing"
+        value="0" />
+    </skills>
+    <Traits>
+      <Trait
+        id="NavalSoldier"
+        value="1" />
+    </Traits>
+    <upgrade_targets>
+      <upgrade_target
+        id="NPCCharacter.mv_old_vaegir_guard" />
+      <upgrade_target
+        id="NPCCharacter.mv_old_vaegir_linebreaker" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment
+          slot="Item0"
+          id="Item.nord_battle_axe_1_t5" />
+        <equipment
+          slot="Item1"
+          id="Item.northern_round_shield" />
+        <equipment
+          slot="Head"
+          id="Item.nord_helmet_da" />
+        <equipment
+          slot="Cape"
+          id="Item.nord_casual_cloak" />
+        <equipment
+          slot="Body"
+          id="Item.double_belted_leather_armor" />
+        <equipment
+          slot="Gloves"
+          id="Item.nord_casual_bracers" />
+        <equipment
+          slot="Leg"
+          id="Item.strapped_jackboots" />
+      </EquipmentRoster>
+      <EquipmentRoster
+        civilian="true">
+        <equipment
+          slot="Item0"
+          id="Item.peasant_2haxe_1_t1" />
+        <equipment
+          slot="Item2"
+          id="Item.throwing_stone" />
+        <equipment
+          slot="Body"
+          id="Item.bandit_envelope_dress_v1" />
+        <equipment
+          slot="Leg"
+          id="Item.wrapped_shoes" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter
+    id="mv_old_vaegir_guard"
+    default_group="Infantry"
+    level="21"
+    name="{=Vaegir Guard}Vaegir Guard"
+    occupation="Mercenary"
+    is_female="false"
+    culture="Culture.sturgia">
+    <face>
+      <face_key_template
+        value="BodyProperty.villager_nord" />
+    </face>
+    <skills>
+      <skill
+        id="Athletics"
+        value="120" />
+      <skill
+        id="Riding"
+        value="0" />
+      <skill
+        id="OneHanded"
+        value="120" />
+      <skill
+        id="TwoHanded"
+        value="0" />
+      <skill
+        id="Polearm"
+        value="0" />
+      <skill
+        id="Bow"
+        value="0" />
+      <skill
+        id="Crossbow"
+        value="0" />
+      <skill
+        id="Throwing"
+        value="0" />
+    </skills>
+    <Traits>
+      <Trait
+        id="NavalSoldier"
+        value="1" />
+    </Traits>
+    <upgrade_targets>
+      <upgrade_target
+        id="NPCCharacter.mv_old_vaegir_elite_guard" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment
+          slot="Item0"
+          id="Item.nord_battle_axe_1_t5" />
+        <equipment
+          slot="Item1"
+          id="Item.nord_shield_tier_4_b" />
+        <equipment
+          slot="Head"
+          id="Item.goggled_helmet_over_mail" />
+        <equipment
+          slot="Cape"
+          id="Item.nord_shoulder_b" />
+        <equipment
+          slot="Body"
+          id="Item.nordic_chainmail_a" />
+        <equipment
+          slot="Gloves"
+          id="Item.lordly_padded_mitten" />
+        <equipment
+          slot="Leg"
+          id="Item.strapped_jackboots" />
+      </EquipmentRoster>
+      <EquipmentRoster
+        civilian="true">
+        <equipment
+          slot="Item0"
+          id="Item.peasant_2haxe_1_t1" />
+        <equipment
+          slot="Item2"
+          id="Item.throwing_stone" />
+        <equipment
+          slot="Body"
+          id="Item.bandit_envelope_dress_v1" />
+        <equipment
+          slot="Leg"
+          id="Item.wrapped_shoes" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter
+    id="mv_old_vaegir_linebreaker"
+    default_group="Infantry"
+    level="21"
+    name="{=Vaegir LineBreaker}Vaegir LineBreaker"
+    occupation="Mercenary"
+    is_female="false"
+    culture="Culture.sturgia">
+    <face>
+      <face_key_template
+        value="BodyProperty.villager_nord" />
+    </face>
+    <skills>
+      <skill
+        id="Athletics"
+        value="120" />
+      <skill
+        id="Riding"
+        value="0" />
+      <skill
+        id="OneHanded"
+        value="120" />
+      <skill
+        id="TwoHanded"
+        value="120" />
+      <skill
+        id="Polearm"
+        value="0" />
+      <skill
+        id="Bow"
+        value="0" />
+      <skill
+        id="Crossbow"
+        value="0" />
+      <skill
+        id="Throwing"
+        value="0" />
+    </skills>
+    <Traits>
+      <Trait
+        id="NavalSoldier"
+        value="1" />
+    </Traits>
+    <upgrade_targets>
+      <upgrade_target
+        id="NPCCharacter.mv_old_vaegir_elite_linebreaker" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment
+          slot="Item0"
+          id="Item.northern_axe_t3" />
+        <equipment
+          slot="Item1"
+          id="Item.sturgia_axe_5_t5" />
+        <equipment
+          slot="Head"
+          id="Item.goggled_helmet_over_mail" />
+        <equipment
+          slot="Cape"
+          id="Item.a_pauldron_cape_b" />
+        <equipment
+          slot="Body"
+          id="Item.pirate_tier_3_armor" />
+        <equipment
+          slot="Gloves"
+          id="Item.northman_wrist_armor" />
+        <equipment
+          slot="Leg"
+          id="Item.northern_plated_boots" />
+      </EquipmentRoster>
+      <EquipmentRoster
+        civilian="true">
+        <equipment
+          slot="Item0"
+          id="Item.peasant_2haxe_1_t1" />
+        <equipment
+          slot="Item2"
+          id="Item.throwing_stone" />
+        <equipment
+          slot="Body"
+          id="Item.bandit_envelope_dress_v1" />
+        <equipment
+          slot="Leg"
+          id="Item.wrapped_shoes" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter
+    id="mv_old_vaegir_elite_linebreaker"
+    default_group="Infantry"
+    level="26"
+    name="{=Vaegir Elite LineBreaker}Vaegir Elite LineBreaker"
+    occupation="Mercenary"
+    is_female="false"
+    culture="Culture.sturgia">
+    <face>
+      <face_key_template
+        value="BodyProperty.villager_nord" />
+    </face>
+    <skills>
+      <skill
+        id="Athletics"
+        value="170" />
+      <skill
+        id="Riding"
+        value="0" />
+      <skill
+        id="OneHanded"
+        value="170" />
+      <skill
+        id="TwoHanded"
+        value="170" />
+      <skill
+        id="Polearm"
+        value="0" />
+      <skill
+        id="Bow"
+        value="0" />
+      <skill
+        id="Crossbow"
+        value="0" />
+      <skill
+        id="Throwing"
+        value="0" />
+    </skills>
+    <Traits>
+      <Trait
+        id="NavalSoldier"
+        value="1" />
+    </Traits>
+    <upgrade_targets>
+      <upgrade_target
+        id="NPCCharacter.mv_old_vaegir_berserker" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment
+          slot="Item0"
+          id="Item.sturgia_2haxe_1_t4" />
+        <equipment
+          slot="Item1"
+          id="Item.sturgia_axe_5_t5" />
+        <equipment
+          slot="Head"
+          id="Item.closed_goggled_helmet" />
+        <equipment
+          slot="Cape"
+          id="Item.nord_fur_shoulder" />
+        <equipment
+          slot="Body"
+          id="Item.sturgian_lamellar_base" />
+        <equipment
+          slot="Gloves"
+          id="Item.northern_plated_gloves" />
+        <equipment
+          slot="Leg"
+          id="Item.northern_plated_boots" />
+      </EquipmentRoster>
+      <EquipmentRoster
+        civilian="true">
+        <equipment
+          slot="Item0"
+          id="Item.peasant_2haxe_1_t1" />
+        <equipment
+          slot="Item2"
+          id="Item.throwing_stone" />
+        <equipment
+          slot="Body"
+          id="Item.bandit_envelope_dress_v1" />
+        <equipment
+          slot="Leg"
+          id="Item.wrapped_shoes" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter
+    id="mv_old_vaegir_berserker"
+    default_group="Infantry"
+    level="31"
+    name="{=Vaegir Berserker}Vaegir Berserker"
+    occupation="Mercenary"
+    is_female="false"
+    culture="Culture.sturgia">
+    <face>
+      <face_key_template
+        value="BodyProperty.villager_nord" />
+    </face>
+    <skills>
+      <skill
+        id="Athletics"
+        value="260" />
+      <skill
+        id="Riding"
+        value="0" />
+      <skill
+        id="OneHanded"
+        value="260" />
+      <skill
+        id="TwoHanded"
+        value="260" />
+      <skill
+        id="Polearm"
+        value="0" />
+      <skill
+        id="Bow"
+        value="0" />
+      <skill
+        id="Crossbow"
+        value="0" />
+      <skill
+        id="Throwing"
+        value="0" />
+    </skills>
+    <Traits>
+      <Trait
+        id="NavalSoldier"
+        value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment
+          slot="Item0"
+          id="Item.nord_twohanded_axe_3_t5" />
+        <equipment
+          slot="Item1"
+          id="Item.sturgia_axe_5_t5" />
+        <equipment
+          slot="Head"
+          id="Item.lendman_helmet_over_full_mail" />
+        <equipment
+          slot="Cape"
+          id="Item.northman_raider_shoulder" />
+        <equipment
+          slot="Body"
+          id="Item.nord_king_armor_d" />
+        <equipment
+          slot="Gloves"
+          id="Item.mail_mitten_d" />
+        <equipment
+          slot="Leg"
+          id="Item.plated_strip_boots" />
+      </EquipmentRoster>
+      <EquipmentRoster
+        civilian="true">
+        <equipment
+          slot="Item0"
+          id="Item.peasant_2haxe_1_t1" />
+        <equipment
+          slot="Item2"
+          id="Item.throwing_stone" />
+        <equipment
+          slot="Body"
+          id="Item.bandit_envelope_dress_v1" />
+        <equipment
+          slot="Leg"
+          id="Item.wrapped_shoes" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter
+    id="mv_old_vaegir_elite_guard"
+    default_group="Infantry"
+    level="26"
+    name="{=Vaegir Elite Guard}Vaegir Elite Guard"
+    occupation="Mercenary"
+    is_female="false"
+    culture="Culture.sturgia">
+    <face>
+      <face_key_template
+        value="BodyProperty.villager_nord" />
+    </face>
+    <skills>
+      <skill
+        id="Athletics"
+        value="170" />
+      <skill
+        id="Riding"
+        value="0" />
+      <skill
+        id="OneHanded"
+        value="170" />
+      <skill
+        id="TwoHanded"
+        value="0" />
+      <skill
+        id="Polearm"
+        value="0" />
+      <skill
+        id="Bow"
+        value="0" />
+      <skill
+        id="Crossbow"
+        value="0" />
+      <skill
+        id="Throwing"
+        value="0" />
+    </skills>
+    <Traits>
+      <Trait
+        id="NavalSoldier"
+        value="1" />
+    </Traits>
+    <upgrade_targets>
+      <upgrade_target
+        id="NPCCharacter.mv_old_vaegir_royal_guard" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment
+          slot="Item0"
+          id="Item.sturgia_axe_5_t5" />
+        <equipment
+          slot="Item1"
+          id="Item.heavy_round_shield" />
+        <equipment
+          slot="Head"
+          id="Item.imperial_goggled_helmet" />
+        <equipment
+          slot="Cape"
+          id="Item.imperial_lamellar_shoulders" />
+        <equipment
+          slot="Body"
+          id="Item.sturgian_lamellar_base" />
+        <equipment
+          slot="Gloves"
+          id="Item.hybrid_armor_gloves_b" />
+        <equipment
+          slot="Leg"
+          id="Item.lamellar_plate_boots" />
+      </EquipmentRoster>
+      <EquipmentRoster
+        civilian="true">
+        <equipment
+          slot="Item0"
+          id="Item.peasant_2haxe_1_t1" />
+        <equipment
+          slot="Item2"
+          id="Item.throwing_stone" />
+        <equipment
+          slot="Body"
+          id="Item.bandit_envelope_dress_v1" />
+        <equipment
+          slot="Leg"
+          id="Item.wrapped_shoes" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter
+    id="mv_old_vaegir_royal_guard"
+    default_group="Infantry"
+    level="31"
+    name="{=Vaegir Royal Guard}Vaegir Royal Guard"
+    occupation="Mercenary"
+    is_female="false"
+    culture="Culture.sturgia">
+    <face>
+      <face_key_template
+        value="BodyProperty.villager_nord" />
+    </face>
+    <skills>
+      <skill
+        id="Athletics"
+        value="260" />
+      <skill
+        id="Riding"
+        value="0" />
+      <skill
+        id="OneHanded"
+        value="260" />
+      <skill
+        id="TwoHanded"
+        value="0" />
+      <skill
+        id="Polearm"
+        value="0" />
+      <skill
+        id="Bow"
+        value="0" />
+      <skill
+        id="Crossbow"
+        value="0" />
+      <skill
+        id="Throwing"
+        value="0" />
+    </skills>
+    <Traits>
+      <Trait
+        id="NavalSoldier"
+        value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment
+          slot="Item0"
+          id="Item.sturgia_axe_5_t5" />
+        <equipment
+          slot="Item1"
+          id="Item.nord_shield_tier_6_b" />
+        <equipment
+          slot="Head"
+          id="Item.imperial_goggled_helmet" />
+        <equipment
+          slot="Cape"
+          id="Item.noble_pauldron_with_scarf" />
+        <equipment
+          slot="Body"
+          id="Item.lamellar_with_scale_skirt" />
+        <equipment
+          slot="Gloves"
+          id="Item.lamellar_plate_gauntlets" />
+        <equipment
+          slot="Leg"
+          id="Item.hybrid_armor_boots_b" />
+      </EquipmentRoster>
+      <EquipmentRoster
+        civilian="true">
+        <equipment
+          slot="Item0"
+          id="Item.peasant_2haxe_1_t1" />
+        <equipment
+          slot="Item2"
+          id="Item.throwing_stone" />
+        <equipment
+          slot="Body"
+          id="Item.bandit_envelope_dress_v1" />
+        <equipment
+          slot="Leg"
+          id="Item.wrapped_shoes" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
 </NPCCharacters>
 
