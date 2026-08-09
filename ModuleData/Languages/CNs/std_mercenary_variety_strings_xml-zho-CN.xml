@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="简体中文" />
+  </tags>
+  <strings>
+    <string id="0gi5Fp8c" text="资深剑姊妹" />
+    <string id="7WV17e5Q" text="雇佣精锐长枪兵" />
+    <string id="DxtSIxyZ" text="精锐雇佣弩手" />
+    <string id="kyt087eN" text="老练游骑兵" />
+    <string id="MVEmac6" text="破契者" />
+    <string id="MVHodoPatrol" text="守路人巡逻队" />
+    <string id="MVHodoPatrolText" text="守路人巡逻队是一支活跃在吕卡隆至达努斯提卡南部帝国道路上的组织，由守路人、追踪者和赏金猎人组成。他们接受商人、村庄长老和城镇行政官的报酬，负责猎杀劫掠者、森林强盗以及其他袭击商队和朝圣者的恶徒。他们中的许多人曾经在帝国军队或城镇卫队服役，但守路人不向任何帝位争夺者宣誓效忠。他们拒绝参与王国之间的战争，认为君主们已经拥有足够的军队，而道路上的百姓却无人保护。他们的队长不是以夺取多少旗帜来评判，而是以巡逻道路的安全来评判。" />
+    <string id="MVHodophylakes" text="守路人" />
+    <string id="MVHodophylakesAcceptRebelNobleQuest" text="我会解决他们。" />
+    <string id="MVHodophylakesAcceptRebelNobleQuestAnswer" text="那就小心行事。叛乱领主或许危险，但他终究还是一名领主，这也意味着他更容易相信自己的传奇。击溃他们的部队，吕卡隆附近的百姓会记住究竟是谁让道路重新畅通。" />
+    <string id="MVHodophylakesAskIdentity" text="你们是什么样的组织？" />
+    <string id="MVHodophylakesDeliverFood" text="我带来了你们需要的粮食补给。" />
+    <string id="MVHodophylakesDeliverFoodAnswer" text="很好。这些粮食能让我们的人吃饱，也能让巡逻继续进行。我们对你的帮助表示感谢。" />
+    <string id="MVHodophylakesFoodNotReady" text="我还在收集补给。" />
+    <string id="MVHodophylakesFoodNotReadyAnswer" text="等你准备好之后再来。我们不能靠承诺养活巡逻队。" />
+    <string id="MVHodophylakesForestBanditContext" text="我仍在执行日常巡逻，保护道路上的商人和村民。不过最近有一伙森林强盗开始给我们制造麻烦。" />
+    <string id="MVHodophylakesForestBanditQuestInProgress" text="我还在追捕那伙森林强盗。" />
+    <string id="MVHodophylakesForestBanditQuestInProgressAnswer" text="他们的营地还在那里。等你解决他们之后再回来。" />
+    <string id="MVHodophylakesGuildEntry" text="进入守路人公会" />
+    <string id="MVHodophylakesGuildLeave" text="离开" />
+    <string id="MVHodophylakesGuildMenu" text="你来到了达努斯提卡的守路人公会。自从帝国分裂并陷入内战后，贵族们已经无暇关心普通百姓的安全。于是，一些市民自发组成了守路人巡逻队，保护旅人们在道路上的安全。你现在位于达努斯提卡的公会大厅，这座城市处于帝国贸易路线的中心，因此吸引了数量众多的侠义之士。" />
+    <string id="MVHodophylakesIdentityAnswer" text="我们是守路人巡逻队，负责守护南部帝国道路，也接受赏金猎杀恶徒。我们的职责是追捕劫掠者、森林强盗，以及所有袭击旅人、村庄和商队的歹徒，活动范围从吕卡隆一直延伸到达努斯提卡。我们不向任何王位宣誓，也不接受王国之间战争的委托。王公们已经拥有足够的军队，而道路上的普通百姓需要有人保护。" />
+    <string id="MVHodophylakesOfferFoodHelpAnswer" text="确实有一件事。我们的巡逻队已经捉襟见肘，储备也快要见底了。带给我们40单位谷物，我们会妥善使用它们。" />
+    <string id="MVHodophylakesOfferForestBanditQuest" text="你提到了一伙制造麻烦的森林强盗，我能帮什么忙？" />
+    <string id="MVHodophylakesOfferForestBanditQuestAnswer" text="有一伙森林强盗已经养成了袭击我们巡逻队的习惯。他们抢走补给，伏击我们的人，还在道路沿线留下警告。找到他们的藏身处，彻底结束他们的威胁。" />
+    <string id="MVHodophylakesOfferHelp" text="有什么我能帮助的吗？" />
+    <string id="MVHodophylakesOfferHelpAnswer" text="谢谢，我们暂时不需要任何帮助，感谢你的关怀。" />
+    <string id="MVHodophylakesOfferRebelNobleQuest" text="道路上还有其他麻烦吗？" />
+    <string id="MVHodophylakesRebelNobleQuestInProgress" text="我还在追查吕卡隆附近的叛乱贵族。" />
+    <string id="MVHodophylakesRebelNobleQuestInProgressAnswer" text="他们的旗帜仍然飘在道路上。不要让他们把一场叛乱变成永久的收费和恐惧之国。" />
+    <string id="MVHodophylakesRebelNobleQuestPart1" text="吕卡隆附近出现了一个更加危险的威胁。一群贵族举旗叛乱，自称是在保卫帝国，但他们的士兵拦截商队、掠夺村庄的粮食，并要求所有经过他们旗帜下方的旅人服从他们。" />
+    <string id="MVHodophylakesRebelNobleQuestPart2Answer" text="我们并不是为了帝国而行动。我们无意争夺王位，也不想决定哪一位帝国继承人更配戴上王冠。但他们的叛乱已经不再只是贵族之间的争端。他们把自己的头衔当成掠夺的许可，袭击着我们巡逻队发誓要保护的百姓。一个用剑尖向道路征税的贵族，即使他的印章由黄金铸成，也依然是强盗。" />
+    <string id="MVHodophylakesRebelNobleQuestPart2Prompt" text="贵族叛乱？守路人为什么要介入帝国的争端？" />
+    <string id="MVHodophylakesRebelNobleQuestPart3Answer" text="因为每一支帝国军队都已经被要求前往别处作战。对将领们来说，吕卡隆是一项战利品；但对城墙之外的百姓来说，它却是一种负担。宫廷忙于争论合法性，而这些贵族则召集士兵、夺取补给，把道路变成属于他们的边疆。我们不能打着帝国的旗帜行军，但我们可以阻止一个武装团体让我们的道路变得不安全。" />
+    <string id="MVHodophylakesRebelNobleQuestPart3Prompt" text="如果他们是反抗帝国的叛军，为什么没有帝国军队处理他们？" />
+    <string id="MVHodophylakesRebelNobleQuestPart4Answer" text="找到在吕卡隆附近活动的叛乱贵族部队，击溃他们。我不是要求你征服封地，也不是要求你向某位继承人宣誓效忠。我只要求你终结这支借叛乱之名恐吓道路的武装力量。只要他们的部队消失，他们的威胁就会瓦解，无论那些宫殿里的领主愿不愿意承认这一点。" />
+    <string id="MVHodophylakesRebelNobleQuestPart4Prompt" text="你究竟想让我做什么？" />
+    <string id="MVHodophylakesRecruitSisterFollowers" text="招募剑士团追随者" />
+    <string id="MVHodophylakesRecruitSisters10" text="招募10名T3剑姊妹（1200第纳尔）" />
+    <string id="MVHodophylakesRecruitSisters20" text="招募20名T3剑姊妹（2400第纳尔）" />
+    <string id="MVHodophylakesRecruitSisters30" text="招募30名T3剑姊妹（3600第纳尔）" />
+    <string id="MVHodophylakesRecruitT4SisterFollowers" text="招募T4剑姊妹追随者" />
+    <string id="MVHodophylakesRecruitT4Sisters10" text="招募10名T4剑姊妹（1800第纳尔）" />
+    <string id="MVHodophylakesRecruitT4Sisters20" text="招募20名T4剑姊妹（3000第纳尔）" />
+    <string id="MVHodophylakesRecruitT4Sisters30" text="招募30名T4剑姊妹（4000第纳尔）" />
+    <string id="MVHodophylakesRecruitT5CrossbowSisterFollowers" text="招募T5剑姊妹弩手" />
+    <string id="MVHodophylakesRecruitT5CrossbowSisters10" text="招募10名T5剑姊妹弩手（3000第纳尔）" />
+    <string id="MVHodophylakesRecruitT5CrossbowSisters20" text="招募20名T5剑姊妹弩手（5000第纳尔）" />
+    <string id="MVHodophylakesRecruitT5CrossbowSisters30" text="招募30名T5剑姊妹弩手（7000第纳尔）" />
+    <string id="MVHodophylakesRecruitT6CrossbowSisterFollowers" text="招募T6剑姊妹重弩手" />
+    <string id="MVHodophylakesRecruitT6CrossbowSisters10" text="招募10名T6剑姊妹重弩手（5000第纳尔）" />
+    <string id="MVHodophylakesRecruitT6CrossbowSisters20" text="招募20名T6剑姊妹重弩手（9000第纳尔）" />
+    <string id="MVHodophylakesRecruitT6CrossbowSisters30" text="招募30名T6剑姊妹重弩手（13000第纳尔）" />
+    <string id="MVHodophylakesReportForestBanditQuest" text="森林强盗的藏身处已经不复存在。" />
+    <string id="MVHodophylakesReportForestBanditQuestAnswer" text="这样一来，道路就会更加安全。你为守路人做了一件我们不会忘记的事。" />
+    <string id="MVHodophylakesReportRebelNobleQuest" text="吕卡隆附近的叛乱贵族部队已经被摧毁。" />
+    <string id="MVHodophylakesReportRebelNobleQuestAnswer" text="你完成了军队和宫廷都没能完成的事。你没有选择某位继承人，而是选择了那些必须经过这条道路的百姓。守路人会记住这份区别。" />
+    <string id="MVHodophylakesSwordSisterRecruitmentBack" text="返回" />
+    <string id="MVHodophylakesSwordSisterRecruitmentMenu" text="公会可以立即提供剑士团追随者。请选择你想招募的队伍规模。" />
+    <string id="MVHodophylakesT4SwordSisterRecruitmentBack" text="返回" />
+    <string id="MVHodophylakesT4SwordSisterRecruitmentMenu" text="公会可以立即提供经验丰富的T4剑士团追随者。请选择你想招募的队伍规模。" />
+    <string id="MVHodophylakesT5SwordSisterRecruitmentBack" text="返回" />
+    <string id="MVHodophylakesT5SwordSisterRecruitmentMenu" text="公会可以立即提供经验丰富的T5剑姊妹弩手。公会不提供骑兵路线。" />
+    <string id="MVHodophylakesT6SwordSisterRecruitmentBack" text="返回" />
+    <string id="MVHodophylakesT6SwordSisterRecruitmentMenu" text="公会可以立即提供精锐T6剑姊妹重弩手。公会不提供骑兵路线。" />
+    <string id="MVIreneDromophylax" text="艾琳娜·德罗莫菲拉克斯" />
+    <string id="MVIreneDromophylaxText" text="艾琳娜·德罗莫菲拉克斯是迪奥多拉的表亲，也是尼克塔斯的妹妹。在守路人巡逻队成为她家族的责任之前，她曾为商队担任追踪者，凭借蹄印、营火灰烬和伏击痕迹判断道路上的危险。她安静而精准，深受信任，总能在敌人发现道路之前先找到敌人。" />
+    <string id="MVLeontios" text="莱昂提奥斯" />
+    <string id="MVLeontiosHodophylaxText" text="莱昂提奥斯·守路人是一名资深的道路军士，在巡逻队拥有正式名称之前就曾在尼坎德罗斯麾下服役。他熟悉吕卡隆至达努斯提卡之间的每一块破损里程碑，也无法容忍那些把荣耀误认为职责的队长。尼坎德罗斯牺牲后，莱昂提奥斯仍然留在迪奥多拉身边，以一名埋葬过太多旅人的老兵威望支持着这位年轻的指挥官。" />
+    <string id="MVNiketasDromophylax" text="尼克塔斯·德罗莫菲拉克斯" />
+    <string id="MVNiketasDromophylaxText" text="尼克塔斯·德罗莫菲拉克斯是迪奥多拉的表亲，也是艾琳娜的哥哥。他是一名经验丰富的重弩手和道路队长，曾用纪律严明的齐射击溃强盗冲锋，再持剑盾与敌人近战。尼克塔斯没有迪奥多拉那样的贵族气质，也不像艾琳娜那样善于谋划，但他用一个终生保护受惊旅人的士兵所拥有的坚硬意志，为守路人巡逻队提供了务实的骨干。" />
+    <string id="MVOldVaegirAnswerWhyTogether" text="我们中的大多数人，一生的大半时间都靠手中的剑谋生。被帝国解雇并没有给我们带来新的谋生手段，所以我们现在仍然只能靠武力接活。至少当我们还是一个组织时，就能接到更大的合同，获得比单独行动更多的订单。这就是帝国把我们驱逐之后，我们仍然集体行动的原因。" />
+    <string id="MVOldVaegirAskWhyTogether" text="我听说帝国已经解散了你们。为什么你们现在还在集体行动？你们服务于谁吗？" />
+    <string id="MVOldVaegirDobromir" text="多布罗米尔" />
+    <string id="MVOldVaegirDobromirText" text="多布罗米尔曾是卫队的军需官和护甲匠，是一个安静的人，能记住队伍中的每一根矛、每一件锁子甲和每一袋粮食。他从来不是大厅里声音最大的人，但当军官们忙于争论责任时，他会保证老兵们有饭可吃。卫队被解散后，多布罗米尔卖掉剩余物资、偿还债务，再一点点重建他们的装备。他跟随瓦谢沃洛德，因为他知道没有补给的队伍只能成为记忆。在老维吉亚卫队中，他的账本几乎和队长的剑一样受到尊重。" />
+    <string id="MVOldVaegirGuards" text="老维吉亚卫队" />
+    <string id="MVOldVaegirGuardsShort" text="维吉亚卫队" />
+    <string id="MVOldVaegirGuardsText" text="老维吉亚卫队曾经是由皇帝阿雷尼科斯亲自统率的精锐近卫部队。先皇意外驾崩后，他们因为保护不力而受到责难，并被开除出帝国军队。他们失去了昔日的旗帜，也无法在重组后的军队中找到位置，如今只能在斯特吉亚和北帝国之间流浪，寻找新的雇主和值得参与的战争。他们仍然保有宫廷卫队的纪律、老兵的骄傲，以及被宫廷抛弃后挥之不去的苦涩记忆。" />
+    <string id="MVOldVaegirMiroslav" text="米罗斯拉夫" />
+    <string id="MVOldVaegirMiroslavText" text="皇帝驾崩时，米罗斯拉夫是老维吉亚卫队中最年轻的成员。他曾作为侍童和旗手学徒进入近卫队，后来在一次冬季撤退中扛着旗帜前进，始终没有让它落入雪中，因此赢得了站在战线上的资格。卫队被解散后，他几乎没有宫廷经验，也不愿回到宫廷。米罗斯拉夫留在瓦谢沃洛德身边，因为是这位队长把他从一个男孩培养成了士兵。他容易发怒，渴望证明自己，但对老卫队的忠诚坚定不移。" />
+    <string id="MVOldVaegirOfferHelp" text="有什么我能帮助的吗？" />
+    <string id="MVOldVaegirOfferHelpAnswer" text="我们不需要你帮什么忙。" />
+    <string id="MVOldVaegirOfferFoodHelpAnswer" text="有一件事，不过如果还有其他办法，我也不会向你开口。我们需要二十份肉。多布罗米尔可以把它们熏制成肉干，让弟兄们暂时有东西果腹。自从帝国解雇我们以来，我们一直从一份合同流浪到另一份合同。储备已经耗尽，钱袋也所剩无几，我们没有别的办法养活这些人。" />
+    <string id="MVOldVaegirDeliverMeat" text="我带来了你们需要的肉。" />
+    <string id="MVOldVaegirDeliverMeatAnswer" text="这些肉会被制成路上的肉干。你做的不只是填满我们的粮仓，更是帮助了一支被帝国选择遗忘的队伍。" />
+    <string id="MVOldVaegirMeatNotReady" text="我还在收集你们需要的肉。" />
+    <string id="MVOldVaegirMeatNotReadyAnswer" text="那就等你准备好之后再回来。我们不能靠承诺养活一支正在流浪的卫队。" />
+    <string id="MVOldVaegirFoodQuestTitle" text="给老维吉亚卫队的肉" />
+    <string id="MVOldVaegirFoodQuestLog" text="为瓦谢沃洛德带去20份肉，让老维吉亚卫队将其熏制成肉干。" />
+    <string id="MVOldVaegirOfferSeaRaiderHelp" text="你提到一些老战友已经成为海寇，我能做些什么？" />
+    <string id="MVOldVaegirSeaRaiderContext" text="瓦谢沃洛德听说，几名不愿忍受被解雇后艰苦生活的老卫队成员已经在北方水域靠劫掠为生。他们的营地就在狄亚特马附近。找到那里，终结他们的劫掠，在昔日的战友情谊变成袭击旅人的借口之前阻止他们。" />
+    <string id="MVOldVaegirReportSeaRaider" text="狄亚特马附近的海寇营地已经被我摧毁了。" />
+    <string id="MVOldVaegirReportSeaRaiderAnswer" text="那么，他们偷来的生活也随着偷来的营生一起结束了。我们不得不把老战友当成敌人，我对此感到遗憾，但仅凭感情无法保护道路。感谢你，也感谢所有仍然在这面旗帜下行军的人。" />
+    <string id="MVOldVaegirSeaRaiderNotReady" text="我还没有清剿狄亚特马附近的海寇营地。" />
+    <string id="MVOldVaegirSeaRaiderNotReadyAnswer" text="那就不要再耽搁了。他们在那里多待一天，就可能有另一名旅人为我们昔日战友的绝望付出代价。" />
+    <string id="MVOldVaegirSeaRaiderQuestTitle" text="昔日战友的营地" />
+    <string id="MVOldVaegirSeaRaiderQuestLog" text="找到并清剿狄亚特马附近的海寇藏身处，那里曾经的维吉亚卫队成员已经靠劫掠为生。" />
+    <string id="MVOldVaegirVasevolod" text="瓦谢沃洛德" />
+    <string id="MVOldVaegirVasevolodText" text="瓦谢沃洛德曾是皇帝阿雷尼科斯的贴身近卫，也是老维吉亚卫队的队长。他曾在宫廷仪式、边境巡视以及保卫北方道路的漫长战役中陪伴皇帝左右。阿雷尼科斯意外驾崩后，瓦谢沃洛德接受了卫队失职的指责，尽管他认为责任同样来自疲惫的士兵和野心勃勃的廷臣。卫队被解散后，他本可以独自寻找新主人，但责任感让他无法抛下追随自己的士兵。如今，他带领队伍从斯特吉亚一路流浪到北帝国，决心让他们继续团结在一起，直到找到配得上他们昔日誓言的事业。" />
+    <string id="MVOldVaegirYaropolk" text="雅罗波尔克" />
+    <string id="MVOldVaegirYaropolkText" text="雅罗波尔克是仍然在旧旗帜下行军的最年长战士之一。在阿雷尼科斯成为皇帝之前，他就曾担任战线军士，并花费数十年教导新兵如何在第一排开始崩溃时守住盾墙。他不相信宫廷的解释，也无法容忍那些把仪式误认为保护的军官。雅罗波尔克认为卫队的耻辱在调查开始之前就已经被决定，但他也相信，在耻辱中活下去本身就是一种责任。他仍然陪伴在瓦谢沃洛德身边，作为队伍中最严厉的声音，提醒年轻人，旧日的誓言可以比接受誓言的统治者存在得更久。" />
+    <string id="MVOut6" text="契约游骑兵" />
+    <string id="MVSisArb6" text="剑姊妹重弩手" />
+    <string id="MVSisBan6" text="剑姊妹旗手" />
+    <string id="MVSisLR5" text="剑姊妹枪骑士" />
+    <string id="MVTheodora" text="迪奥多拉" />
+    <string id="MVTheodoraFoodSupplyQuestLog" text="为守路人巡逻队向迪奥多拉带去40单位谷物。" />
+    <string id="MVTheodoraFoodSupplyQuestTitle" text="守路人的粮食补给" />
+    <string id="MVTheodoraForestBanditQuestLog" text="找到并清除在达努斯提卡附近袭击守路人巡逻队的森林强盗藏身处。" />
+    <string id="MVTheodoraForestBanditQuestTitle" text="森林强盗的威胁" />
+    <string id="MVTheodoraRebelNobleQuestLog" text="击败在吕卡隆附近活动的叛乱贵族部队，结束他们对道路的袭击。" />
+    <string id="MVTheodoraRebelNobleQuestTitle" text="吕卡隆叛乱" />
+    <string id="MVTheodoraRebelPartyCancelDisband" text="我会重新考虑这份提议。" />
+    <string id="MVTheodoraRebelPartyCannotPayDisband" text="我没有多余的5万第纳尔。" />
+    <string id="MVTheodoraRebelPartyDisband" text="你们早就已经失去了继续留在这里的合法性。我可以给你们一笔丰厚的补偿，放下武器，结束这一切吧。" />
+    <string id="MVTheodoraRebelPartyDisbandAnswer" text="我们当然可以解散。我们可以回去当普通的农民和工匠，或者当雇佣兵谋生。但我们需要足够的钱重新开始。5万第纳尔应该足够维持我们的开支。" />
+    <string id="MVTheodoraRebelPartyFight" text="你们这些残害和欺压村民、商队的贵族，接受我们的制裁吧！" />
+    <string id="MVTheodoraRebelPartyFightAnswer" text="很好，那我们就要来制裁你了。" />
+    <string id="MVTheodoraRebelPartyIntroduction" text="我们的权利来自先皇阿雷尼科斯的授予。我们的血脉高贵，地位不容置疑。所有忠诚的帝国公民自然都要向我们缴纳应付的税款。" />
+    <string id="MVTheodoraRebelPartyName" text="吕卡隆叛乱贵族" />
+    <string id="MVTheodoraRebelPartyPayDisband" text="支付5万第纳尔，让他们解散。" />
+    <string id="MVTheodoraRebelPartyRecruit" text="你们早就已经失去了立足于此的合法性，不如跟着我一起成就事业如何？" />
+    <string id="MVTheodoraRebelPartyRecruitAccept" text="加入我，你们将拥有一个比这场道路上的叛乱更加广阔的未来。" />
+    <string id="MVTheodoraRebelPartyRecruitAnswer" text="你要我们放弃自己的主张，跟随你的旗帜？那就证明你的提议不只是道路上的又一个承诺。" />
+    <string id="MVTheodoraRebelPartyRecruitCancel" text="那我们就没有什么好谈的了。" />
+    <string id="MVTheodoraText" text="迪奥多拉是尼坎德罗斯的女儿。她的父亲曾是一名老练的队长，为了保护南部帝国道路上的村庄、商队和朝圣者免受劫掠者与森林强盗的袭击，创办了守路人巡逻队。尼坎德罗斯在护送难民往返吕卡隆和达努斯提卡时遭到伏击并牺牲，迪奥多拉于是接过了他的旗帜与指挥权。虽然她还很年轻，但她拒绝把手中的长矛卖给王公们参加战争，因此赢得了巡逻队的忠诚。她始终遵守父亲的誓言：道路首先属于那些必须经过它的普通百姓。" />
+    <string id="MVVaegirShelterEntry" text="进入维吉亚庇护所" />
+    <string id="MVVaegirShelterLeave" text="离开" />
+    <string id="MVVaegirShelterMenu" text="你来到了狄亚特马的维吉亚庇护所。曾经散落在北方边疆各处的维吉亚老兵、旅人和流离失所的家庭，如今聚集在同一屋檐下。这个庇护所为他们提供保护、同伴和一处仍然记得古老北方传统的容身之地。" />
+    <string id="MVVaegirShelterRecruitmentBack" text="返回" />
+    <string id="MVVaegirShelterRecruitmentMenu" text="庇护所可以立即提供T3维吉亚战士。请选择你想招募的队伍规模。" />
+    <string id="MVVaegirShelterRecruitVaegir" text="招募T3维吉亚战士" />
+    <string id="MVVaegirShelterRecruitVaegir10" text="招募10名T3维吉亚战士（1200第纳尔）" />
+    <string id="MVVaegirShelterRecruitVaegir20" text="招募20名T3维吉亚战士（2400第纳尔）" />
+    <string id="MVVaegirShelterRecruitVaegir30" text="招募30名T3维吉亚战士（3600第纳尔）" />
+    <string id="MVVaegirShelterRecruitT4Vaegir" text="招募T4维吉亚卫士" />
+    <string id="MVVaegirShelterT4RecruitmentMenu" text="庇护所可以立即提供经验丰富的T4维吉亚卫士。请选择你想招募的队伍规模。" />
+    <string id="MVVaegirShelterRecruitT4Vaegir10" text="招募10名T4维吉亚卫士（1800第纳尔）" />
+    <string id="MVVaegirShelterRecruitT4Vaegir20" text="招募20名T4维吉亚卫士（3000第纳尔）" />
+    <string id="MVVaegirShelterRecruitT4Vaegir30" text="招募30名T4维吉亚卫士（4000第纳尔）" />
+    <string id="MVValkyrie" text="瓦尔基里" />
+    <string id="MVValkyrieShieldMaiden" text="盾女" />
+    <string id="MVValkyrieShieldMaidenElite" text="精锐盾女" />
+    <string id="MVWPik6" text="自由佣兵队长" />
+    <string id="MVXbow6" text="契约重弩手" />
+    <string id="r8npO8hG" text="剑姊妹追随者" />
+    <string id="uPypJHlm" text="精锐佣兵锤兵" />
+    <string id="Vaegir Berserker" text="维吉亚狂战士" />
+    <string id="Vaegir Elite Guard" text="维吉亚精锐卫士" />
+    <string id="Vaegir Elite LineBreaker" text="维吉亚精锐破阵者" />
+    <string id="Vaegir Guard" text="维吉亚卫士" />
+    <string id="Vaegir LineBreaker" text="维吉亚破阵者" />
+    <string id="Vaegir Recruit" text="维吉亚新兵" />
+    <string id="Vaegir Royal Guard" text="维吉亚皇家卫士" />
+    <string id="Vaegir Villager" text="维吉亚村民" />
+    <string id="Vaegir Warrior" text="维吉亚战士" />
+    <string id="ZK0GXYCx" text="剑姊妹" />
+  </strings>
+</base>
