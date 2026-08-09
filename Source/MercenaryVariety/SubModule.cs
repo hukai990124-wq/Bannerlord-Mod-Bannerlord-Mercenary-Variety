@@ -13,8 +13,12 @@ namespace MercenaryVariety
             CampaignGameStarter campaignGameStarter = gameStarterObject as CampaignGameStarter;
             if (game.GameType is Campaign && campaignGameStarter != null)
             {
+                campaignGameStarter.AddBehavior(new HodophylakesProgressBehavior());
                 campaignGameStarter.AddBehavior(new HodophylakesDialogBehavior());
+                campaignGameStarter.AddBehavior(new OldVaegirGuardsProgressBehavior());
                 campaignGameStarter.AddBehavior(new OldVaegirGuardsDialogBehavior());
+                campaignGameStarter.AddBehavior(new HodophylakesGuildMenuBehavior());
+                campaignGameStarter.AddBehavior(new VaegirShelterMenuBehavior());
             }
         }
     }
