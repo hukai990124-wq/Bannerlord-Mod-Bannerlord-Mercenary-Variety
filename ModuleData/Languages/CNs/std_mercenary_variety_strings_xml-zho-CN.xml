@@ -4,7 +4,10 @@
     <tag language="简体中文" />
   </tags>
   <strings>
-    <string id="0gi5Fp8c" text="资深剑姊妹" />
+    <string id="MVTheTribune" text="护民官之裁决" />
+    <string id="MVTheodoraTribuneRewardMessage" text="你的勇气与正义被人们所赞赏，他们称你为护民官，并认为你是那个能带领人们再次统一帝国，终结这个乱世的人。" />
+    <string id="MVVaegirCommanderHelmetRewardMessage" text="瓦塞沃洛德将维吉亚近卫指挥官头盔托付给你，作为你为维吉亚卫队寻回服役记录的证明。" />
+    <string id="0gi5Fp8c" text="资深女剑士" />
     <string id="7WV17e5Q" text="雇佣精锐长枪兵" />
     <string id="DxtSIxyZ" text="精锐雇佣弩手" />
     <string id="kyt087eN" text="老练游骑兵" />
@@ -42,21 +45,21 @@
     <string id="MVHodophylakesRebelNobleQuestPart4Answer" text="找到在吕卡隆附近活动的叛乱贵族部队，击溃他们。我不是要求你征服封地，也不是要求你向某位继承人宣誓效忠。我只要求你终结这支借叛乱之名恐吓道路的武装力量。只要他们的部队消失，他们的威胁就会瓦解，无论那些宫殿里的领主愿不愿意承认这一点。" />
     <string id="MVHodophylakesRebelNobleQuestPart4Prompt" text="你究竟想让我做什么？" />
     <string id="MVHodophylakesRecruitSisterFollowers" text="招募剑士团追随者" />
-    <string id="MVHodophylakesRecruitSisters10" text="招募10名T3剑姊妹（1200第纳尔）" />
-    <string id="MVHodophylakesRecruitSisters20" text="招募20名T3剑姊妹（2400第纳尔）" />
-    <string id="MVHodophylakesRecruitSisters30" text="招募30名T3剑姊妹（3600第纳尔）" />
-    <string id="MVHodophylakesRecruitT4SisterFollowers" text="招募T4剑姊妹追随者" />
-    <string id="MVHodophylakesRecruitT4Sisters10" text="招募10名T4剑姊妹（1800第纳尔）" />
-    <string id="MVHodophylakesRecruitT4Sisters20" text="招募20名T4剑姊妹（3000第纳尔）" />
-    <string id="MVHodophylakesRecruitT4Sisters30" text="招募30名T4剑姊妹（4000第纳尔）" />
-    <string id="MVHodophylakesRecruitT5CrossbowSisterFollowers" text="招募T5剑姊妹弩手" />
-    <string id="MVHodophylakesRecruitT5CrossbowSisters10" text="招募10名T5剑姊妹弩手（3000第纳尔）" />
-    <string id="MVHodophylakesRecruitT5CrossbowSisters20" text="招募20名T5剑姊妹弩手（5000第纳尔）" />
-    <string id="MVHodophylakesRecruitT5CrossbowSisters30" text="招募30名T5剑姊妹弩手（7000第纳尔）" />
-    <string id="MVHodophylakesRecruitT6CrossbowSisterFollowers" text="招募T6剑姊妹重弩手" />
-    <string id="MVHodophylakesRecruitT6CrossbowSisters10" text="招募10名T6剑姊妹重弩手（5000第纳尔）" />
-    <string id="MVHodophylakesRecruitT6CrossbowSisters20" text="招募20名T6剑姊妹重弩手（9000第纳尔）" />
-    <string id="MVHodophylakesRecruitT6CrossbowSisters30" text="招募30名T6剑姊妹重弩手（13000第纳尔）" />
+    <string id="MVHodophylakesRecruitSisters10" text="招募10名T3女剑士团（1200第纳尔）" />
+    <string id="MVHodophylakesRecruitSisters20" text="招募20名T3女剑士团（2400第纳尔）" />
+    <string id="MVHodophylakesRecruitSisters30" text="招募30名T3女剑士团（3600第纳尔）" />
+    <string id="MVHodophylakesRecruitT4SisterFollowers" text="招募T4女剑士团追随者" />
+    <string id="MVHodophylakesRecruitT4Sisters10" text="招募10名T4女剑士团（1800第纳尔）" />
+    <string id="MVHodophylakesRecruitT4Sisters20" text="招募20名T4女剑士团（3000第纳尔）" />
+    <string id="MVHodophylakesRecruitT4Sisters30" text="招募30名T4女剑士团（4000第纳尔）" />
+    <string id="MVHodophylakesRecruitT5CrossbowSisterFollowers" text="招募T5女剑士团弩手" />
+    <string id="MVHodophylakesRecruitT5CrossbowSisters10" text="招募10名T5女剑士团弩手（3000第纳尔）" />
+    <string id="MVHodophylakesRecruitT5CrossbowSisters20" text="招募20名T5女剑士团弩手（5000第纳尔）" />
+    <string id="MVHodophylakesRecruitT5CrossbowSisters30" text="招募30名T5女剑士团弩手（7000第纳尔）" />
+    <string id="MVHodophylakesRecruitT6CrossbowSisterFollowers" text="招募T6女剑士团重弩手" />
+    <string id="MVHodophylakesRecruitT6CrossbowSisters10" text="招募10名T6女剑士团重弩手（5000第纳尔）" />
+    <string id="MVHodophylakesRecruitT6CrossbowSisters20" text="招募20名T6女剑士团重弩手（9000第纳尔）" />
+    <string id="MVHodophylakesRecruitT6CrossbowSisters30" text="招募30名T6女剑士团重弩手（13000第纳尔）" />
     <string id="MVHodophylakesReportForestBanditQuest" text="森林强盗的藏身处已经不复存在。" />
     <string id="MVHodophylakesReportForestBanditQuestAnswer" text="这样一来，道路就会更加安全。你为守路人做了一件我们不会忘记的事。" />
     <string id="MVHodophylakesReportRebelNobleQuest" text="吕卡隆附近的叛乱贵族部队已经被摧毁。" />
@@ -66,9 +69,9 @@
     <string id="MVHodophylakesT4SwordSisterRecruitmentBack" text="返回" />
     <string id="MVHodophylakesT4SwordSisterRecruitmentMenu" text="公会可以立即提供经验丰富的T4剑士团追随者。请选择你想招募的队伍规模。" />
     <string id="MVHodophylakesT5SwordSisterRecruitmentBack" text="返回" />
-    <string id="MVHodophylakesT5SwordSisterRecruitmentMenu" text="公会可以立即提供经验丰富的T5剑姊妹弩手。公会不提供骑兵路线。" />
+    <string id="MVHodophylakesT5SwordSisterRecruitmentMenu" text="公会可以立即提供经验丰富的T5女剑士团弩手。公会不提供骑兵路线。" />
     <string id="MVHodophylakesT6SwordSisterRecruitmentBack" text="返回" />
-    <string id="MVHodophylakesT6SwordSisterRecruitmentMenu" text="公会可以立即提供精锐T6剑姊妹重弩手。公会不提供骑兵路线。" />
+    <string id="MVHodophylakesT6SwordSisterRecruitmentMenu" text="公会可以立即提供精锐T6女剑士团重弩手。公会不提供骑兵路线。" />
     <string id="MVIreneDromophylax" text="艾琳娜·德罗莫菲拉克斯" />
     <string id="MVIreneDromophylaxText" text="艾琳娜·德罗莫菲拉克斯是迪奥多拉的表亲，也是尼克塔斯的妹妹。在守路人巡逻队成为她家族的责任之前，她曾为商队担任追踪者，凭借蹄印、营火灰烬和伏击痕迹判断道路上的危险。她安静而精准，深受信任，总能在敌人发现道路之前先找到敌人。" />
     <string id="MVLeontios" text="莱昂提奥斯" />
@@ -106,9 +109,9 @@
     <string id="MVOldVaegirYaropolk" text="雅罗波尔克" />
     <string id="MVOldVaegirYaropolkText" text="雅罗波尔克是仍然在旧旗帜下行军的最年长战士之一。在阿雷尼科斯成为皇帝之前，他就曾担任战线军士，并花费数十年教导新兵如何在第一排开始崩溃时守住盾墙。他不相信宫廷的解释，也无法容忍那些把仪式误认为保护的军官。雅罗波尔克认为卫队的耻辱在调查开始之前就已经被决定，但他也相信，在耻辱中活下去本身就是一种责任。他仍然陪伴在瓦谢沃洛德身边，作为队伍中最严厉的声音，提醒年轻人，旧日的誓言可以比接受誓言的统治者存在得更久。" />
     <string id="MVOut6" text="契约游骑兵" />
-    <string id="MVSisArb6" text="剑姊妹重弩手" />
-    <string id="MVSisBan6" text="剑姊妹旗手" />
-    <string id="MVSisLR5" text="剑姊妹枪骑士" />
+    <string id="MVSisArb6" text="女剑士团重弩手" />
+    <string id="MVSisBan6" text="女剑士团旗手" />
+    <string id="MVSisLR5" text="女剑士团枪骑士" />
     <string id="MVTheodora" text="迪奥多拉" />
     <string id="MVTheodoraFoodSupplyQuestLog" text="为守路人巡逻队向迪奥多拉带去40单位谷物。" />
     <string id="MVTheodoraFoodSupplyQuestTitle" text="守路人的粮食补给" />
@@ -149,7 +152,7 @@
     <string id="MVValkyrieShieldMaidenElite" text="精锐盾女" />
     <string id="MVWPik6" text="自由佣兵队长" />
     <string id="MVXbow6" text="契约重弩手" />
-    <string id="r8npO8hG" text="剑姊妹追随者" />
+    <string id="r8npO8hG" text="女剑士团追随者" />
     <string id="uPypJHlm" text="精锐佣兵锤兵" />
     <string id="Vaegir Berserker" text="维吉亚狂战士" />
     <string id="Vaegir Elite Guard" text="维吉亚精锐卫士" />
@@ -160,6 +163,199 @@
     <string id="Vaegir Royal Guard" text="维吉亚皇家卫士" />
     <string id="Vaegir Villager" text="维吉亚村民" />
     <string id="Vaegir Warrior" text="维吉亚战士" />
-    <string id="ZK0GXYCx" text="剑姊妹" />
+    <string id="ZK0GXYCx" text="女剑士团" />
+    <string id="MVVaegirShelterRecruitT5Vaegir" text="招募T5维吉亚精锐卫士" />
+    <string id="MVVaegirShelterT5RecruitmentMenu" text="庇护所现在可以提供经验丰富的T5维吉亚精锐卫士。请选择你想招募的队伍规模。" />
+    <string id="MVVaegirShelterRecruitT5Vaegir10" text="招募10名T5维吉亚精锐卫士（3000第纳尔）" />
+    <string id="MVVaegirShelterRecruitT5Vaegir20" text="招募20名T5维吉亚精锐卫士（5000第纳尔）" />
+    <string id="MVVaegirShelterRecruitT5Vaegir30" text="招募30名T5维吉亚精锐卫士（7000第纳尔）" />
+    <string id="MVOldVaegirRecordsQuestTitle" text="帝国的旧账" />
+    <string id="MVOldVaegirRecordsQuestLog" text="找到狄亚特马附近的帝国逃兵，取回维吉亚卫队的军籍证明和未付军饷账单。" />
+    <string id="MVOldVaegirOfferRecordsQuest" text="你提到帝国扣下了你们最后的军饷和军籍证明。有什么我能帮忙的吗？" />
+    <string id="MVOldVaegirRecordsContext" text="帝国解散维吉亚卫队时，没有归还我们的军籍册和军饷账单，反而把它们扣了下来。一群帝国逃兵现在把这些东西藏在狄亚特马附近。他们利用我们的名字和欠发的军饷索取赎金，要求我们付款才肯交出资料。取回这些东西，我们才能带着证明离开帝国，证明我们曾经是谁。" />
+    <string id="MVOldVaegirReportRecordsQuest" text="帝国逃兵已经交出了维吉亚卫队的军籍证明。" />
+    <string id="MVOldVaegirReportRecordsQuestAnswer" text="那么，我们服役的最后一份记录终于回到了手中。你没有恢复我们在帝国的旧地位，但你取回了任何军官都不该夺走的东西：证明我们曾经服役的凭证。" />
+    <string id="MVOldVaegirRecordsQuestInProgress" text="我还在处理狄亚特马附近的帝国逃兵。" />
+    <string id="MVOldVaegirRecordsQuestInProgressAnswer" text="别让他们拿我们的名字和军饷做买卖。那些文件是维吉亚卫队存在过的最后证明，而不是帝国账本上一笔可以随意抹掉的开支。" />
+    <string id="MVOldVaegirRecordsPartyName" text="帝国军需官的逃兵" />
+    <string id="MVOldVaegirRecordsPartyIntroduction" text="这些文件盖着已故皇帝阿雷尼科斯的印章。帝国解散了你们的卫队，却从未支付欠下的军饷。我们在这些文件被销毁前拿走了军籍册和账本，如今它们对我们的价值，甚至超过当年持剑保护它们的那些士兵。" />
+    <string id="MVOldVaegirRecordsPartyFight" text="你们无权扣留他们的名字和欠发的军饷。交出资料，否则就用战斗来解决。" />
+    <string id="MVOldVaegirRecordsPartyFightAnswer" text="那就来拿吧。我们倒要看看，老帝国的名号在这条路上还剩多少分量。" />
+    <string id="MVOldVaegirRecordsPartyPay" text="我支付50000第纳尔。交出所有军籍证明和欠维吉亚卫队的军饷。这笔钱将以帝国的名义支付。" />
+    <string id="MVOldVaegirRecordsPartyPayAnswer" text="五万第纳尔，换取帝国抛弃的几张纸？很好，拿走军籍册和账本吧。如果这样能让交易听起来更像帝国付款，我们就这么称呼它。" />
+    <string id="MVOldVaegirRecordsPartyNegotiate" text="那些是被窃取的军务文件，不是你们的财产。交出来，然后离开，否则这件事就会变成帝国仍能追究的罪行。" />
+    <string id="MVOldVaegirRecordsPartyNegotiateAnswer" text="你说话的口气，比那些抛弃他们的军官更像个有权力的人。拿走这些文件吧。我们没兴趣为了不属于我们的帝国欠债送命。" />
+    <string id="MVVaegirShelterRecruitT6Vaegir" text="招募T6维吉亚皇家卫士" />
+    <string id="MVVaegirShelterT6RecruitmentMenu" text="庇护所现在可以提供最精锐的T6维吉亚皇家卫士。请选择你想招募的队伍规模。" />
+    <string id="MVVaegirShelterRecruitT6Vaegir10" text="招募10名T6维吉亚皇家卫士（5000第纳尔）" />
+    <string id="MVVaegirShelterRecruitT6Vaegir20" text="招募20名T6维吉亚皇家卫士（9000第纳尔）" />
+    <string id="MVVaegirShelterRecruitT6Vaegir30" text="招募30名T6维吉亚皇家卫士（13000第纳尔）" />
+    <string id="MVVaegirShelterHireOldVaegirGuards" text="雇佣老维吉亚卫队为佣兵" />
+    <string id="MVOldVaegirGovernorQuestTitle" text="帝国执政官的审判" />
+    <string id="MVOldVaegirGovernorQuestLog" text="找到安普雷拉附近那名曾诬陷维吉亚卫队的帝国执政官，并击败他的骑兵亲卫。" />
+    <string id="MVOldVaegirOfferGovernorQuest" text="你说过，是一名帝国执政官诬陷了你们，导致你们蒙受耻辱。有什么我能帮忙的吗？" />
+    <string id="MVOldVaegirGovernorContext" text="吕卡隆的执政官在阿雷尼科斯皇帝死后歪曲了调查结果。他声称维吉亚卫队与未能保护皇帝的人串通，把我们的服役说成罪行，为法庭解散我们提供了借口。如今他仍带着一支亲卫队在安普雷拉附近活动，披着帝国的颜色，把我们的驱逐称为合法判决。找到他，让这个把我们的服役变成谎言的人付出代价。" />
+    <string id="MVOldVaegirReportGovernorQuest" text="那名执政官的骑兵已经被击败。" />
+    <string id="MVOldVaegirReportGovernorQuestAnswer" text="那么，最后一个诬陷我们的声音也沉默了。你做到了我们手中的剑无法做到的事：让帝国为毁掉我们名誉的谎言付出代价。从今天起，我们会把自己的判断交给你来信任。" />
+    <string id="MVOldVaegirAskFuture" text="那么今后你们如何打算呢？" />
+    <string id="MVOldVaegirAnswerFuture" text="作为回报，你是我们维吉亚人最信任的朋友。我们愿意在任何时候接受你的雇佣，也会有很多年轻人愿意加入你的队伍。但是至于我们这些老人，我们只想着再多攒些钱，回到北方的故乡度过余生。如果你愿意，我们依然可以以佣兵的形式为你战斗。" />
+    <string id="MVOldVaegirGovernorQuestInProgress" text="我还没有处理安普雷拉附近的执政官亲卫队。" />
+    <string id="MVOldVaegirGovernorQuestInProgressAnswer" text="不要把他的旗帜误认为正义。那个人利用先皇驾崩，把我们的服役变成了罪行。" />
+    <string id="MVOldVaegirGovernorPartyName" text="执政官的铁骑亲卫" />
+    <string id="MVOldVaegirGovernorPartyIntroduction" text="执政官的亲卫队打着帝国旗号拦在路上。他们的指挥官举起印章，宣称维吉亚卫队的解散是合法判决。这里不会有审判，只有他必须承担的后果。" />
+    <string id="MVOldVaegirGovernorPartyFight" text="你用谎言审判了忠诚的士兵。现在就用鲜血为此负责。" />
+    <string id="MVSeaRaiderWarlord" text="海寇军阀" />
+    <string id="MVSeaRaiderTavernEntry" text="进入海寇酒馆" />
+    <string id="MVSeaRaiderTavernMenu" text="诺德身处苦寒之地，许多人在农忙时是辛苦本分的农夫，但是即便如此，依旧有很多的人无法度过寒冬。为此一些男人们自发的组成了劫掠团伙去到南方寻找生机。此地即便在诺德亦是偏僻之地，但却有天然良港，聚集了大量想要组织起船队去到南方抢掠的人们。如果你与他们足够交好，或许你可以在这里招募到你想要的勇士....." />
+    <string id="MVSeaRaiderTavernNoTrust" text="没人会相信外乡人，他们不抢你已经是好运了。" />
+    <string id="MVSeaRaiderTavernReputation" text="人们听说过你的名声，有不少小伙子们希望你带他们填饱肚子。" />
+    <string id="MVSeaRaiderTavernCooldown" text="海寇们还没有重新聚集起来，请十天后再来。" />
+    <string id="MVSeaRaiderTavernRecruitOption" text="招募20名T3海寇战士（2000第纳尔）" />
+    <string id="MVSeaRaiderTavernRecruitT4Option" text="招募20名T4海寇首领（4000第纳尔）" />
+    <string id="MVSeaRaiderGreatRaiding" text="组建你自己的掠夺队" />
+    <string id="MVSeaRaiderT3RecruitmentTooltip" text="招募条件：流氓习气50、魅力50、2000第纳尔，并且10日冷却已结束。" />
+    <string id="MVSeaRaiderT4RecruitmentTooltip" text="招募条件：流氓习气75、魅力75、4000第纳尔，并且10日冷却已结束。" />
+    <string id="MVSeaRaiderGreatRaidingTooltip" text="招募条件：流氓习气100、魅力100、20000第纳尔，并且30日冷却已结束。获得50至100名海寇，其中包含1至3名T6海寇军阀。" />
+    <string id="MVSeaRaiderGreatRaidingSuccess" text="海寇们一边高举手中的角杯，一边呼喊着你的名字。他们早已听闻你的大名，如今愿意奉你为领袖。共{COUNT}名海寇加入了你的队伍。" />
+    <string id="MVSeaRaiderT3RecruitmentSuccess" text="一些年轻的小伙子们抱着试试的态度加入了你，他们希望能从你这里碰碰运气。" />
+    <string id="MVSeaRaiderT4RecruitmentSuccess" text="一伙老兵认为你是一名合格的领袖，他们决定由你来指挥他们的航向。" />
+    <string id="MVSeaRaiderPromiseWarriors" text="向勇士们许诺荣耀与黄金" />
+    <string id="MVSeaRaiderPromiseWarriorsTooltip" text="进入条件：流氓习气100、魅力100。更大的承诺需要流氓习气150、魅力150。" />
+    <string id="MVSeaRaiderPromiseWarriorsMenu" text="港湾中的船员们带着戒备围拢过来。你可以邀请他们加入自己的队伍，召集海上群狼封锁港口，或号召北方劫掠者发动大劫掠。" />
+    <string id="MVSeaRaiderPromiseSeaWolves" text="组织海上群狼" />
+    <string id="MVSeaRaiderPromiseSeaWolvesTooltip" text="要求：流氓习气150、魅力150。选择一座海港，对其进行持续十五日的海上封锁。" />
+    <string id="MVSeaRaiderPromiseGreatRaid" text="组织大劫掠" />
+    <string id="MVSeaRaiderPromiseGreatRaidTooltip" text="要求：流氓习气150、魅力150。选择一座城镇，发动持续十五日的陆上大劫掠。" />
+    <string id="MVSeaRaiderPromiseBack" text="返回海寇酒馆" />
+    <string id="MVSeaRaiderGreatRaidOrdersMenu" text="选择大劫掠将围攻的目标城镇。劫掠队会在七天后出现，并于十五天后自行散去。" />
+    <string id="MVSeaRaiderGreatRaidPravend" text="将大劫掠指向帕拉汶德" />
+    <string id="MVSeaRaiderGreatRaidCarBanseth" text="将大劫掠指向卡·班赛斯" />
+    <string id="MVSeaRaiderGreatRaidEpicrotea" text="将大劫掠指向埃皮克罗提亚" />
+    <string id="MVSeaRaiderGreatRaidVarcheg" text="将大劫掠指向瓦尔切格" />
+    <string id="MVSeaRaiderGreatRaidMakeb" text="将大劫掠指向马凯布" />
+    <string id="MVSeaRaiderGreatRaidHargard" text="将大劫掠指向哈加德" />
+    <string id="MVSeaRaiderGreatRaidBack" text="返回勇士承诺" />
+    <string id="MVSeaRaiderGreatRaidTargetTooltip" text="船队需要七天集结。六支海寇军团会活动十五天。" />
+    <string id="MVSeaRaiderGreatRaidOrdered" text="有传言，在某个偏远的诺德角落聚集了一大批人，他们在某人的号召下划船南下。" />
+    <string id="MVSeaRaiderGreatRaidSpawned" text="据说有一位魅力非凡的领袖劝说了北方的勇士们团结一致，他们现在在那位领袖的引导下，绕过海岸防卫包围了{TOWN_NAME}！" />
+    <string id="MVSeaRaiderGreatRaidSpawnFailed" text="被许诺的劫掠者未能在{TOWN_NAME}附近完成集结。" />
+    <string id="MVSeaRaiderGreatRaidTargetArea" text="目标地区" />
+    <string id="MVSeaRaiderGreatRaidDefeated" text="说到底就是一帮乌合之众，所谓的大劫掠军队被全数剿灭，幕后的主使恐怕也未达所愿。" />
+    <string id="MVSeaRaiderGreatRaidDisbanded" text="海寇们终究只是一时起意的乌合之众。在劫掠了足够的金钱与食物之后，大多数人都选择欢呼着回到故乡。他们的侵略终究不是永久的。" />
+    <string id="MVSeaRaiderTavernLeave" text="离开" />
+    <string id="MVRecruitmentTooltip" text="招募条件：&#10;{REQUIREMENTS}" />
+    <string id="MVRecruitmentRequiresQuest" text="完成对应任务以解锁。" />
+    <string id="MVRecruitmentRequiresRoguery" text="流氓习气达到{VALUE}。" />
+    <string id="MVRecruitmentRequiresDenars" text="至少需要{VALUE}第纳尔。" />
+    <string id="MVRecruitmentRequiresCooldown" text="冷却时间尚未结束。" />
+    <string id="MVRecruitmentMissingTroop" text="目标兵种未加载。" />
+    <string id="MVRecruitmentUnavailable" text="当前无法招募。" />
+    <string id="MVSeaRaiderSeaWolvesOstican" text="将海上群狼指向奥斯蒂港" />
+    <string id="MVSeaRaiderSeaWolvesCarBanseth" text="将海上群狼指向卡·班赛斯" />
+    <string id="MVSeaRaiderSeaWolvesOmor" text="将海上群狼指向奥莫尔" />
+    <string id="MVSeaRaiderSeaWolvesThronderlag" text="将海上群狼指向特龙德拉格" />
+    <string id="MVSeaRaiderSeaWolvesArgoron" text="将海上群狼指向阿尔戈隆" />
+    <string id="MVSeaRaiderSeaWolvesOrtysia" text="将海上群狼指向俄耳提西亚" />
+    <string id="MVSeaRaiderSeaWolvesMakeb" text="将海上群狼指向马凯布" />
+    <string id="MVSeaRaiderSeaWolvesOrdersMenu" text="选择海上群狼将封锁的港口。舰队会在七天后出现，并于十五天后自行散去。" />
+    <string id="MVSeaRaiderSeaWolvesBack" text="返回勇士承诺" />
+    <string id="MVSeaRaiderSeaWolvesTooltip" text="要求：流氓习气150、魅力150，且没有正在筹备或活动中的海上群狼战。七日后，六支各由两艘Drakkar长船搭载110名海寇的舰队会出现在{TOWN_NAME}港口外水域，并活动十五天。自筹备开始起30天内，海寇不会主动攻击你。" />
+    <string id="MVSeaRaiderSeaWolvesOrdered" text="来自萨克利夫的消息传开了：海上群狼正在集结，准备驶向{TOWN_NAME}。" />
+    <string id="MVSeaRaiderSeaWolvesSpawned" text="六支海上群狼舰队已出现在{TOWN_NAME}港口外水域。每支舰队由两艘Drakkar长船搭载110名海寇组成。" />
+    <string id="MVSeaRaiderSeaWolvesDefeated" text="海上群狼已在{TOWN_NAME}港口外水域被击溃或消灭。" />
+    <string id="MVSeaRaiderSeaWolvesDisbanded" text="经过十五日在{TOWN_NAME}港口外水域的活动，海上群狼分完战利品后再次驶回北方。" />
+    <string id="MVSeaRaiderSeaWolvesSpawnFailed" text="海上群狼无法找到进入{TOWN_NAME}水域的可航行路线。" />
+    <string id="MVSeaRaiderSeaWolvesTargetWaters" text="目标水域" />
+    <string id="MVSeaRaiderClanGreyWolf" text="灰狼氏族" />
+    <string id="MVSeaRaiderClanBlackOar" text="黑桨氏族" />
+    <string id="MVSeaRaiderClanIronRaven" text="铁鸦氏族" />
+    <string id="MVSeaRaiderClanStormAxe" text="风暴斧氏族" />
+    <string id="MVSeaRaiderClanWinterBear" text="冬熊氏族" />
+    <string id="MVSeaRaiderClanBrokenShield" text="碎盾氏族" />
+    <string id="MVSeaRaiderClanWhiteWake" text="白浪氏族" />
+    <string id="MVSeaRaiderClanSaltFang" text="盐牙氏族" />
+    <string id="MVSeaRaiderClanSeaSerpent" text="海蛇氏族" />
+    <string id="MVSeaRaiderClanColdTide" text="寒潮氏族" />
+    <string id="MVSeaRaiderClanWhaleRoad" text="鲸道氏族" />
+    <string id="MVSeaRaiderClanBlackSail" text="黑帆氏族" />
+    <string id="MVWesternMercenaryOutpostEntry" text="进入佣兵公会" />
+    <string id="MVWesternMercenaryOutpostMenu" text="萨哥特位于瓦兰迪亚、巴旦尼亚与西帝国势力交错的边缘。这里的商人需要护卫，贵族需要私兵，边境上的战争也从不缺少愿意为金钱效力的人。许多退伍士兵、破产骑士和流浪弩手来到萨哥特，将自己的武艺交给出价最高、能够兑现承诺的雇主。久而久之，这座城市成为了佣兵最重要的集结地之一。" />
+    <string id="MVWesternMercenaryOutpostLeave" text="离开" />
+    <string id="MVWesternMercenaryDonationEntry" text="向佣兵公会捐款" />
+    <string id="MVWesternMercenaryDonationMenu" text="佣兵们接受任何雇主的招募，但是优质的佣兵资源往往很难得到，但你如果能为佣兵公会献上一笔赠款，成为他们的荣誉贵宾，或许公会的员工们会为你介绍不少优秀的战士。&#10;你目前的权限等级是：{MEMBERSHIP_LEVEL}" />
+    <string id="MVGoldenBoarEntry" text="联系黄金野猪兵团" />
+    <string id="MVGoldenBoarMenu" text="当你在萨哥特的佣兵公会中达到一定地位之后，野猪兵团也有不少人愿意与你进行联络。你如果拥有足够的权势和财富，甚至可以将他们整个团都买下来。" />
+    <string id="MVGoldenBoarRecruit" text="招募野猪团小队（6名新兵、6名老兵、3名精兵；{GOLDEN_BOAR_RECRUITMENT_COST}第纳尔）" />
+    <string id="MVGoldenBoarRecruitTooltip" text="需要初级佣兵会员资格、2700第纳尔，并且7日招募冷却已结束。" />
+    <string id="MVGoldenBoarRecruitFreeTooltip" text="黄金野猪兵团已被买断，本次招募免费；仍需初级佣兵会员资格，并等待7日招募冷却结束。" />
+    <string id="MVGoldenBoarCompanyHire" text="雇佣黄金野猪兵团进入你的队伍（25名新兵、20名老兵、15名精兵；{GOLDEN_BOAR_COMPANY_COST}第纳尔）" />
+    <string id="MVGoldenBoarCompanyHireTooltip" text="需要佣兵公会赞助人资格、9000第纳尔，并且15日招募冷却已结束。" />
+    <string id="MVGoldenBoarCompanyHireFreeTooltip" text="黄金野猪兵团已被买断，本次招募免费；仍需佣兵公会赞助人资格，并等待15日招募冷却结束。" />
+    <string id="MVGoldenBoarDemandService" text="要求黄金野猪兵团出战（50000第纳尔）" />
+    <string id="MVGoldenBoarBuyout" text="买断黄金野猪兵团（1500000第纳尔）" />
+    <string id="MVGoldenBoarClanUnavailable" text="黄金野猪兵团已经不复存在。" />
+    <string id="MVGoldenBoarServiceNoKingdom" text="你必须先加入一个王国，黄金野猪兵团才能为其效力。" />
+    <string id="MVGoldenBoarServiceSuccess" text="黄金野猪兵团已经加入你的王国，并将在六十天内履行合约。" />
+    <string id="MVGoldenBoarAlreadyBoughtOut" text="黄金野猪兵团已经被你买断。" />
+    <string id="MVGoldenBoarBuyoutSuccess" text="黄金野猪兵团已经解散，其留下的招募渠道今后将免费为你服务。" />
+    <string id="MVGoldenBoarServiceRequiresHonorary" text="需要拥有佣兵公会荣誉会长身份。" />
+    <string id="MVGoldenBoarServiceBoughtOut" text="黄金野猪兵团已被买断并解散，无法再作为独立佣兵氏族出战。" />
+    <string id="MVGoldenBoarServiceRequiresGold" text="需要50000第纳尔。" />
+    <string id="MVGoldenBoarServiceTooltip" text="黄金野猪兵团将为你的王国效力六十天，费用为50000第纳尔。" />
+    <string id="MVGoldenBoarBuyoutRequiresHonorary" text="需要拥有佣兵公会荣誉会长身份。" />
+    <string id="MVGoldenBoarBuyoutRequiresGold" text="需要1500000第纳尔。" />
+    <string id="MVGoldenBoarBuyoutTooltip" text="解散黄金野猪兵团，并使其公会招募渠道变为免费，费用为1500000第纳尔。" />
+    <string id="MVGoldenBoarMobilizeBoughtOut" text="召集黄金野猪兵团出战（立即获得80名士兵）" />
+    <string id="MVGoldenBoarMobilizationCooldown" text="已买断的黄金野猪兵团战士每六十天只能被召集一次。" />
+    <string id="MVGoldenBoarMobilizationTooltip" text="立即获得30名新兵、25名老兵、20名冠军、4名野猪团长与1名野猪团百夫长。不受部队人数上限限制，每六十天可使用一次。" />
+    <string id="MVGoldenBoarMobilizationSuccess" text="八十名已被买断的黄金野猪兵团战士响应了你的号召，并由一名野猪团百夫长率领。" />
+    <string id="MVBoarCaptain" text="野猪团队长" />
+    <string id="MVBoarCenturion" text="野猪团百夫长" />
+    <string id="MVGoldenBoarBack" text="返回佣兵公会" />
+    <string id="MVWesternMercenaryDonateBasicMembership" text="捐款5万第纳尔，成为初级佣兵会员。" />
+    <string id="MVWesternMercenaryDonationBasicTooltip" text="需要50000第纳尔。" />
+    <string id="MVWesternMercenaryAlreadyBasicMember" text="你已经是初级佣兵会员。" />
+    <string id="MVWesternMercenaryMembershipBasic" text="初级佣兵会员" />
+    <string id="MVWesternMercenaryDonateAdvancedMembership" text="捐款15万第纳尔，成为高级佣兵会员。" />
+    <string id="MVWesternMercenaryDonationAdvancedTooltip" text="需要150000第纳尔。" />
+    <string id="MVWesternMercenaryAdvancedRequiresBasic" text="需要初级佣兵会员资格。" />
+    <string id="MVWesternMercenaryAdvancedRequiresClanTier" text="需要家族等级达到3级。" />
+    <string id="MVWesternMercenaryAlreadyAdvancedMember" text="你已经是高级佣兵会员。" />
+    <string id="MVWesternMercenaryMembershipAdvanced" text="高级佣兵会员" />
+    <string id="MVWesternMercenaryDonateGuildSponsorship" text="捐款60万第纳尔，成为佣兵公会赞助人。" />
+    <string id="MVWesternMercenaryDonationSponsorTooltip" text="需要600000第纳尔。" />
+    <string id="MVWesternMercenarySponsorRequiresAdvanced" text="需要高级佣兵会员资格。" />
+    <string id="MVWesternMercenarySponsorRequiresClanTier" text="需要家族等级达到4级。" />
+    <string id="MVWesternMercenaryAlreadySponsor" text="你已经是佣兵公会赞助人。" />
+    <string id="MVWesternMercenaryMembershipSponsor" text="佣兵公会赞助人" />
+    <string id="MVWesternMercenaryDonateHonoraryGuildmaster" text="捐款120万第纳尔，成为佣兵公会荣誉会长。" />
+    <string id="MVWesternMercenaryHonoraryRequiresSponsor" text="需要佣兵公会赞助人资格。" />
+    <string id="MVWesternMercenaryAlreadyHonoraryGuildmaster" text="你已经是佣兵公会荣誉会长。" />
+    <string id="MVWesternMercenaryDonationHonoraryTooltip" text="需要1200000第纳尔。" />
+    <string id="MVWesternMercenaryMembershipHonoraryGuildmaster" text="佣兵公会荣誉会长" />
+    <string id="MVWesternMercenaryMembershipVisitor" text="访客" />
+    <string id="MVWesternMercenaryDonationBack" text="返回佣兵公会" />
+    <string id="MVWesternMercenaryRecruitT3" text="招募10名T3西方佣兵（1200第纳尔）" />
+    <string id="MVWesternMercenaryRecruitT3Tooltip" text="需要初级佣兵会员资格、1200第纳尔，并且5日招募冷却已结束。" />
+    <string id="MVWesternMercenaryRecruitT4" text="招募一伙熟练的老手（5名长枪兵、5名弩兵；1800第纳尔）" />
+    <string id="MVWesternMercenaryRecruitT4Tooltip" text="需要高级佣兵会员资格、1800第纳尔，并且5日招募冷却已结束。" />
+    <string id="MVWesternMercenaryRecruitT5" text="招募精锐战士小队（5名精锐长枪兵、5名精锐弩手；4000第纳尔）" />
+    <string id="MVWesternMercenaryRecruitT5Tooltip" text="需要佣兵公会赞助人资格、4000第纳尔，并且7日招募冷却已结束。" />
+    <string id="MVWesternMercenaryRecruitNobleCompany" text="征募贵族佣兵（5名T6长枪兵、5名T6弩手、5名瓦兰迪亚方旗骑士；20000第纳尔）" />
+    <string id="MVWesternMercenaryRecruitNobleCompanyTooltip" text="需要佣兵公会荣誉会长身份、20000第纳尔，并且15日招募冷却已结束。" />
+    <string id="MVRusHelmIcon" text="维吉亚装饰头盔" />
+    <string id="MVRusHelmNoble" text="维吉亚贵族头盔" />
+    <string id="MVRusHelmNobleIcon" text="维吉亚贵族装饰贵族头盔" />
+    <string id="MVRusHelmRegular" text="维吉亚头盔" />
+    <string id="MVRusHelmRegular2" text="维吉亚头盔" />
+    <string id="MVRusOpenHelm" text="开面维吉亚头盔" />
+    <string id="MVVaegirWarMask" text="维吉亚战面具" />
+    <string id="MVVaegirWarHelmet" text="维吉亚战盔" />
+    <string id="MVRusArmour" text="维吉亚板甲外衣" />
+    <string id="MVRusArmour1" text="维吉亚板甲外衣" />
+    <string id="MVRusArmour2" text="维吉亚板甲外衣" />
+    <string id="MVVaegirNorthernLordHelmet" text="北境领主头盔" />
+    <string id="MVVaegirGuardCommanderHelmet" text="维吉亚禁军指挥官头盔" />
+    <string id="MVTheUnification" text="统一者" />
   </strings>
 </base>
