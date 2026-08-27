@@ -20,4 +20,23 @@
       <PartyTemplateStack min_value="14" max_value="14" troop="NPCCharacter.mv_old_vaegir_recruit" />
     </stacks>
   </MBPartyTemplate>
+  <MBPartyTemplate id="mv_sea_raider_great_raiding_army_template">
+    <stacks>
+      <PartyTemplateStack min_value="30" max_value="30" troop="NPCCharacter.sea_raiders_raider" />
+      <PartyTemplateStack min_value="42" max_value="42" troop="NPCCharacter.sea_raiders_chief" />
+      <PartyTemplateStack min_value="36" max_value="36" troop="NPCCharacter.sea_raiders_boss" />
+      <PartyTemplateStack min_value="12" max_value="12" troop="NPCCharacter.mv_sea_raider_warlord" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="mv_sea_raider_sea_wolves_test_template">
+    <stacks>
+      <PartyTemplateStack min_value="28" max_value="28" troop="NPCCharacter.sea_raiders_raider" />
+      <PartyTemplateStack min_value="38" max_value="38" troop="NPCCharacter.sea_raiders_chief" />
+      <PartyTemplateStack min_value="32" max_value="32" troop="NPCCharacter.sea_raiders_boss" />
+      <PartyTemplateStack min_value="12" max_value="12" troop="NPCCharacter.mv_sea_raider_warlord" />
+    </stacks>
+    <ship_hulls>
+      <ShipTemplateStack min_value="2" max_value="2" id="ShipHull.nord_medium_ship" />
+    </ship_hulls>
+  </MBPartyTemplate>
 </partyTemplates>

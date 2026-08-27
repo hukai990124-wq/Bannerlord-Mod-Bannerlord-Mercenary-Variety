@@ -45,8 +45,8 @@
     </Traits>
     <Equipments>
       <EquipmentRoster>
-        <equipment slot="Item0" id="Item.mv_the_tribune" />
-        <equipment slot="Item1" id="Item.mv_the_unification" />
+        <equipment slot="Item0" id="Item.empire_mace_5_t5" />
+        <equipment slot="Item1" id="Item.fortified_kite_shield" />
         <equipment slot="Head" id="Item.empire_battle_crown_west" />
         <equipment slot="Cape" id="Item.imperial_lamellar_shoulders" />
         <equipment slot="Body" id="Item.imperial_scale_armor" />
@@ -308,7 +308,7 @@
       <EquipmentRoster>
         <equipment slot="Item0" id="Item.sturgia_2haxe_2_t5" />
         <equipment slot="Item1" id="Item.northern_throwing_axe_1_t1" />
-        <equipment slot="Head" id="Item.mv_vaegir_guard_commander_helmet" />
+        <equipment slot="Head" id="Item.closed_goggled_helmet" />
         <equipment slot="Cape" id="Item.nord_king_shoulder_armor_b" />
         <equipment slot="Body" id="Item.nord_king_armor_b" />
         <equipment slot="Gloves" id="Item.hybrid_armor_gloves_b" />
@@ -372,7 +372,7 @@
       <EquipmentRoster>
         <equipment slot="Item0" id="Item.northern_axe_t3" />
         <equipment slot="Item1" id="Item.northern_throwing_axe_1_t1" />
-        <equipment slot="Head" id="Item.mv_vaegir_guard_commander_helmet" />
+        <equipment slot="Head" id="Item.nord_helmet_ea" />
         <equipment slot="Cape" id="Item.fur_cape_b" />
         <equipment slot="Body" id="Item.nord_chainmail_armor" />
         <equipment slot="Gloves" id="Item.northman_wrist_armor" />
@@ -434,7 +434,7 @@
       <EquipmentRoster>
         <equipment slot="Item0" id="Item.bearded_axe_t3" />
         <equipment slot="Item1" id="Item.northern_throwing_axe_1_t1" />
-        <equipment slot="Head" id="Item.mv_vaegir_guard_commander_helmet" />
+        <equipment slot="Head" id="Item.nord_helmet_fa" />
         <equipment slot="Cape" id="Item.nord_fur_shoulder" />
         <equipment slot="Body" id="Item.nordic_chainmail_a" />
         <equipment slot="Gloves" id="Item.mail_mitten_d" />
@@ -496,7 +496,7 @@
       <EquipmentRoster>
         <equipment slot="Item0" id="Item.sturgia_2haxe_1_t4" />
         <equipment slot="Item1" id="Item.northern_throwing_axe_1_t1" />
-        <equipment slot="Head" id="Item.mv_vaegir_guard_commander_helmet" />
+        <equipment slot="Head" id="Item.nordic_helmet" />
         <equipment slot="Cape" id="Item.chainmail_shoulder_armor_b" />
         <equipment slot="Body" id="Item.nordic_chainmail_c" />
         <equipment slot="Gloves" id="Item.mail_mitten_g" />

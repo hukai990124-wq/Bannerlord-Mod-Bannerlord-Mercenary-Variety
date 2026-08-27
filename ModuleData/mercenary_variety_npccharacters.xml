@@ -52,12 +52,15 @@
   				<equipment
   					slot="Item1"
   					id="Item.crossbow_a" />
-  				<equipment
-  					slot="Item2"
-  					id="Item.bolt_b" />
-  				<equipment
-  					slot="Cape"
-  					id="Item.wrapped_scarf" />
+				<equipment
+					slot="Item2"
+					id="Item.bolt_b" />
+				<equipment
+					slot="Head"
+					id="Item.open_padded_coif" />
+				<equipment
+					slot="Cape"
+					id="Item.wrapped_scarf" />
   				<equipment
   					slot="Body"
   					id="Item.layered_leather_tunic" />
@@ -1799,6 +1802,189 @@
           slot="Leg"
           id="Item.wrapped_shoes" />
       </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="mv_sea_raider_warlord"
+    default_group="Infantry"
+    is_hero="false"
+    level="31"
+    name="{=MVSeaRaiderWarlord}Sea Raider Warlord"
+    occupation="Bandit"
+    culture="Culture.sea_raiders">
+    <face>
+      <face_key_template
+        value="BodyProperty.fighter_lakepike" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="230" />
+      <skill id="Riding" value="0" />
+      <skill id="OneHanded" value="240" />
+      <skill id="TwoHanded" value="280" />
+      <skill id="Polearm" value="0" />
+      <skill id="Bow" value="0" />
+      <skill id="Crossbow" value="0" />
+      <skill id="Throwing" value="260" />
+    </skills>
+    <upgrade_targets />
+    <Traits>
+      <Trait
+        id="NavalSoldier"
+        value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment
+          slot="Item0"
+          id="Item.sturgia_2haxe_1_t4" />
+        <equipment
+          slot="Item1"
+          id="Item.sturgia_sword_4_t4" />
+        <equipment
+          slot="Item2"
+          id="Item.northern_round_shield" />
+        <equipment
+          slot="Item3"
+          id="Item.northern_javelin_3_t4" />
+        <equipment
+          slot="Head"
+          id="Item.northern_warlord_helmet" />
+        <equipment
+          slot="Cape"
+          id="Item.nord_king_shoulder_armor" />
+        <equipment
+          slot="Body"
+          id="Item.decorated_nordic_hauberk" />
+        <equipment
+          slot="Gloves"
+          id="Item.hybrid_armor_gloves_b" />
+        <equipment
+          slot="Leg"
+          id="Item.hybrid_armor_boots_b" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="company_of_the_boar_tier_3"
+    default_group="Ranged"
+    level="21"
+    occupation="Soldier"
+    culture="Culture.vlandia"
+    name="{=cSdSSXsO}Boar Champion">
+    <face>
+      <face_key_template
+        value="BodyProperty.fighter_company_of_boar" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Riding" value="15" />
+      <skill id="OneHanded" value="100" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="45" />
+      <skill id="Bow" value="45" />
+      <skill id="Crossbow" value="100" />
+      <skill id="Throwing" value="100" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.mv_company_of_the_boar_t5" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.crossbow_d" />
+        <equipment slot="Item1" id="Item.bolt_a" />
+        <equipment slot="Item2" id="Item.vlandia_mace_2_t4" />
+        <equipment slot="Item3" id="Item.pavise_shield" />
+        <equipment slot="Head" id="Item.segmented_cervelliere_over_mail_coif" />
+        <equipment slot="Body" id="Item.veteran_mercenary_armor" />
+        <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+        <equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
+        <equipment slot="Cape" id="Item.battania_woodland_cloak" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="vlandia_troop_civilian_template_t3"
+        equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="mv_company_of_the_boar_t5"
+    default_group="Ranged"
+    is_hero="false"
+    level="26"
+    name="{=MVBoarCaptain}Boar Captain"
+    occupation="Soldier"
+    culture="Culture.vlandia">
+    <face>
+      <face_key_template
+        value="BodyProperty.fighter_company_of_boar" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="90" />
+      <skill id="Riding" value="23" />
+      <skill id="OneHanded" value="150" />
+      <skill id="TwoHanded" value="90" />
+      <skill id="Polearm" value="68" />
+      <skill id="Bow" value="68" />
+      <skill id="Crossbow" value="180" />
+      <skill id="Throwing" value="150" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.mv_company_of_the_boar_t6" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.crossbow_f" />
+        <equipment slot="Item1" id="Item.bolt_c" />
+        <equipment slot="Item2" id="Item.eastern_steel_mace_t4" />
+        <equipment slot="Item3" id="Item.pavise_shield" />
+        <equipment slot="Head" id="Item.kettle_hat_over_mail_coif" />
+        <equipment slot="Body" id="Item.aserai_chain_plate_armor_a" />
+        <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+        <equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
+        <equipment slot="Cape" id="Item.battanian_chainmail_shoulder_b" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="vlandia_troop_civilian_template_t3"
+        equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter
+    id="mv_company_of_the_boar_t6"
+    default_group="Ranged"
+    is_hero="false"
+    level="31"
+    name="{=MVBoarCenturion}Boar Centurion"
+    occupation="Soldier"
+    culture="Culture.vlandia">
+    <face>
+      <face_key_template
+        value="BodyProperty.fighter_company_of_boar" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="170" />
+      <skill id="Riding" value="30" />
+      <skill id="OneHanded" value="200" />
+      <skill id="TwoHanded" value="100" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="70" />
+      <skill id="Crossbow" value="240" />
+      <skill id="Throwing" value="150" />
+    </skills>
+    <upgrade_targets />
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.crossbow_f" />
+        <equipment slot="Item1" id="Item.bolt_c" />
+        <equipment slot="Item2" id="Item.vlandia_mace_3_t5" />
+        <equipment slot="Item3" id="Item.pavise_shield" />
+        <equipment slot="Head" id="Item.visored_helmet_over_mail_coif" />
+        <equipment slot="Body" id="Item.coat_of_plates_over_mail" />
+        <equipment slot="Leg" id="Item.strapped_mail_chausses" />
+        <equipment slot="Gloves" id="Item.lordly_mail_mitten" />
+        <equipment slot="Cape" id="Item.noble_pauldron_with_cape" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="vlandia_troop_civilian_template_t3"
+        equipmentType="Civilian" />
     </Equipments>
   </NPCCharacter>
 </NPCCharacters>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      type="string">
+  <BannerIconData>
+    <BannerIconGroup id="900"
+                     name="{=!}Mercenary Variety"
+                     is_pattern="false">
+      <Icon id="90001" material_name="new_material_1" texture_index="0" />
+      <Icon id="90002" material_name="new_material_1" texture_index="1" />
+      <Icon id="90003" material_name="new_material_1" texture_index="2" />
+      <Icon id="90004" material_name="new_material_1" texture_index="3" />
+      <Icon id="90005" material_name="new_material_1" texture_index="4" />
+      <Icon id="90006" material_name="new_material_1" texture_index="5" />
+      <Icon id="90007" material_name="new_material_1" texture_index="6" />
+    </BannerIconGroup>
+  </BannerIconData>
+</base>
