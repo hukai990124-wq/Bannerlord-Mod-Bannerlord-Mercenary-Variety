@@ -7,12 +7,12 @@
   <SingleplayerModule value="true" />
   <MultiplayerModule value="false" />
   <DependedModules>
-    <DependedModule Id="Native" DependentVersion="v1.4.7" Optional="false" />
-    <DependedModule Id="SandBoxCore" DependentVersion="v1.4.7" Optional="false" />
-    <DependedModule Id="Sandbox" DependentVersion="v1.4.7" Optional="false" />
-    <DependedModule Id="NavalDLC" DependentVersion="v1.4.7" Optional="false" />
-    <DependedModule Id="CustomBattle" DependentVersion="v1.4.7" Optional="false" />
-    <DependedModule Id="StoryMode" DependentVersion="v1.4.7" Optional="true" />
+    <DependedModule Id="Native" DependentVersion="v1.4.8" Optional="false" />
+    <DependedModule Id="SandBoxCore" DependentVersion="v1.4.8" Optional="false" />
+    <DependedModule Id="Sandbox" DependentVersion="v1.4.8"  Optional="false" />
+    <DependedModule Id="NavalDLC" DependentVersion="v1.2.8" Optional="true" />
+    <DependedModule Id="CustomBattle"  DependentVersion="v1.4.8" Optional="false" />
+    <DependedModule Id="StoryMode"  DependentVersion="v1.4.8" Optional="true" />
   </DependedModules>
   <SubModules>
     <SubModule>
@@ -26,6 +26,22 @@
     </SubModule>
   </SubModules>
   <Xmls>
+    <XmlNode>
+      <XmlName id="Items" path="mv_rome_weapons" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="Items" path="mercenary_variety_rome_items" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
     <XmlNode>
       <XmlName id="NPCCharacters" path="mercenary_variety_valkyrie_npccharacters" />
       <IncludedGameTypes>
@@ -44,6 +60,14 @@
     </XmlNode>
     <XmlNode>
       <XmlName id="NPCCharacters" path="mercenary_variety_npccharacters" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="mercenary_variety_sword_sister_equipment_cleanup" />
       <IncludedGameTypes>
         <GameType value="Campaign" />
         <GameType value="CampaignStoryMode" />
@@ -92,6 +116,9 @@
         <GameType value="Campaign" />
         <GameType value="CampaignStoryMode" />
       </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="BannerIcons" path="banner_icons" />
     </XmlNode>
   </Xmls>
 </Module>
