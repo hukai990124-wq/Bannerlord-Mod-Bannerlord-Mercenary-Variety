@@ -2,11 +2,13 @@ using System;
 using System.Collections.Generic;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Conversation;
+using TaleWorlds.CampaignSystem.Encounters;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Party.PartyComponents;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
+using TaleWorlds.Localization;
 using TaleWorlds.ObjectSystem;
 
 namespace MercenaryVariety
@@ -23,6 +25,14 @@ namespace MercenaryVariety
         private const string SeaRaiderPartyId = "mv_old_vaegir_sea_raider_party";
         private const string SeaRaiderPartyTemplateId = "sea_raiders_template";
         private const float MaxSeaRaiderHideoutDistanceFromDiathma = 30f;
+        private const string RecordsPartyId = "mv_old_vaegir_records_party";
+        private const int RecordsPartySize = 40;
+        private const int RecordsPaymentFee = 50000;
+        private const string RecordsPartyName = "{=MVOldVaegirRecordsPartyName}Imperial Paymaster's Deserters";
+        private const string AmprelaId = "town_EN6";
+        private const string GovernorPartyId = "mv_old_vaegir_governor_party";
+        private const int GovernorPartySize = 200;
+        private const string GovernorPartyName = "{=MVOldVaegirGovernorPartyName}The Governor's Iron Retinue";
 
         public override void RegisterEvents()
         {
@@ -178,6 +188,213 @@ namespace MercenaryVariety
                 null,
                 null,
                 120);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_offer_records_quest",
+                "lord_talk_speak_diplomacy_2",
+                "mv_old_vaegir_records_context",
+                "{=MVOldVaegirOfferRecordsQuest}You mentioned that the Empire withheld your final pay and military records. Is there something I can do?",
+                CanOfferRecordsQuest,
+                StartRecordsQuest,
+                110);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_records_context",
+                "mv_old_vaegir_records_context",
+                "lord_talk_speak_diplomacy_2",
+                "{=MVOldVaegirRecordsContext}When the Empire dismissed the Vaegir Guard, our muster rolls and wage ledgers were taken instead of returned. A group of former Imperial deserters now holds them near Diathma. They use our names and the wages owed to us as leverage, demanding payment before they will surrender anything. Recover those records, and we can finally leave the Empire with proof of who we were.",
+                null,
+                null,
+                120);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_report_records_quest",
+                "lord_talk_speak_diplomacy_2",
+                "mv_old_vaegir_report_records_quest_answer",
+                "{=MVOldVaegirReportRecordsQuest}The Imperial deserters have surrendered the Vaegir Guard's records.",
+                CanCompleteRecordsQuest,
+                CompleteRecordsQuest,
+                110);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_report_records_quest_answer",
+                "mv_old_vaegir_report_records_quest_answer",
+                "lord_talk_speak_diplomacy_2",
+                "{=MVOldVaegirReportRecordsQuestAnswer}Then the last account of our service is back in our hands. You have not restored our old place in the Empire, but you have returned the one thing no officer should have been able to take from us: the proof that we served.",
+                null,
+                null,
+                120);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_records_quest_in_progress",
+                "lord_talk_speak_diplomacy_2",
+                "mv_old_vaegir_records_quest_in_progress_answer",
+                "{=MVOldVaegirRecordsQuestInProgress}I am still dealing with the Imperial deserters near Diathma.",
+                IsRecordsQuestActiveWithoutDefeat,
+                null,
+                100);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_records_quest_in_progress_answer",
+                "mv_old_vaegir_records_quest_in_progress_answer",
+                "lord_talk_speak_diplomacy_2",
+                "{=MVOldVaegirRecordsQuestInProgressAnswer}Then do not let them sell our names or spend our wages. Those papers are the last proof that the Vaegir Guard existed as more than a discarded expense in an Imperial ledger.",
+                null,
+                null,
+                120);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_records_party_encounter_start",
+                "start",
+                "mv_old_vaegir_records_party_options",
+                "{=MVOldVaegirRecordsPartyIntroduction}These papers bear the seal of the late Emperor Arenikos. The Empire dismissed your old guard, but it never paid what it owed. We took the rolls and the ledgers before they could be destroyed, and now they are worth more to us than the swords of the men who once carried them.",
+                IsOldVaegirRecordsPartyEncounter,
+                null,
+                200);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_records_party_fight",
+                "mv_old_vaegir_records_party_options",
+                "mv_old_vaegir_records_party_fight_answer",
+                "{=MVOldVaegirRecordsPartyFight}You have no right to keep their names or the wages owed to them. Hand over the records, or answer for this in battle.",
+                IsOldVaegirRecordsPartyEncounter,
+                null,
+                200);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_records_party_fight_answer",
+                "mv_old_vaegir_records_party_fight_answer",
+                "close_window",
+                "{=MVOldVaegirRecordsPartyFightAnswer}Then come and take them. We will see whether old Imperial names still carry any weight on the road.",
+                null,
+                StartRecordsPartyBattle,
+                200);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_records_party_pay",
+                "mv_old_vaegir_records_party_options",
+                "mv_old_vaegir_records_party_pay_answer",
+                "{=MVOldVaegirRecordsPartyPay}I will pay 50,000 denars. Surrender every record and the wages owed to the Vaegir Guard. The payment will be made in the Empire's name.",
+                CanPayRecordsFee,
+                null,
+                200);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_records_party_pay_answer",
+                "mv_old_vaegir_records_party_pay_answer",
+                "close_window",
+                "{=MVOldVaegirRecordsPartyPayAnswer}Fifty thousand for papers the Empire abandoned? Very well. Take the rolls and the ledgers. We will call it an Imperial payment, if that makes the transaction easier to swallow.",
+                null,
+                PayAndResolveRecordsParty,
+                200);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_records_party_negotiate",
+                "mv_old_vaegir_records_party_options",
+                "mv_old_vaegir_records_party_negotiate_answer",
+                "{=MVOldVaegirRecordsPartyNegotiate}Those records are stolen military documents, not your property. Surrender them, and leave before this becomes a crime the Empire can still punish.",
+                IsOldVaegirRecordsPartyEncounter,
+                null,
+                200);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_records_party_negotiate_answer",
+                "mv_old_vaegir_records_party_negotiate_answer",
+                "close_window",
+                "{=MVOldVaegirRecordsPartyNegotiateAnswer}You speak with more certainty than the officers who abandoned those men. Take the records. We have no wish to die for an Imperial debt that was never ours to collect.",
+                null,
+                ResolveRecordsPartyByNegotiation,
+                200);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_offer_governor_quest",
+                "lord_talk_speak_diplomacy_2",
+                "mv_old_vaegir_governor_context",
+                "{=MVOldVaegirOfferGovernorQuest}You said an Imperial governor was responsible for our disgrace. Is there something I can do?",
+                CanOfferGovernorQuest,
+                StartGovernorQuest,
+                110);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_governor_context",
+                "mv_old_vaegir_governor_context",
+                "lord_talk_speak_diplomacy_2",
+                "{=MVOldVaegirGovernorContext}The governor of Lycaron twisted the inquiry after Emperor Arenikos died. He claimed that our guard had conspired with the men who failed to protect the emperor, and his testimony gave the court an excuse to dismiss us. He still rides with a personal retinue near Amprela, dressed in Imperial colors and calling our dismissal a lawful judgment. Find him and end the man who turned our service into a lie.",
+                null,
+                null,
+                120);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_report_governor_quest",
+                "lord_talk_speak_diplomacy_2",
+                "mv_old_vaegir_report_governor_quest_answer",
+                "{=MVOldVaegirReportGovernorQuest}The governor's cavalry has been defeated.",
+                CanCompleteGovernorQuest,
+                CompleteGovernorQuest,
+                110);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_report_governor_quest_answer",
+                "mv_old_vaegir_report_governor_quest_answer",
+                "lord_talk_speak_diplomacy_2",
+                "{=MVOldVaegirReportGovernorQuestAnswer}Then the last voice that condemned us is silent. You have done what our swords could not: you forced the Empire to answer for the lie that destroyed our name. From this day, we will trust your judgment with our own.",
+                null,
+                null,
+                120);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_ask_future",
+                "lord_talk_speak_diplomacy_2",
+                "mv_old_vaegir_answer_future",
+                "{=MVOldVaegirAskFuture}What do you intend to do now?",
+                CanDiscussVaegirFuture,
+                null,
+                115);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_answer_future",
+                "mv_old_vaegir_answer_future",
+                "lord_talk_speak_diplomacy_2",
+                "{=MVOldVaegirAnswerFuture}In return, you have become the most trusted friend the Vaegir among us have ever known. We will accept your employment whenever you call, and many younger men will gladly join your ranks. But as for us old soldiers, we only wish to save enough coin to return to our northern homeland and spend our remaining years there. If you wish, we can still fight for you as mercenaries.",
+                null,
+                null,
+                120);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_governor_quest_in_progress",
+                "lord_talk_speak_diplomacy_2",
+                "mv_old_vaegir_governor_quest_in_progress_answer",
+                "{=MVOldVaegirGovernorQuestInProgress}I have not yet dealt with the governor's retinue near Amprela.",
+                IsGovernorQuestActiveWithoutDefeat,
+                null,
+                100);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_governor_quest_in_progress_answer",
+                "mv_old_vaegir_governor_quest_in_progress_answer",
+                "lord_talk_speak_diplomacy_2",
+                "{=MVOldVaegirGovernorQuestInProgressAnswer}Do not mistake his banners for justice. That man used the emperor's death to turn our service into a crime.",
+                null,
+                null,
+                120);
+
+            campaignGameStarter.AddDialogLine(
+                "mv_old_vaegir_governor_party_encounter_start",
+                "start",
+                "mv_old_vaegir_governor_party_options",
+                "{=MVOldVaegirGovernorPartyIntroduction}The governor's retinue blocks the road beneath Imperial colors. Their commander raises his seal and names the dismissal of the Vaegir Guard a lawful judgment. There will be no hearing here, only the consequence of what he did.",
+                IsOldVaegirGovernorPartyEncounter,
+                null,
+                200);
+
+            campaignGameStarter.AddPlayerLine(
+                "mv_old_vaegir_governor_party_fight",
+                "mv_old_vaegir_governor_party_options",
+                "close_window",
+                "{=MVOldVaegirGovernorPartyFight}You condemned honorable soldiers with a lie. Now answer for it in blood.",
+                IsOldVaegirGovernorPartyEncounter,
+                StartGovernorPartyBattle,
+                200);
         }
 
         private static bool IsTalkingToOldVaegirGuards()
@@ -194,12 +411,15 @@ namespace MercenaryVariety
 
         private static bool CanShowGenericOfferHelp()
         {
-            return IsTalkingToOldVaegirGuards() &&
-                   (!IsTalkingToVasevolod() ||
-                    (!CanOfferFoodQuest() &&
-                     !IsFoodQuestActive() &&
-                     !CanOfferSeaRaiderQuest() &&
-                     !IsSeaRaiderQuestActive()));
+            return IsTalkingToVasevolod() &&
+                   !CanOfferFoodQuest() &&
+                   !IsFoodQuestActive() &&
+                   !CanOfferSeaRaiderQuest() &&
+                   !IsSeaRaiderQuestActive() &&
+                   !CanOfferRecordsQuest() &&
+                   !IsRecordsQuestActive() &&
+                   !CanOfferGovernorQuest() &&
+                   !IsGovernorQuestActive();
         }
 
         private static bool CanOfferFoodQuest()
@@ -306,6 +526,227 @@ namespace MercenaryVariety
                    !progress.IsSeaRaiderHideoutCleared;
         }
 
+        private static bool CanOfferRecordsQuest()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            return IsTalkingToVasevolod() &&
+                   progress != null &&
+                   progress.IsSeaRaiderQuestCompleted &&
+                   !progress.IsRecordsQuestStarted &&
+                   !progress.IsRecordsQuestCompleted;
+        }
+
+        private static bool IsRecordsQuestActive()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            return IsTalkingToVasevolod() &&
+                   progress != null &&
+                   progress.IsRecordsQuestStarted &&
+                   !progress.IsRecordsQuestCompleted;
+        }
+
+        private static bool IsRecordsQuestActiveWithoutDefeat()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            return IsRecordsQuestActive() &&
+                   progress != null &&
+                   !progress.IsRecordsPartyDefeated;
+        }
+
+        private static bool CanOfferGovernorQuest()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            return IsTalkingToVasevolod() &&
+                   progress != null &&
+                   progress.IsRecordsQuestCompleted &&
+                   !progress.IsGovernorQuestStarted &&
+                   !progress.IsGovernorQuestCompleted;
+        }
+
+        private static bool CanDiscussVaegirFuture()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            return IsTalkingToVasevolod() &&
+                   progress != null &&
+                   progress.IsGovernorQuestCompleted;
+        }
+
+        private static bool IsGovernorQuestActive()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            return IsTalkingToVasevolod() &&
+                   progress != null &&
+                   progress.IsGovernorQuestStarted &&
+                   !progress.IsGovernorQuestCompleted;
+        }
+
+        private static bool IsGovernorQuestActiveWithoutDefeat()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            return IsGovernorQuestActive() &&
+                   progress != null &&
+                   !progress.IsGovernorPartyDefeated;
+        }
+
+        private static void StartGovernorQuest()
+        {
+            Hero vasevolod = Hero.OneToOneConversationHero;
+            if (vasevolod == null || !CanOfferGovernorQuest())
+            {
+                return;
+            }
+
+            if (TryFindOrCreateGovernorParty(out MobileParty targetParty))
+            {
+                new OldVaegirGovernorQuest(vasevolod, targetParty).StartQuest();
+            }
+        }
+
+        private static bool CanCompleteGovernorQuest()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            return IsTalkingToVasevolod() &&
+                   progress != null &&
+                   progress.IsGovernorQuestStarted &&
+                   !progress.IsGovernorQuestCompleted &&
+                   progress.IsGovernorPartyDefeated &&
+                   FindActiveGovernorQuest() != null;
+        }
+
+        private static void CompleteGovernorQuest()
+        {
+            OldVaegirGovernorQuest quest = FindActiveGovernorQuest();
+            if (quest != null && CanCompleteGovernorQuest())
+            {
+                quest.CompleteQuestWithSuccess();
+            }
+        }
+
+        private static bool IsOldVaegirGovernorPartyEncounter()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            MobileParty encounteredParty = PlayerEncounter.EncounteredMobileParty;
+
+            return Campaign.Current != null &&
+                   Campaign.Current.CurrentConversationContext == ConversationContext.PartyEncounter &&
+                   encounteredParty != null &&
+                   progress != null &&
+                   progress.IsGovernorQuestStarted &&
+                   !progress.IsGovernorQuestCompleted &&
+                   encounteredParty.StringId == progress.GovernorPartyId;
+        }
+
+        private static void StartGovernorPartyBattle()
+        {
+            if (!IsOldVaegirGovernorPartyEncounter())
+            {
+                return;
+            }
+
+            PlayerEncounter.StartHostileAction();
+            PlayerEncounter.StartBattle();
+        }
+
+        private static void StartRecordsQuest()
+        {
+            Hero vasevolod = Hero.OneToOneConversationHero;
+            if (vasevolod == null || !CanOfferRecordsQuest())
+            {
+                return;
+            }
+
+            if (TryFindOrCreateRecordsParty(out MobileParty targetParty))
+            {
+                new OldVaegirRecordsQuest(vasevolod, targetParty).StartQuest();
+            }
+        }
+
+        private static bool CanCompleteRecordsQuest()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            return IsTalkingToVasevolod() &&
+                   progress != null &&
+                   progress.IsRecordsQuestStarted &&
+                   !progress.IsRecordsQuestCompleted &&
+                   progress.IsRecordsPartyDefeated &&
+                   FindActiveRecordsQuest() != null;
+        }
+
+        private static void CompleteRecordsQuest()
+        {
+            OldVaegirRecordsQuest quest = FindActiveRecordsQuest();
+            if (quest != null && CanCompleteRecordsQuest())
+            {
+                quest.CompleteQuestWithSuccess();
+            }
+        }
+
+        private static bool IsOldVaegirRecordsPartyEncounter()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            MobileParty encounteredParty = PlayerEncounter.EncounteredMobileParty;
+
+            return Campaign.Current != null &&
+                   Campaign.Current.CurrentConversationContext == ConversationContext.PartyEncounter &&
+                   encounteredParty != null &&
+                   progress != null &&
+                   progress.IsRecordsQuestStarted &&
+                   !progress.IsRecordsQuestCompleted &&
+                   encounteredParty.StringId == progress.RecordsPartyId;
+        }
+
+        private static bool CanPayRecordsFee()
+        {
+            return IsOldVaegirRecordsPartyEncounter() &&
+                   Hero.MainHero.Gold >= RecordsPaymentFee;
+        }
+
+        private static void StartRecordsPartyBattle()
+        {
+            if (!IsOldVaegirRecordsPartyEncounter())
+            {
+                return;
+            }
+
+            PlayerEncounter.StartHostileAction();
+            PlayerEncounter.StartBattle();
+        }
+
+        private static void PayAndResolveRecordsParty()
+        {
+            if (!CanPayRecordsFee())
+            {
+                return;
+            }
+
+            OldVaegirRecordsQuest quest = FindActiveRecordsQuest();
+            if (quest == null)
+            {
+                return;
+            }
+
+            Hero.MainHero.ChangeHeroGold(-RecordsPaymentFee);
+            quest.ResolveByPayment();
+            PlayerEncounter.LeaveEncounter = true;
+        }
+
+        private static void ResolveRecordsPartyByNegotiation()
+        {
+            if (!IsOldVaegirRecordsPartyEncounter())
+            {
+                return;
+            }
+
+            OldVaegirRecordsQuest quest = FindActiveRecordsQuest();
+            if (quest == null)
+            {
+                return;
+            }
+
+            quest.ResolveByNegotiation();
+            PlayerEncounter.LeaveEncounter = true;
+        }
+
         private static void CompleteSeaRaiderQuest()
         {
             OldVaegirSeaRaiderQuest quest = FindActiveSeaRaiderQuest();
@@ -351,6 +792,149 @@ namespace MercenaryVariety
             }
 
             return null;
+        }
+
+        private static OldVaegirRecordsQuest FindActiveRecordsQuest()
+        {
+            if (Campaign.Current == null || Campaign.Current.QuestManager == null)
+            {
+                return null;
+            }
+
+            foreach (QuestBase quest in Campaign.Current.QuestManager.Quests)
+            {
+                OldVaegirRecordsQuest recordsQuest = quest as OldVaegirRecordsQuest;
+                if (recordsQuest != null)
+                {
+                    return recordsQuest;
+                }
+            }
+
+            return null;
+        }
+
+        private static OldVaegirGovernorQuest FindActiveGovernorQuest()
+        {
+            if (Campaign.Current == null || Campaign.Current.QuestManager == null)
+            {
+                return null;
+            }
+
+            foreach (QuestBase quest in Campaign.Current.QuestManager.Quests)
+            {
+                OldVaegirGovernorQuest governorQuest = quest as OldVaegirGovernorQuest;
+                if (governorQuest != null)
+                {
+                    return governorQuest;
+                }
+            }
+
+            return null;
+        }
+
+        private static bool TryFindOrCreateRecordsParty(out MobileParty targetParty)
+        {
+            targetParty = null;
+            Settlement diathma = Settlement.Find(DiathmaId);
+            if (diathma == null)
+            {
+                return false;
+            }
+
+            foreach (MobileParty party in MobileParty.All)
+            {
+                if (party != null && party.IsActive && party.StringId == RecordsPartyId)
+                {
+                    targetParty = party;
+                    return true;
+                }
+            }
+
+            TroopRoster memberRoster = TroopRoster.CreateDummyTroopRoster();
+            AddTroopIfAvailable(memberRoster, "imperial_legionary", 10);
+            AddTroopIfAvailable(memberRoster, "imperial_veteran_infantryman", 15);
+            AddTroopIfAvailable(memberRoster, "imperial_trained_infantryman", 10);
+            AddTroopIfAvailable(memberRoster, "imperial_archer", 5);
+
+            if (memberRoster.TotalManCount != RecordsPartySize)
+            {
+                return false;
+            }
+
+            targetParty = MobileParty.CreateParty(RecordsPartyId, null);
+            if (targetParty == null)
+            {
+                return false;
+            }
+
+            targetParty.InitializeMobilePartyAroundPosition(
+                memberRoster,
+                TroopRoster.CreateDummyTroopRoster(),
+                diathma.Position,
+                2.0f,
+                1.0f,
+                false);
+            targetParty.Party.SetCustomName(new TextObject(RecordsPartyName));
+            targetParty.SetCustomHomeSettlement(diathma);
+            targetParty.SetPartyUsedByQuest(true);
+            targetParty.SetMoveModeHold();
+            return true;
+        }
+
+        private static bool TryFindOrCreateGovernorParty(out MobileParty targetParty)
+        {
+            targetParty = null;
+            Settlement amprela = Settlement.Find(AmprelaId);
+            if (amprela == null)
+            {
+                return false;
+            }
+
+            foreach (MobileParty party in MobileParty.All)
+            {
+                if (party != null && party.IsActive && party.StringId == GovernorPartyId)
+                {
+                    targetParty = party;
+                    return true;
+                }
+            }
+
+            TroopRoster memberRoster = TroopRoster.CreateDummyTroopRoster();
+            AddTroopIfAvailable(memberRoster, "imperial_elite_cataphract", 100);
+            AddTroopIfAvailable(memberRoster, "imperial_cataphract", 100);
+
+            if (memberRoster.TotalManCount != GovernorPartySize)
+            {
+                return false;
+            }
+
+            targetParty = MobileParty.CreateParty(GovernorPartyId, null);
+            if (targetParty == null)
+            {
+                return false;
+            }
+
+            targetParty.InitializeMobilePartyAroundPosition(
+                memberRoster,
+                TroopRoster.CreateDummyTroopRoster(),
+                amprela.Position,
+                2.0f,
+                1.0f,
+                false);
+            targetParty.Party.SetCustomName(new TextObject(GovernorPartyName));
+            targetParty.SetCustomHomeSettlement(amprela);
+            targetParty.SetPartyUsedByQuest(true);
+            targetParty.SetMoveModeHold();
+            return true;
+        }
+
+        private static void AddTroopIfAvailable(TroopRoster roster, string troopId, int count)
+        {
+            CharacterObject troop = CharacterObject.Find(troopId);
+            if (troop != null)
+            {
+                roster.AddToCounts(troop, count);
+            }
         }
 
         private static bool TryPrepareSeaRaiderHideout(out Settlement targetHideout)

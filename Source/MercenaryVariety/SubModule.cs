@@ -19,6 +19,9 @@ namespace MercenaryVariety
                 campaignGameStarter.AddBehavior(new OldVaegirGuardsDialogBehavior());
                 campaignGameStarter.AddBehavior(new HodophylakesGuildMenuBehavior());
                 campaignGameStarter.AddBehavior(new VaegirShelterMenuBehavior());
+                campaignGameStarter.AddBehavior(new SeaRaiderGuildMenuBehavior());
+                campaignGameStarter.AddBehavior(new WesternMercenaryGuildProgressBehavior());
+                campaignGameStarter.AddBehavior(new WesternMercenaryOutpostMenuBehavior());
             }
         }
     }

@@ -2,7 +2,10 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Roster;
+using TaleWorlds.Core;
+using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.ObjectSystem;
 
 namespace MercenaryVariety
 {
@@ -54,6 +57,30 @@ namespace MercenaryVariety
             HodophylakesProgressBehavior.Instance?.MarkTheodoraRebelQuestCompleted();
             ChangeRelationAction.ApplyPlayerRelation(QuestGiver, 20);
             Clan.PlayerClan.AddRenown(20f);
+
+            if (MobileParty.MainParty == null)
+            {
+                return;
+            }
+
+            ItemObject tribune = MBObjectManager.Instance.GetObject<ItemObject>("mv_the_tribune");
+            ItemObject unification = MBObjectManager.Instance.GetObject<ItemObject>("mv_the_unification");
+
+            if (tribune != null)
+            {
+                MobileParty.MainParty.ItemRoster.AddToCounts(tribune, 1);
+            }
+
+            if (unification != null)
+            {
+                MobileParty.MainParty.ItemRoster.AddToCounts(unification, 1);
+            }
+
+            InformationManager.DisplayMessage(
+                new InformationMessage(
+                    new TextObject(
+                        "{=MVTheodoraTribuneRewardMessage}Your courage and justice have earned the people's admiration. They call you the Tribune and believe you are the one who can unite the Empire once more and bring this age of chaos to an end.")
+                    .ToString()));
         }
 
         public void ResolveByDisbanding()

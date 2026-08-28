@@ -5,34 +5,44 @@
     <Nullable>disable</Nullable>
     <AssemblyName>MercenaryVariety</AssemblyName>
     <RootNamespace>MercenaryVariety</RootNamespace>
-    <OutputPath>..\..\bin\Win64_Shipping_Client\</OutputPath>
+    <BannerlordRuntimeFolder Condition="'$(Configuration)' == 'Editor'">Win64_Shipping_wEditor</BannerlordRuntimeFolder>
+    <BannerlordRuntimeFolder Condition="'$(Configuration)' != 'Editor'">Win64_Shipping_Client</BannerlordRuntimeFolder>
+    <OutputPath>..\..\bin\$(BannerlordRuntimeFolder)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="NavalDLC">
+      <HintPath>..\..\..\..\Modules\NavalDLC\bin\$(BannerlordRuntimeFolder)\NavalDLC.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="TaleWorlds.CampaignSystem">
-      <HintPath>..\..\..\..\bin\Win64_Shipping_Client\TaleWorlds.CampaignSystem.dll</HintPath>
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.CampaignSystem.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="TaleWorlds.Core">
-      <HintPath>..\..\..\..\bin\Win64_Shipping_Client\TaleWorlds.Core.dll</HintPath>
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Engine">
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.Engine.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="TaleWorlds.Library">
-      <HintPath>..\..\..\..\bin\Win64_Shipping_Client\TaleWorlds.Library.dll</HintPath>
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.Library.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="TaleWorlds.Localization">
-      <HintPath>..\..\..\..\bin\Win64_Shipping_Client\TaleWorlds.Localization.dll</HintPath>
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.Localization.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="TaleWorlds.MountAndBlade">
-      <HintPath>..\..\..\..\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.dll</HintPath>
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.MountAndBlade.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="TaleWorlds.ObjectSystem">
-      <HintPath>..\..\..\..\bin\Win64_Shipping_Client\TaleWorlds.ObjectSystem.dll</HintPath>
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.ObjectSystem.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>

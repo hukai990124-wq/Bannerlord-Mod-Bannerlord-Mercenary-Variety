@@ -1,4 +1,5 @@
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.CampaignSystem.GameMenus;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Settlements;
@@ -12,12 +13,21 @@ namespace MercenaryVariety
         private const string ShelterMenuId = "mv_vaegir_shelter";
         private const string RecruitmentMenuId = "mv_vaegir_shelter_recruitment";
         private const string T4RecruitmentMenuId = "mv_vaegir_shelter_t4_recruitment";
+        private const string T5RecruitmentMenuId = "mv_vaegir_shelter_t5_recruitment";
+        private const string T6RecruitmentMenuId = "mv_vaegir_shelter_t6_recruitment";
         private const string VaegirTroopId = "mv_old_vaegir_warrior";
         private const string T4VaegirTroopId = "mv_old_vaegir_guard";
+        private const string T5VaegirTroopId = "mv_old_vaegir_elite_guard";
+        private const string T6VaegirTroopId = "mv_old_vaegir_royal_guard";
+        private const string OldVaegirGuardsClanId = "mv_old_vaegir_guards";
         private const float VaegirRecruitmentCooldownDays = 7f;
         private const float T4VaegirRecruitmentCooldownDays = 7f;
+        private const float T5VaegirRecruitmentCooldownDays = 7f;
+        private const float T6VaegirRecruitmentCooldownDays = 7f;
         private CampaignTime _nextVaegirRecruitmentTime = CampaignTime.Zero;
         private CampaignTime _nextT4VaegirRecruitmentTime = CampaignTime.Zero;
+        private CampaignTime _nextT5VaegirRecruitmentTime = CampaignTime.Zero;
+        private CampaignTime _nextT6VaegirRecruitmentTime = CampaignTime.Zero;
 
         public override void RegisterEvents()
         {
@@ -34,6 +44,12 @@ namespace MercenaryVariety
             dataStore.SyncData(
                 "mv_vaegir_shelter_next_t4_recruitment_time",
                 ref _nextT4VaegirRecruitmentTime);
+            dataStore.SyncData(
+                "mv_vaegir_shelter_next_t5_recruitment_time",
+                ref _nextT5VaegirRecruitmentTime);
+            dataStore.SyncData(
+                "mv_vaegir_shelter_next_t6_recruitment_time",
+                ref _nextT6VaegirRecruitmentTime);
         }
 
         private void OnSessionLaunched(CampaignGameStarter campaignGameStarter)
@@ -60,7 +76,7 @@ namespace MercenaryVariety
 
             campaignGameStarter.AddGameMenu(
                 ShelterMenuId,
-                "{=MVVaegirShelterMenu}You have arrived at the Vaegir Shelter in Diathma. Once scattered across the northern frontier, Vaegir veterans, travelers, and displaced families have gathered here under one roof. The shelter offers protection, fellowship, and a place for those who still remember the old northern traditions.",
+                "{=MVVaegirShelterMenu}Since the Empire disbanded the Vaegir Guard, many veterans who have not returned to their homeland have chosen to remain in the north of the Empire. They live among communities founded by Nord and Sturgian immigrants, waiting for a new employer to offer them work. Life is harsh without steady pay, but for various reasons these soldiers from the north have chosen to stay rather than make the journey home.",
                 args => { },
                 GameMenu.MenuOverlayType.None,
                 GameMenu.MenuFlags.None,
@@ -97,6 +113,68 @@ namespace MercenaryVariety
                     return true;
                 },
                 args => GameMenu.SwitchToMenu(T4RecruitmentMenuId),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                ShelterMenuId,
+                "mv_vaegir_shelter_recruit_t5_vaegir",
+                "{=MVVaegirShelterRecruitT5Vaegir}Recruit T5 Vaegir Elite Guards",
+                args =>
+                {
+                    OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+                    if (progress == null || !progress.IsT5VaegirRecruitmentUnlocked)
+                    {
+                        return false;
+                    }
+
+                    args.optionLeaveType = GameMenuOption.LeaveType.Submenu;
+                    return true;
+                },
+                args => GameMenu.SwitchToMenu(T5RecruitmentMenuId),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                ShelterMenuId,
+                "mv_vaegir_shelter_recruit_t6_vaegir",
+                "{=MVVaegirShelterRecruitT6Vaegir}Recruit T6 Vaegir Royal Guards",
+                args =>
+                {
+                    OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+                    if (progress == null || !progress.IsT6VaegirRecruitmentUnlocked)
+                    {
+                        return false;
+                    }
+
+                    args.optionLeaveType = GameMenuOption.LeaveType.Submenu;
+                    return true;
+                },
+                args => GameMenu.SwitchToMenu(T6RecruitmentMenuId),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                ShelterMenuId,
+                "mv_vaegir_shelter_hire_old_vaegir_guards",
+                "{=MVVaegirShelterHireOldVaegirGuards}Hire the Old Vaegir Guards as Mercenaries",
+                args =>
+                {
+                    if (!CanHireOldVaegirGuards())
+                    {
+                        return false;
+                    }
+
+                    args.optionLeaveType = GameMenuOption.LeaveType.Leave;
+                    return true;
+                },
+                args => HireOldVaegirGuards(),
                 false,
                 -1,
                 false,
@@ -244,6 +322,148 @@ namespace MercenaryVariety
                 false,
                 null);
 
+            campaignGameStarter.AddGameMenu(
+                T5RecruitmentMenuId,
+                "{=MVVaegirShelterT5RecruitmentMenu}The shelter can provide elite T5 Vaegir Guards for immediate service. Choose the size of the group you wish to recruit.",
+                args => { },
+                GameMenu.MenuOverlayType.None,
+                GameMenu.MenuFlags.None,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                T5RecruitmentMenuId,
+                "mv_vaegir_shelter_recruit_t5_vaegir_10",
+                "{=MVVaegirShelterRecruitT5Vaegir10}Recruit 10 T5 Vaegir Elite Guards (3000 denars)",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Recruit;
+                    args.IsEnabled = CanRecruitT5Vaegir(10, 3000);
+                    return true;
+                },
+                args => RecruitT5Vaegir(10, 3000),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                T5RecruitmentMenuId,
+                "mv_vaegir_shelter_recruit_t5_vaegir_20",
+                "{=MVVaegirShelterRecruitT5Vaegir20}Recruit 20 T5 Vaegir Elite Guards (5000 denars)",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Recruit;
+                    args.IsEnabled = CanRecruitT5Vaegir(20, 5000);
+                    return true;
+                },
+                args => RecruitT5Vaegir(20, 5000),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                T5RecruitmentMenuId,
+                "mv_vaegir_shelter_recruit_t5_vaegir_30",
+                "{=MVVaegirShelterRecruitT5Vaegir30}Recruit 30 T5 Vaegir Elite Guards (7000 denars)",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Recruit;
+                    args.IsEnabled = CanRecruitT5Vaegir(30, 7000);
+                    return true;
+                },
+                args => RecruitT5Vaegir(30, 7000),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                T5RecruitmentMenuId,
+                "mv_vaegir_shelter_t5_recruitment_back",
+                "{=MVVaegirShelterRecruitmentBack}Back",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Submenu;
+                    return true;
+                },
+                args => GameMenu.SwitchToMenu(ShelterMenuId),
+                true,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenu(
+                T6RecruitmentMenuId,
+                "{=MVVaegirShelterT6RecruitmentMenu}The shelter can provide the most elite T6 Vaegir Royal Guards for immediate service. Choose the size of the group you wish to recruit.",
+                args => { },
+                GameMenu.MenuOverlayType.None,
+                GameMenu.MenuFlags.None,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                T6RecruitmentMenuId,
+                "mv_vaegir_shelter_recruit_t6_vaegir_10",
+                "{=MVVaegirShelterRecruitT6Vaegir10}Recruit 10 T6 Vaegir Royal Guards (5000 denars)",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Recruit;
+                    args.IsEnabled = CanRecruitT6Vaegir(10, 5000);
+                    return true;
+                },
+                args => RecruitT6Vaegir(10, 5000),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                T6RecruitmentMenuId,
+                "mv_vaegir_shelter_recruit_t6_vaegir_20",
+                "{=MVVaegirShelterRecruitT6Vaegir20}Recruit 20 T6 Vaegir Royal Guards (9000 denars)",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Recruit;
+                    args.IsEnabled = CanRecruitT6Vaegir(20, 9000);
+                    return true;
+                },
+                args => RecruitT6Vaegir(20, 9000),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                T6RecruitmentMenuId,
+                "mv_vaegir_shelter_recruit_t6_vaegir_30",
+                "{=MVVaegirShelterRecruitT6Vaegir30}Recruit 30 T6 Vaegir Royal Guards (13000 denars)",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Recruit;
+                    args.IsEnabled = CanRecruitT6Vaegir(30, 13000);
+                    return true;
+                },
+                args => RecruitT6Vaegir(30, 13000),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                T6RecruitmentMenuId,
+                "mv_vaegir_shelter_t6_recruitment_back",
+                "{=MVVaegirShelterRecruitmentBack}Back",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Submenu;
+                    return true;
+                },
+                args => GameMenu.SwitchToMenu(ShelterMenuId),
+                true,
+                -1,
+                false,
+                null);
+
             campaignGameStarter.AddGameMenuOption(
                 ShelterMenuId,
                 "mv_vaegir_shelter_leave",
@@ -273,8 +493,7 @@ namespace MercenaryVariety
 
             return party != null && troop != null &&
                    _nextVaegirRecruitmentTime.IsPast &&
-                   Hero.MainHero.Gold >= cost &&
-                   party.Party.NumberOfAllMembers + count <= party.Party.PartySizeLimit;
+                   Hero.MainHero.Gold >= cost;
         }
 
         private bool CanRecruitT4Vaegir(int count, int cost)
@@ -286,8 +505,45 @@ namespace MercenaryVariety
                    OldVaegirGuardsProgressBehavior.Instance != null &&
                    OldVaegirGuardsProgressBehavior.Instance.IsT4VaegirRecruitmentUnlocked &&
                    _nextT4VaegirRecruitmentTime.IsPast &&
-                   Hero.MainHero.Gold >= cost &&
-                   party.Party.NumberOfAllMembers + count <= party.Party.PartySizeLimit;
+                   Hero.MainHero.Gold >= cost;
+        }
+
+        private bool CanRecruitT5Vaegir(int count, int cost)
+        {
+            MobileParty party = MobileParty.MainParty;
+            CharacterObject troop = CharacterObject.Find(T5VaegirTroopId);
+
+            return party != null && troop != null &&
+                   OldVaegirGuardsProgressBehavior.Instance != null &&
+                   OldVaegirGuardsProgressBehavior.Instance.IsT5VaegirRecruitmentUnlocked &&
+                   _nextT5VaegirRecruitmentTime.IsPast &&
+                   Hero.MainHero.Gold >= cost;
+        }
+
+        private bool CanRecruitT6Vaegir(int count, int cost)
+        {
+            MobileParty party = MobileParty.MainParty;
+            CharacterObject troop = CharacterObject.Find(T6VaegirTroopId);
+
+            return party != null && troop != null &&
+                   OldVaegirGuardsProgressBehavior.Instance != null &&
+                   OldVaegirGuardsProgressBehavior.Instance.IsT6VaegirRecruitmentUnlocked &&
+                   _nextT6VaegirRecruitmentTime.IsPast &&
+                   Hero.MainHero.Gold >= cost;
+        }
+
+        private static bool CanHireOldVaegirGuards()
+        {
+            OldVaegirGuardsProgressBehavior progress = OldVaegirGuardsProgressBehavior.Instance;
+            Clan oldVaegirGuards = Clan.FindFirst(clan => clan.StringId == OldVaegirGuardsClanId);
+            Kingdom playerKingdom = Clan.PlayerClan?.Kingdom;
+
+            return progress != null &&
+                   progress.IsGovernorQuestCompleted &&
+                   !progress.IsOldVaegirMercenaryHired &&
+                   oldVaegirGuards != null &&
+                   playerKingdom != null &&
+                   oldVaegirGuards.Kingdom != playerKingdom;
         }
 
         private void RecruitVaegir(int count, int cost)
@@ -331,6 +587,69 @@ namespace MercenaryVariety
                 0);
 
             _nextT4VaegirRecruitmentTime = CampaignTime.DaysFromNow(T4VaegirRecruitmentCooldownDays);
+            GameMenu.SwitchToMenu("town");
+        }
+
+        private void RecruitT5Vaegir(int count, int cost)
+        {
+            if (!CanRecruitT5Vaegir(count, cost))
+            {
+                return;
+            }
+
+            CharacterObject troop = CharacterObject.Find(T5VaegirTroopId);
+            Hero.MainHero.ChangeHeroGold(-cost);
+            MobileParty.MainParty.MemberRoster.AddToCounts(
+                troop,
+                count,
+                false,
+                0,
+                0,
+                false,
+                0);
+
+            _nextT5VaegirRecruitmentTime = CampaignTime.DaysFromNow(T5VaegirRecruitmentCooldownDays);
+            GameMenu.SwitchToMenu("town");
+        }
+
+        private void RecruitT6Vaegir(int count, int cost)
+        {
+            if (!CanRecruitT6Vaegir(count, cost))
+            {
+                return;
+            }
+
+            CharacterObject troop = CharacterObject.Find(T6VaegirTroopId);
+            Hero.MainHero.ChangeHeroGold(-cost);
+            MobileParty.MainParty.MemberRoster.AddToCounts(
+                troop,
+                count,
+                false,
+                0,
+                0,
+                false,
+                0);
+
+            _nextT6VaegirRecruitmentTime = CampaignTime.DaysFromNow(T6VaegirRecruitmentCooldownDays);
+            GameMenu.SwitchToMenu("town");
+        }
+
+        private static void HireOldVaegirGuards()
+        {
+            if (!CanHireOldVaegirGuards())
+            {
+                return;
+            }
+
+            Clan oldVaegirGuards = Clan.FindFirst(clan => clan.StringId == OldVaegirGuardsClanId);
+            Kingdom playerKingdom = Clan.PlayerClan?.Kingdom;
+            if (oldVaegirGuards == null || playerKingdom == null)
+            {
+                return;
+            }
+
+            ChangeKingdomAction.ApplyByJoinFactionAsMercenary(oldVaegirGuards, playerKingdom);
+            OldVaegirGuardsProgressBehavior.Instance.MarkOldVaegirMercenaryHired();
             GameMenu.SwitchToMenu("town");
         }
     }

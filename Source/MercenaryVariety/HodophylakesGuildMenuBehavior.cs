@@ -553,8 +553,7 @@ namespace MercenaryVariety
 
             return party != null && troop != null &&
                    nextRecruitmentTime.IsPast &&
-                   Hero.MainHero.Gold >= cost &&
-                   party.Party.NumberOfAllMembers + count <= party.Party.PartySizeLimit;
+                   Hero.MainHero.Gold >= cost;
         }
 
         private void RecruitTroops(
