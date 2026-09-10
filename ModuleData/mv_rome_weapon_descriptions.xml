@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WeaponDescriptions>
+  <WeaponDescription id="mv_tribune_description" weapon_class="OneHandedSword" item_usage_features="onehanded:block:shield:swing:thrust">
+    <WeaponFlags><WeaponFlag value="MeleeWeapon" /></WeaponFlags>
+    <AvailablePieces><AvailablePiece id="mv_tribune_piece" /></AvailablePieces>
+  </WeaponDescription>
+  <WeaponDescription id="mv_lictor_description" weapon_class="TwoHandedAxe" item_usage_features="twohanded:widegrip:axe">
+    <WeaponFlags>
+      <WeaponFlag value="MeleeWeapon" />
+      <WeaponFlag value="NotUsableWithOneHand" />
+      <WeaponFlag value="BonusAgainstShield" />
+      <WeaponFlag value="TwoHandIdleOnMount" />
+    </WeaponFlags>
+    <AvailablePieces><AvailablePiece id="mv_lictor_piece" /></AvailablePieces>
+  </WeaponDescription>
+  <WeaponDescription id="mv_dominus_description" weapon_class="TwoHandedPolearm" item_usage_features="polearm:block:long:shield:swing:thrust">
+    <WeaponFlags>
+      <WeaponFlag value="MeleeWeapon" />
+      <WeaponFlag value="NotUsableWithOneHand" />
+      <WeaponFlag value="WideGrip" />
+      <WeaponFlag value="TwoHandIdleOnMount" />
+      <WeaponFlag value="BonusAgainstShield" />
+    </WeaponFlags>
+    <AvailablePieces><AvailablePiece id="mv_dominus_piece" /></AvailablePieces>
+  </WeaponDescription>
+  <WeaponDescription id="mv_domina_one_handed_description" weapon_class="OneHandedPolearm" item_usage_features="onehanded_polearm:block:long:rshield:thrust">
+    <WeaponFlags>
+      <WeaponFlag value="MeleeWeapon" />
+      <WeaponFlag value="WideGrip" />
+    </WeaponFlags>
+    <AvailablePieces><AvailablePiece id="mv_domina_piece" /></AvailablePieces>
+  </WeaponDescription>
+  <WeaponDescription id="mv_domina_two_handed_description" weapon_class="TwoHandedPolearm" item_usage_features="polearm:block:long:shield:swing:thrust">
+    <WeaponFlags>
+      <WeaponFlag value="MeleeWeapon" />
+      <WeaponFlag value="NotUsableWithOneHand" />
+      <WeaponFlag value="WideGrip" />
+      <WeaponFlag value="TwoHandIdleOnMount" />
+    </WeaponFlags>
+    <AvailablePieces><AvailablePiece id="mv_domina_piece" /></AvailablePieces>
+  </WeaponDescription>
+  <WeaponDescription id="mv_domina_couchable_description" weapon_class="TwoHandedPolearm" item_usage_features="polearm:couch">
+    <WeaponFlags>
+      <WeaponFlag value="MeleeWeapon" />
+      <WeaponFlag value="WideGrip" />
+    </WeaponFlags>
+    <AvailablePieces><AvailablePiece id="mv_domina_piece" /></AvailablePieces>
+  </WeaponDescription>
+</WeaponDescriptions>

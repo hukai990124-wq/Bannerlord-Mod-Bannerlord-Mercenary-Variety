@@ -7,12 +7,13 @@
   <SingleplayerModule value="true" />
   <MultiplayerModule value="false" />
   <DependedModules>
+    <DependedModule Id="Bannerlord.Harmony" Optional="true" />
     <DependedModule Id="Native" DependentVersion="v1.4.8" Optional="false" />
     <DependedModule Id="SandBoxCore" DependentVersion="v1.4.8" Optional="false" />
     <DependedModule Id="Sandbox" DependentVersion="v1.4.8"  Optional="false" />
     <DependedModule Id="NavalDLC" DependentVersion="v1.2.8" Optional="true" />
     <DependedModule Id="CustomBattle"  DependentVersion="v1.4.8" Optional="false" />
-    <DependedModule Id="StoryMode"  DependentVersion="v1.4.8" Optional="true" />
+    <DependedModule Id="StoryMode"  DependentVersion="v1.4.8" Optional="false" />
   </DependedModules>
   <SubModules>
     <SubModule>
@@ -26,6 +27,31 @@
     </SubModule>
   </SubModules>
   <Xmls>
+    <XmlNode>
+      <XmlName id="CraftingPieces" path="mv_rome_crafting_pieces" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="WeaponDescriptions" path="mv_rome_weapon_descriptions" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="CraftingTemplates" path="mv_rome_crafting_templates" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+
     <XmlNode>
       <XmlName id="Items" path="mv_rome_weapons" />
       <IncludedGameTypes>
@@ -51,6 +77,22 @@
       </IncludedGameTypes>
     </XmlNode>
     <XmlNode>
+      <XmlName id="NPCCharacters" path="mercenary_variety_assassin_npccharacters" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="mercenary_variety_assassin_contact" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
       <XmlName id="BodyProperties" path="mercenary_variety_bodyproperties" />
       <IncludedGameTypes>
         <GameType value="Campaign" />
@@ -67,7 +109,7 @@
       </IncludedGameTypes>
     </XmlNode>
     <XmlNode>
-      <XmlName id="NPCCharacters" path="mercenary_variety_sword_sister_equipment_cleanup" />
+      <XmlName id="NPCCharacters" path="XSLT/mercenary_variety_sea_raider_tree" />
       <IncludedGameTypes>
         <GameType value="Campaign" />
         <GameType value="CampaignStoryMode" />
@@ -75,7 +117,7 @@
       </IncludedGameTypes>
     </XmlNode>
     <XmlNode>
-      <XmlName id="NPCCharacters" path="mercenary_variety_caravan_upgrades" />
+      <XmlName id="NPCCharacters" path="XSLT/mercenary_variety_brotherhood_of_woods_tree" />
       <IncludedGameTypes>
         <GameType value="Campaign" />
         <GameType value="CampaignStoryMode" />
@@ -83,7 +125,23 @@
       </IncludedGameTypes>
     </XmlNode>
     <XmlNode>
-      <XmlName id="SPCultures" path="mercenary_variety_spcultures" />
+      <XmlName id="NPCCharacters" path="XSLT/mercenary_variety_sword_sister_equipment_cleanup" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="XSLT/mercenary_variety_caravan_upgrades" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="SPCultures" path="XSLT/mercenary_variety_spcultures" />
       <IncludedGameTypes>
         <GameType value="Campaign" />
         <GameType value="CampaignStoryMode" />

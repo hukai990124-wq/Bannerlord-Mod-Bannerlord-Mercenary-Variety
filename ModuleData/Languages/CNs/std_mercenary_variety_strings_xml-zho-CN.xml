@@ -4,7 +4,46 @@
     <tag language="简体中文" />
   </tags>
   <strings>
-    <string id="MVTheTribune" text="护民官之裁决" />
+    <string id="MVAssassinApprentice" text="阿萨辛学徒" />
+    <string id="MVAssassinVeteran" text="资深阿萨辛" />
+    <string id="MVAssassinMaster" text="阿萨辛大师" />
+    <string id="MVAltair" text="Altair" />
+    <string id="MVAltairGreeting" text="陌生人，我认识你吗？" />
+    <string id="MVAltairCompletedGreeting" text="多数无知者并不知道吾等的存在，而你却选择了危险的接触。" />
+    <string id="MVAltairRequestDarkPower" text="我需要借助力量。" />
+    <string id="MVAltairDarkPowerReply" text="你需要什么？" />
+    <string id="MVAltairRequestIntel" text="我想知道那些大人物们的情报。" />
+    <string id="MVAltairIntelReply" text="那些身处明面的人物，总不难探知他们的消息。" />
+    <string id="MVAltairRequestSneakNetwork" text="我希望阿萨辛的兄弟姐妹们会在城中接待我。" />
+    <string id="MVAltairSneakNetworkReply" text="我已放出消息，阴影中的同袍会为你指出通往城内的路。" />
+    <string id="MVAltairSneakNetworkActivated" text="阴影中的同袍会在三十日内接待你。" />
+    <string id="MVAltairRequestCompanions" text="我需要更多伙伴加入我。" />
+    <string id="MVAltairCompanionOfferApprentice" text="并没有多少阿萨辛愿意固定被某个人所雇佣，不过确实有1名学徒想寻找一个历练的地方。" />
+    <string id="MVAltairCompanionOfferBandit" text="呵呵，有一些落草为寇之人确实想找口饭吃。不知道你愿不愿意接手了。" />
+    <string id="MVAltairAcceptCompanions" text="我愿意。" />
+    <string id="MVAltairApprenticeJoined" text="一名阿萨辛学徒加入了你的队伍。" />
+    <string id="MVAltairBanditsJoined" text="10名沙漠强盗加入了你的队伍。" />
+    <string id="MVAltairShadowQuestion" text="并非一切事务都可埋藏于阴影之中。" />
+    <string id="MVAltairShadowReply" text="不错，但世人往往只看得见光照之处。你似乎有察觉阴影深处的能力？" />
+    <string id="MVAltairOrigins" text="不一样的出身，自然能够洞察常人不可见之物。" />
+    <string id="MVAltairUnderstanding" text="那么你应该明白，看见我们，与认识我们，是两回事。" />
+<string id="MVAltairJoinShadows" text="我愿投身于阴影之中。" />
+<string id="MVAltairProve" text="吾等不与凡庸之辈交谈，汝需证明自身。" />
+<string id="MVAltairAcceptTrial" text="吾愿接受。" />
+<string id="MVAltairTrialBegun" text="即便在阴影之中，神也会注视着一切。" />
+<string id="MVAltairTrialTitle" text="来自阿萨辛的试炼" />
+<string id="MVAltairTrialLog" text="向阿泰尔证明你的价值：击败50名敌人，并拥有30点家族声望。" />
+<string id="MVAltairTrialProgressEnemies" text="击败50名敌人" />
+<string id="MVAltairTrialTaskEnemies" text="击败敌人" />
+<string id="MVAltairTrialProgressRenown" text="获得30点家族声望" />
+<string id="MVAltairTrialTaskRenown" text="家族声望" />
+<string id="MVAltairTurnInTrial" text="吾以手中之剑，证明了吾之武力。" />
+<string id="MVAltairTrialComplete" text="神见证了你的一切，某人的近况我们有所耳闻。" />
+<string id="MVAltairLeave" text="离开。" />
+    <string id="MVTheTribune" text="护民官" />
+    <string id="MVCustos" text="护国者" />
+    <string id="MVDomina" text="贵妇" />
+    <string id="MVDominus" text="尊主" />
     <string id="MVTheodoraTribuneRewardMessage" text="你的勇气与正义被人们所赞赏，他们称你为护民官，并认为你是那个能带领人们再次统一帝国，终结这个乱世的人。" />
     <string id="MVVaegirCommanderHelmetRewardMessage" text="瓦塞沃洛德将维吉亚近卫指挥官头盔托付给你，作为你为维吉亚卫队寻回服役记录的证明。" />
     <string id="0gi5Fp8c" text="资深女剑士" />
@@ -212,6 +251,14 @@
     <string id="MVSeaRaiderTavernCooldown" text="海寇们还没有重新聚集起来，请十天后再来。" />
     <string id="MVSeaRaiderTavernRecruitOption" text="招募20名T3海寇战士（2000第纳尔）" />
     <string id="MVSeaRaiderTavernRecruitT4Option" text="招募20名T4海寇首领（4000第纳尔）" />
+    <string id="MVSeaRaiderSiegePravend" text="怂恿海寇联合军出战" />
+    <string id="MVSeaRaiderSiegeUnavailable" text="海寇联合军无法出战：未检测到可用的 Harmony 补丁。" />
+    <string id="MVSeaRaiderSiegeSpawnFailed" text="海寇联合军未能完成集结。" />
+    <string id="MVSeaRaiderHostCommander" text="海寇联合军统领" />
+    <string id="MVSeaRaiderHostName" text="海寇联合军" />
+    <string id="MVSeaRaiderSiegeStarted" text="八百名海寇已在帕拉汶德附近集结，正向城墙进军。" />
+    <string id="MVSeaRaiderSiegePillage" text="海寇联合军洗劫帕拉汶德后四散而去，未能宣称这座城镇。" />
+    <string id="MVSeaRaiderSiegeSealed" text="海寇联合军尚未准备好向帕拉汶德进军。" />
     <string id="MVSeaRaiderGreatRaiding" text="组建你自己的掠夺队" />
     <string id="MVSeaRaiderT3RecruitmentTooltip" text="招募条件：流氓习气50、魅力50、2000第纳尔，并且10日冷却已结束。" />
     <string id="MVSeaRaiderT4RecruitmentTooltip" text="招募条件：流氓习气75、魅力75、4000第纳尔，并且10日冷却已结束。" />
@@ -312,6 +359,31 @@
     <string id="MVBoarCaptain" text="野猪团队长" />
     <string id="MVBoarCenturion" text="野猪团百夫长" />
     <string id="MVGoldenBoarBack" text="返回佣兵公会" />
+    <string id="MVBrotherhoodOfWoodsEntry" text="联系绿林兄弟会" />
+    <string id="MVBrotherhoodOfWoodsMenu" text="绿林兄弟会长期潜伏于瓦兰迪亚的森林中，吸纳走投无路的农民与熟悉山林的猎人。当你成为佣兵公会荣誉会长后，可以要求他们为你的王国效力，或一次性收购其残余组织。" />
+    <string id="MVBrotherhoodOfWoodsRecruitDetachment" text="招募绿林小队：6名新木、6名成树与3名古木（{BROTHERHOOD_OF_WOODS_RECRUITMENT_COST}第纳尔）" />
+    <string id="MVBrotherhoodOfWoodsRecruitRequiresBasic" text="需要初级佣兵会员资格。" />
+    <string id="MVBrotherhoodOfWoodsRecruitRequiresGold" text="需要2700第纳尔。" />
+    <string id="MVBrotherhoodOfWoodsRecruitmentCooldown" text="绿林兄弟会每七天只能提供一支小队。" />
+    <string id="MVBrotherhoodOfWoodsRecruitmentTooltip" text="招募6名新木、6名成树与3名古木。需要初级佣兵会员资格，花费2700第纳尔；每七天只能招募一支小队。" />
+    <string id="MVBrotherhoodOfWoodsDemandService" text="要求绿林兄弟会为你的王国效力（50000第纳尔）" />
+    <string id="MVBrotherhoodOfWoodsBuyout" text="收购并解散绿林兄弟会（1500000第纳尔）" />
+    <string id="MVBrotherhoodOfWoodsMobilize" text="召集绿林兄弟会出战（立即获得85名士兵）" />
+    <string id="MVBrotherhoodOfWoodsBack" text="返回佣兵公会" />
+    <string id="MVBrotherhoodOfWoodsRequiresHonorary" text="需要拥有佣兵公会荣誉会长身份。" />
+    <string id="MVBrotherhoodOfWoodsClanUnavailable" text="绿林兄弟会已经不复存在。" />
+    <string id="MVBrotherhoodOfWoodsServiceNoKingdom" text="你必须先加入一个王国，绿林兄弟会才能为其效力。" />
+    <string id="MVBrotherhoodOfWoodsServiceBoughtOut" text="绿林兄弟会已被收购并解散，无法再作为独立势力为王国效力。" />
+    <string id="MVBrotherhoodOfWoodsRequiresGold" text="需要50000第纳尔。" />
+    <string id="MVBrotherhoodOfWoodsServiceTooltip" text="绿林兄弟会将为你的王国效力六十天，费用为50000第纳尔。" />
+    <string id="MVBrotherhoodOfWoodsAlreadyBoughtOut" text="绿林兄弟会已经被收购。" />
+    <string id="MVBrotherhoodOfWoodsBuyoutRequiresGold" text="需要1500000第纳尔。" />
+    <string id="MVBrotherhoodOfWoodsBuyoutTooltip" text="解散绿林兄弟会，并使其人员今后接受你的直接召集，费用为1500000第纳尔。" />
+    <string id="MVBrotherhoodOfWoodsMobilizationCooldown" text="被收购的绿林兄弟会成员每六十天只能被召集一次。" />
+    <string id="MVBrotherhoodOfWoodsMobilizationTooltip" text="立即获得20名幼苗、25名新木、25名成树与15名古木。不受部队人数上限限制，每六十天可使用一次。" />
+    <string id="MVBrotherhoodOfWoodsMobilizationSuccess" text="八十五名被收编的绿林兄弟会成员响应了你的号召。" />
+    <string id="MVBrotherhoodOfWoodsServiceSuccess" text="绿林兄弟会已经加入你的王国，并将在六十天内履行合约。" />
+    <string id="MVBrotherhoodOfWoodsBuyoutSuccess" text="绿林兄弟会已经解散，其成员今后将接受你的直接召集。" />
     <string id="MVWesternMercenaryDonateBasicMembership" text="捐款5万第纳尔，成为初级佣兵会员。" />
     <string id="MVWesternMercenaryDonationBasicTooltip" text="需要50000第纳尔。" />
     <string id="MVWesternMercenaryAlreadyBasicMember" text="你已经是初级佣兵会员。" />
@@ -356,6 +428,52 @@
     <string id="MVRusArmour2" text="维吉亚板甲外衣" />
     <string id="MVVaegirNorthernLordHelmet" text="北境领主头盔" />
     <string id="MVVaegirGuardCommanderHelmet" text="维吉亚禁军指挥官头盔" />
-    <string id="MVTheUnification" text="统一者" />
+    <string id="MVVictrixHelmet" text="胜利女士" />
+    <string id="MVTheUnification" text="统一之愿" />
+    <string id="MVFasces" text="执法吏" />
+    <string id="MVBrotherhoodOfWoodsAncient" text="古木" />
+    <string id="MVAltairWisdomOffer" text="我现在应该不再是一个学徒了吧？" />
+    <string id="MVAltairWisdomExplanation" text="通常来说，我们除了武艺之外，很多成员都会各自的技能，而你，嗯，你似乎是一个胸怀伟大志向的人，向我们证明你如何领导一支队伍？" />
+    <string id="MVAltairWisdomProve" text="我想，我可以证明。" />
+    <string id="MVAltairWisdomLeave" text="我尚需时间磨砺自己。" />
+    <string id="MVAltairWisdomSuccess" text="嗯，你的这项能力可以证明你是一个合适的领袖，我们需要你这种在光明处代表我们的存在。" />
+    <string id="MVAltairWisdomTitle" text="阿萨辛的新人试炼-智慧" />
+    <string id="MVAltairWisdomLog" text="向阿泰尔证明你的领导能力：医术、管理、魅力、统御、侦察或流氓习气任意一项达到50。" />
+    <string id="MVAltairWisdomObjective" text="证明一项领导能力" />
+    <string id="MVAltairWisdomProgress" text="一项技能达到50" />
+    <string id="MVAltairWisdomReturn" text="你的能力已经得到证明，返回阿泰尔处。" />
+    <string id="MVAltairInitiationOffer" text="接下来我还需要做什么，才能成为正式的阿萨辛？" />
+    <string id="MVAltairInitiationExplanation" text="暗影之手在古亚兹设有据点。加入我们，摧毁那里，你就能成为真正的同袍。" />
+    <string id="MVAltairInitiationAccept" text="我愿意参加这次行动。" />
+    <string id="MVAltairInitiationDecline" text="我需要时间准备。" />
+    <string id="MVAltairInitiationAccepted" text="准备好之后告诉我，我们将一同进入他们的据点。" />
+    <string id="MVAltairInitiationReady" text="我已经准备好参加对暗影之手的行动。" />
+    <string id="MVAltairInitiationBegin" text="那么，就让我们用刀剑摧毁他们的隐秘王国。" />
+    <string id="MVAltairInitiationReport" text="暗影之手已经被击败。" />
+    <string id="MVAltairInitiationSuccess" text="你与我们并肩作战并坚持到了最后。从今天起，你就是阿萨辛的一员。" />
+    <string id="MVAltairInitiationTitle" text="阿萨辛入门试炼-暗影之手" />
+    <string id="MVAltairInitiationLog" text="参加阿萨辛在古亚兹对暗影之手的行动，与三名刺客大师、三名刺客和两名刺客学徒并肩作战。" />
+    <string id="MVAltairInitiationObjective" text="消灭暗影之手的护卫" />
+    <string id="MVAltairInitiationProgress" text="护卫已经被击败" />
+    <string id="MVAltairInitiationReturn" text="暗影之手已经溃败，返回阿泰尔处。" />
+    <string id="MVAltairInitiationUnavailable" text="行动无法开始。任务没有改变，返回阿泰尔后可以再次尝试。" />
+    <string id="MVAltairInitiationLost" text="你在行动中落败了。准备好后可以返回阿泰尔再次尝试。" />
+    <string id="MVAltairInitiationWon" text="暗影之手已经被击败，返回阿泰尔处。" />
+    <string id="MVAltairInitiationReward" text="阿泰尔授予你一套高防御的 Black 刺客装备，不包括威严护臂。" />
+    <string id="MVAltairMorePowerRequest" text="我需要阿萨辛更多的力量。" />
+    <string id="MVAltairMorePowerReply" text="一名资深的成员值得我们分配更多的资源。说吧，你要什么？" />
+    <string id="MVAltairMoreHandsRequest" text="我的行动需要更多的人手。" />
+    <string id="MVAltairLeadNovices" text="我愿意带领新人历练。" />
+    <string id="MVAltairMorePowerLeave" text="暂时没有。" />
+    <string id="MVAltairManpowerOfferExiles" text="嗯，你要知道，我们的人手极其宝贵。现在恐怕只能给你一些向我们寻求庇护的流亡者。" />
+    <string id="MVAltairManpowerOfferApprentices" text="眼下正好有一批新人需要一名熟手来带他们历练，我将他们安排到你的队伍如何？" />
+    <string id="MVAltairManpowerAccept" text="我同意。" />
+    <string id="MVAltairManpowerDecline" text="这次不必了。" />
+    <string id="MVAltairExilesJoined" text="10名沙漠强盗、10名海寇和5名海寇首领加入了你的队伍。" />
+    <string id="MVAltairApprenticesJoined" text="10名阿萨辛学徒加入了你的队伍。" />
+    <string id="MVVaegirCommanderArmor" text="维吉亚指挥官战甲" />
+    <string id="MVJavidan" text="不死军" />
+    <string id="MVJavidanBlade" text="不死军刀刃" />
+    <string id="MVJavidanHandle" text="不死军握柄" />
   </strings>
 </base>

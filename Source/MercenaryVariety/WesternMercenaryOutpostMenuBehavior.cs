@@ -15,7 +15,9 @@ namespace MercenaryVariety
         private const string OutpostMenuId = "mv_western_mercenary_outpost";
         private const string DonationMenuId = "mv_western_mercenary_donation";
         private const string GoldenBoarMenuId = "mv_western_mercenary_golden_boar";
+        private const string BrotherhoodOfWoodsMenuId = "mv_western_mercenary_brotherhood_of_woods";
         private const string GoldenBoarClanId = "company_of_the_boar";
+        private const string BrotherhoodOfWoodsClanId = "brotherhood_of_woods";
         private const string T3WesternMercenaryTroopId = "western_mercenary";
         private const string T4WesternPikeTroopId = "western_mercenary_t4";
         private const string T4WesternCrossbowTroopId = "western_crossbow_t4";
@@ -29,6 +31,10 @@ namespace MercenaryVariety
         private const string GoldenBoarT4TroopId = "company_of_the_boar_tier_3";
         private const string GoldenBoarT5TroopId = "mv_company_of_the_boar_t5";
         private const string GoldenBoarT6TroopId = "mv_company_of_the_boar_t6";
+        private const string BrotherhoodOfWoodsT1TroopId = "brotherhood_of_woods_tier_1";
+        private const string BrotherhoodOfWoodsT2TroopId = "brotherhood_of_woods_tier_2";
+        private const string BrotherhoodOfWoodsT3TroopId = "brotherhood_of_woods_tier_3";
+        private const string BrotherhoodOfWoodsT4TroopId = "mv_brotherhood_of_woods_tier_4";
         private const int BasicMembershipDonation = 50000;
         private const int AdvancedMembershipDonation = 150000;
         private const int GuildSponsorshipDonation = 600000;
@@ -50,6 +56,11 @@ namespace MercenaryVariety
         private const int GoldenBoarT4RecruitmentCount = 3;
         private const int GoldenBoarRecruitmentCost = 2700;
         private const float GoldenBoarRecruitmentCooldownDays = 7f;
+        private const int BrotherhoodOfWoodsT2RecruitmentCount = 6;
+        private const int BrotherhoodOfWoodsT3RecruitmentCount = 6;
+        private const int BrotherhoodOfWoodsT4RecruitmentCount = 3;
+        private const int BrotherhoodOfWoodsRecruitmentCost = 2700;
+        private const float BrotherhoodOfWoodsRecruitmentCooldownDays = 7f;
         private const int GoldenBoarCompanyT2RecruitmentCount = 25;
         private const int GoldenBoarCompanyT3RecruitmentCount = 20;
         private const int GoldenBoarCompanyT4RecruitmentCount = 15;
@@ -64,6 +75,14 @@ namespace MercenaryVariety
         private const int GoldenBoarMobilizationT5Count = 4;
         private const int GoldenBoarMobilizationT6Count = 1;
         private const float GoldenBoarMobilizationCooldownDays = 60f;
+        private const int BrotherhoodOfWoodsServiceCost = 50000;
+        private const float BrotherhoodOfWoodsServiceDays = 60f;
+        private const int BrotherhoodOfWoodsBuyoutCost = 1500000;
+        private const int BrotherhoodOfWoodsMobilizationT1Count = 20;
+        private const int BrotherhoodOfWoodsMobilizationT2Count = 25;
+        private const int BrotherhoodOfWoodsMobilizationT3Count = 25;
+        private const int BrotherhoodOfWoodsMobilizationT4Count = 15;
+        private const float BrotherhoodOfWoodsMobilizationCooldownDays = 60f;
 
         private CampaignTime _nextT3RecruitmentTime = CampaignTime.Zero;
         private CampaignTime _nextT4RecruitmentTime = CampaignTime.Zero;
@@ -72,6 +91,8 @@ namespace MercenaryVariety
         private CampaignTime _nextGoldenBoarRecruitmentTime = CampaignTime.Zero;
         private CampaignTime _nextGoldenBoarCompanyRecruitmentTime = CampaignTime.Zero;
         private CampaignTime _nextGoldenBoarMobilizationTime = CampaignTime.Zero;
+        private CampaignTime _nextBrotherhoodOfWoodsRecruitmentTime = CampaignTime.Zero;
+        private CampaignTime _nextBrotherhoodOfWoodsMobilizationTime = CampaignTime.Zero;
 
         public override void RegisterEvents()
         {
@@ -103,6 +124,12 @@ namespace MercenaryVariety
             dataStore.SyncData(
                 "mv_western_mercenary_next_golden_boar_mobilization_time",
                 ref _nextGoldenBoarMobilizationTime);
+            dataStore.SyncData(
+                "mv_western_mercenary_next_brotherhood_of_woods_recruitment_time",
+                ref _nextBrotherhoodOfWoodsRecruitmentTime);
+            dataStore.SyncData(
+                "mv_western_mercenary_next_brotherhood_of_woods_mobilization_time",
+                ref _nextBrotherhoodOfWoodsMobilizationTime);
         }
 
         private void OnSessionLaunched(CampaignGameStarter campaignGameStarter)
@@ -154,6 +181,14 @@ namespace MercenaryVariety
                 GameMenu.MenuFlags.None,
                 null);
 
+            campaignGameStarter.AddGameMenu(
+                BrotherhoodOfWoodsMenuId,
+                "{=MVBrotherhoodOfWoodsMenu}The Brotherhood of the Woods has long hidden among Vlandia's forests, recruiting desperate peasants and skilled poachers alike. At the guild's highest rank, you can force the Brotherhood into your kingdom's service or buy out its remaining organization entirely.",
+                args => { },
+                GameMenu.MenuOverlayType.None,
+                GameMenu.MenuFlags.None,
+                null);
+
             campaignGameStarter.AddGameMenuOption(
                 OutpostMenuId,
                 "mv_western_mercenary_donation_entry",
@@ -179,6 +214,21 @@ namespace MercenaryVariety
                     return true;
                 },
                 args => GameMenu.SwitchToMenu(GoldenBoarMenuId),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                OutpostMenuId,
+                "mv_western_mercenary_brotherhood_of_woods_entry",
+                "{=MVBrotherhoodOfWoodsEntry}Contact the Brotherhood of the Woods",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Submenu;
+                    return true;
+                },
+                args => GameMenu.SwitchToMenu(BrotherhoodOfWoodsMenuId),
                 false,
                 -1,
                 false,
@@ -463,6 +513,113 @@ namespace MercenaryVariety
                 GoldenBoarMenuId,
                 "mv_western_mercenary_golden_boar_back",
                 "{=MVGoldenBoarBack}Return to the Mercenary Guild",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Submenu;
+                    return true;
+                },
+                args => GameMenu.SwitchToMenu(OutpostMenuId),
+                true,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                BrotherhoodOfWoodsMenuId,
+                "mv_western_mercenary_recruit_brotherhood_of_woods_detachment",
+                "{=MVBrotherhoodOfWoodsRecruitDetachment}Recruit a Brotherhood Detachment: 6 Saplings, 6 Arboreal Brothers and 3 Ancients ({BROTHERHOOD_OF_WOODS_RECRUITMENT_COST} denars)",
+                args =>
+                {
+                    WesternMercenaryGuildProgressBehavior progress =
+                        WesternMercenaryGuildProgressBehavior.Instance;
+                    if (progress != null && progress.IsBrotherhoodOfWoodsBoughtOut)
+                    {
+                        return false;
+                    }
+
+                    MBTextManager.SetTextVariable(
+                        "BROTHERHOOD_OF_WOODS_RECRUITMENT_COST",
+                        BrotherhoodOfWoodsRecruitmentCost);
+                    args.optionLeaveType = GameMenuOption.LeaveType.Recruit;
+                    args.IsEnabled = CanRecruitBrotherhoodOfWoodsDetachment();
+                    args.Tooltip = GetBrotherhoodOfWoodsRecruitmentTooltip();
+                    return true;
+                },
+                args => RecruitBrotherhoodOfWoodsDetachment(),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                BrotherhoodOfWoodsMenuId,
+                "mv_western_mercenary_demand_brotherhood_of_woods_service",
+                "{=MVBrotherhoodOfWoodsDemandService}Require the Brotherhood of the Woods to Take the Field (50000 denars)",
+                args =>
+                {
+                    WesternMercenaryGuildProgressBehavior progress =
+                        WesternMercenaryGuildProgressBehavior.Instance;
+                    if (progress != null && progress.IsBrotherhoodOfWoodsBoughtOut)
+                    {
+                        return false;
+                    }
+
+                    args.optionLeaveType = GameMenuOption.LeaveType.Continue;
+                    args.IsEnabled = CanDemandBrotherhoodOfWoodsService();
+                    args.Tooltip = GetBrotherhoodOfWoodsServiceTooltip();
+                    return true;
+                },
+                args => DemandBrotherhoodOfWoodsService(),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                BrotherhoodOfWoodsMenuId,
+                "mv_western_mercenary_mobilize_bought_out_brotherhood_of_woods",
+                "{=MVBrotherhoodOfWoodsMobilize}Call the Brotherhood of the Woods to Arms (receive 85 troops)",
+                args =>
+                {
+                    WesternMercenaryGuildProgressBehavior progress =
+                        WesternMercenaryGuildProgressBehavior.Instance;
+                    if (progress == null || !progress.IsBrotherhoodOfWoodsBoughtOut)
+                    {
+                        return false;
+                    }
+
+                    args.optionLeaveType = GameMenuOption.LeaveType.Recruit;
+                    args.IsEnabled = CanMobilizeBoughtOutBrotherhoodOfWoods();
+                    args.Tooltip = GetBrotherhoodOfWoodsMobilizationTooltip();
+                    return true;
+                },
+                args => MobilizeBoughtOutBrotherhoodOfWoods(),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                BrotherhoodOfWoodsMenuId,
+                "mv_western_mercenary_buyout_brotherhood_of_woods",
+                "{=MVBrotherhoodOfWoodsBuyout}Buy Out the Brotherhood of the Woods (1500000 denars)",
+                args =>
+                {
+                    args.optionLeaveType = GameMenuOption.LeaveType.Continue;
+                    args.IsEnabled = CanBuyOutBrotherhoodOfWoods();
+                    args.Tooltip = GetBrotherhoodOfWoodsBuyoutTooltip();
+                    return true;
+                },
+                args => BuyOutBrotherhoodOfWoods(),
+                false,
+                -1,
+                false,
+                null);
+
+            campaignGameStarter.AddGameMenuOption(
+                BrotherhoodOfWoodsMenuId,
+                "mv_western_mercenary_brotherhood_of_woods_back",
+                "{=MVBrotherhoodOfWoodsBack}Return to the Mercenary Guild",
                 args =>
                 {
                     args.optionLeaveType = GameMenuOption.LeaveType.Submenu;
@@ -1206,6 +1363,281 @@ namespace MercenaryVariety
                         "{=MVGoldenBoarBuyoutSuccess}The Company of the Golden Boar has been dissolved. Its recruitment channels now serve you without charge.")
                     .ToString()));
             GameMenu.SwitchToMenu(GoldenBoarMenuId);
+        }
+
+        private bool CanRecruitBrotherhoodOfWoodsDetachment()
+        {
+            WesternMercenaryGuildProgressBehavior progress =
+                WesternMercenaryGuildProgressBehavior.Instance;
+            CharacterObject t2Troop = CharacterObject.Find(BrotherhoodOfWoodsT2TroopId);
+            CharacterObject t3Troop = CharacterObject.Find(BrotherhoodOfWoodsT3TroopId);
+            CharacterObject t4Troop = CharacterObject.Find(BrotherhoodOfWoodsT4TroopId);
+
+            return progress != null && progress.IsBasicMember &&
+                   !progress.IsBrotherhoodOfWoodsBoughtOut && Hero.MainHero != null &&
+                   MobileParty.MainParty != null && t2Troop != null && t3Troop != null &&
+                   t4Troop != null &&
+                   Hero.MainHero.Gold >= BrotherhoodOfWoodsRecruitmentCost &&
+                   _nextBrotherhoodOfWoodsRecruitmentTime.IsPast;
+        }
+
+        private TextObject GetBrotherhoodOfWoodsRecruitmentTooltip()
+        {
+            WesternMercenaryGuildProgressBehavior progress =
+                WesternMercenaryGuildProgressBehavior.Instance;
+            if (progress == null || !progress.IsBasicMember)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsRecruitRequiresBasic}Requires Basic Mercenary Guild membership.");
+            }
+
+            if (Hero.MainHero == null || Hero.MainHero.Gold < BrotherhoodOfWoodsRecruitmentCost)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsRecruitRequiresGold}Requires 2700 denars.");
+            }
+
+            if (!_nextBrotherhoodOfWoodsRecruitmentTime.IsPast)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsRecruitmentCooldown}The Brotherhood of the Woods can provide one detachment every seven days.");
+            }
+
+            return new TextObject(
+                "{=MVBrotherhoodOfWoodsRecruitmentTooltip}Recruit 6 Saplings, 6 Arboreal Brothers, and 3 Ancients. Requires Basic Mercenary Guild membership and costs 2700 denars. Available once every seven days.");
+        }
+
+        private void RecruitBrotherhoodOfWoodsDetachment()
+        {
+            if (!CanRecruitBrotherhoodOfWoodsDetachment())
+            {
+                return;
+            }
+
+            Hero.MainHero.ChangeHeroGold(-BrotherhoodOfWoodsRecruitmentCost);
+            MobileParty.MainParty.MemberRoster.AddToCounts(
+                CharacterObject.Find(BrotherhoodOfWoodsT2TroopId),
+                BrotherhoodOfWoodsT2RecruitmentCount);
+            MobileParty.MainParty.MemberRoster.AddToCounts(
+                CharacterObject.Find(BrotherhoodOfWoodsT3TroopId),
+                BrotherhoodOfWoodsT3RecruitmentCount);
+            MobileParty.MainParty.MemberRoster.AddToCounts(
+                CharacterObject.Find(BrotherhoodOfWoodsT4TroopId),
+                BrotherhoodOfWoodsT4RecruitmentCount);
+            _nextBrotherhoodOfWoodsRecruitmentTime = CampaignTime.DaysFromNow(
+                BrotherhoodOfWoodsRecruitmentCooldownDays);
+            GameMenu.SwitchToMenu("town");
+        }
+
+        private static bool CanDemandBrotherhoodOfWoodsService()
+        {
+            WesternMercenaryGuildProgressBehavior progress =
+                WesternMercenaryGuildProgressBehavior.Instance;
+            Clan brotherhood = Clan.FindFirst(clan => clan.StringId == BrotherhoodOfWoodsClanId);
+
+            return progress != null && progress.IsHonoraryGuildmaster &&
+                   !progress.IsBrotherhoodOfWoodsBoughtOut && brotherhood != null &&
+                   Clan.PlayerClan?.Kingdom != null && Hero.MainHero != null &&
+                   Hero.MainHero.Gold >= BrotherhoodOfWoodsServiceCost;
+        }
+
+        private static TextObject GetBrotherhoodOfWoodsServiceTooltip()
+        {
+            WesternMercenaryGuildProgressBehavior progress =
+                WesternMercenaryGuildProgressBehavior.Instance;
+            if (progress == null || !progress.IsHonoraryGuildmaster)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsRequiresHonorary}Requires Honorary Guildmaster status.");
+            }
+
+            if (progress.IsBrotherhoodOfWoodsBoughtOut)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsServiceBoughtOut}The Brotherhood has been bought out and dissolved, so it can no longer take the field as an independent mercenary clan.");
+            }
+
+            if (Clan.FindFirst(clan => clan.StringId == BrotherhoodOfWoodsClanId) == null)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsClanUnavailable}The Brotherhood of the Woods no longer exists.");
+            }
+
+            if (Clan.PlayerClan?.Kingdom == null)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsServiceNoKingdom}You must belong to a kingdom before the Brotherhood can enter its service.");
+            }
+
+            if (Hero.MainHero == null || Hero.MainHero.Gold < BrotherhoodOfWoodsServiceCost)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsRequiresGold}Requires 50000 denars.");
+            }
+
+            return new TextObject(
+                "{=MVBrotherhoodOfWoodsServiceTooltip}The Brotherhood will serve your kingdom for sixty days. Costs 50000 denars.");
+        }
+
+        private static bool CanBuyOutBrotherhoodOfWoods()
+        {
+            WesternMercenaryGuildProgressBehavior progress =
+                WesternMercenaryGuildProgressBehavior.Instance;
+            Clan brotherhood = Clan.FindFirst(clan => clan.StringId == BrotherhoodOfWoodsClanId);
+
+            return progress != null && progress.IsHonoraryGuildmaster &&
+                   !progress.IsBrotherhoodOfWoodsBoughtOut && brotherhood != null &&
+                   Hero.MainHero != null && Hero.MainHero.Gold >= BrotherhoodOfWoodsBuyoutCost;
+        }
+
+        private static TextObject GetBrotherhoodOfWoodsBuyoutTooltip()
+        {
+            WesternMercenaryGuildProgressBehavior progress =
+                WesternMercenaryGuildProgressBehavior.Instance;
+            if (progress == null || !progress.IsHonoraryGuildmaster)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsRequiresHonorary}Requires Honorary Guildmaster status.");
+            }
+
+            if (progress.IsBrotherhoodOfWoodsBoughtOut)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsAlreadyBoughtOut}The Brotherhood of the Woods has already been bought out.");
+            }
+
+            if (Clan.FindFirst(clan => clan.StringId == BrotherhoodOfWoodsClanId) == null)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsClanUnavailable}The Brotherhood of the Woods no longer exists.");
+            }
+
+            if (Hero.MainHero == null || Hero.MainHero.Gold < BrotherhoodOfWoodsBuyoutCost)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsBuyoutRequiresGold}Requires 1500000 denars.");
+            }
+
+            return new TextObject(
+                "{=MVBrotherhoodOfWoodsBuyoutTooltip}Dissolves the Brotherhood and makes its warriors available for direct mobilization. Costs 1500000 denars.");
+        }
+
+        private bool CanMobilizeBoughtOutBrotherhoodOfWoods()
+        {
+            WesternMercenaryGuildProgressBehavior progress =
+                WesternMercenaryGuildProgressBehavior.Instance;
+
+            return progress != null && progress.IsHonoraryGuildmaster &&
+                   progress.IsBrotherhoodOfWoodsBoughtOut && MobileParty.MainParty != null &&
+                   CharacterObject.Find(BrotherhoodOfWoodsT1TroopId) != null &&
+                   CharacterObject.Find(BrotherhoodOfWoodsT2TroopId) != null &&
+                   CharacterObject.Find(BrotherhoodOfWoodsT3TroopId) != null &&
+                   CharacterObject.Find(BrotherhoodOfWoodsT4TroopId) != null &&
+                   _nextBrotherhoodOfWoodsMobilizationTime.IsPast;
+        }
+
+        private TextObject GetBrotherhoodOfWoodsMobilizationTooltip()
+        {
+            if (!_nextBrotherhoodOfWoodsMobilizationTime.IsPast)
+            {
+                return new TextObject(
+                    "{=MVBrotherhoodOfWoodsMobilizationCooldown}The bought-out Brotherhood's warriors can only be called to arms once every sixty days.");
+            }
+
+            return new TextObject(
+                "{=MVBrotherhoodOfWoodsMobilizationTooltip}Immediately receive 20 Sprouts, 25 Saplings, 25 Arboreal Brothers, and 15 Ancients. No party-size limit is applied. Available once every sixty days.");
+        }
+
+        private void MobilizeBoughtOutBrotherhoodOfWoods()
+        {
+            if (!CanMobilizeBoughtOutBrotherhoodOfWoods())
+            {
+                return;
+            }
+
+            MobileParty.MainParty.MemberRoster.AddToCounts(
+                CharacterObject.Find(BrotherhoodOfWoodsT1TroopId),
+                BrotherhoodOfWoodsMobilizationT1Count);
+            MobileParty.MainParty.MemberRoster.AddToCounts(
+                CharacterObject.Find(BrotherhoodOfWoodsT2TroopId),
+                BrotherhoodOfWoodsMobilizationT2Count);
+            MobileParty.MainParty.MemberRoster.AddToCounts(
+                CharacterObject.Find(BrotherhoodOfWoodsT3TroopId),
+                BrotherhoodOfWoodsMobilizationT3Count);
+            MobileParty.MainParty.MemberRoster.AddToCounts(
+                CharacterObject.Find(BrotherhoodOfWoodsT4TroopId),
+                BrotherhoodOfWoodsMobilizationT4Count);
+            _nextBrotherhoodOfWoodsMobilizationTime = CampaignTime.DaysFromNow(
+                BrotherhoodOfWoodsMobilizationCooldownDays);
+
+            InformationManager.DisplayMessage(
+                new InformationMessage(
+                    new TextObject(
+                        "{=MVBrotherhoodOfWoodsMobilizationSuccess}Eighty-five warriors of the bought-out Brotherhood of the Woods have answered your call.")
+                    .ToString()));
+            GameMenu.SwitchToMenu("town");
+        }
+
+        private static void DemandBrotherhoodOfWoodsService()
+        {
+            if (!CanDemandBrotherhoodOfWoodsService())
+            {
+                return;
+            }
+
+            Clan brotherhood = Clan.FindFirst(clan => clan.StringId == BrotherhoodOfWoodsClanId);
+            Kingdom playerKingdom = Clan.PlayerClan?.Kingdom;
+            CampaignTime contractEnd = CampaignTime.DaysFromNow(BrotherhoodOfWoodsServiceDays);
+
+            if (brotherhood.Kingdom != null && brotherhood.Kingdom != playerKingdom)
+            {
+                ChangeKingdomAction.ApplyByLeaveKingdomAsMercenary(brotherhood, true);
+            }
+
+            if (brotherhood.Kingdom != playerKingdom)
+            {
+                ChangeKingdomAction.ApplyByJoinFactionAsMercenary(
+                    brotherhood,
+                    playerKingdom,
+                    contractEnd,
+                    1,
+                    true);
+            }
+            else
+            {
+                brotherhood.ShouldStayInKingdomUntil = contractEnd;
+                brotherhood.MercenaryAwardMultiplier = 1;
+            }
+
+            Hero.MainHero.ChangeHeroGold(-BrotherhoodOfWoodsServiceCost);
+            InformationManager.DisplayMessage(
+                new InformationMessage(
+                    new TextObject(
+                        "{=MVBrotherhoodOfWoodsServiceSuccess}The Brotherhood of the Woods has entered your kingdom's service for sixty days.")
+                    .ToString()));
+            GameMenu.SwitchToMenu(BrotherhoodOfWoodsMenuId);
+        }
+
+        private static void BuyOutBrotherhoodOfWoods()
+        {
+            if (!CanBuyOutBrotherhoodOfWoods())
+            {
+                return;
+            }
+
+            WesternMercenaryGuildProgressBehavior progress =
+                WesternMercenaryGuildProgressBehavior.Instance;
+            Clan brotherhood = Clan.FindFirst(clan => clan.StringId == BrotherhoodOfWoodsClanId);
+
+            Hero.MainHero.ChangeHeroGold(-BrotherhoodOfWoodsBuyoutCost);
+            progress?.MarkBrotherhoodOfWoodsBoughtOut();
+            DestroyClanAction.Apply(brotherhood);
+            InformationManager.DisplayMessage(
+                new InformationMessage(
+                    new TextObject(
+                        "{=MVBrotherhoodOfWoodsBuyoutSuccess}The Brotherhood of the Woods has been dissolved. Its members can now be called directly to your party.")
+                    .ToString()));
+            GameMenu.SwitchToMenu(BrotherhoodOfWoodsMenuId);
         }
     }
 }

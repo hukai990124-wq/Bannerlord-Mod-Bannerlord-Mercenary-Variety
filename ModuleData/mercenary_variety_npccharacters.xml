@@ -1987,5 +1987,45 @@
         equipmentType="Civilian" />
     </Equipments>
   </NPCCharacter>
+  <NPCCharacter
+    id="mv_brotherhood_of_woods_tier_4"
+    default_group="Ranged"
+    is_hero="false"
+    level="26"
+    name="{=MVBrotherhoodOfWoodsAncient}Ancient"
+    occupation="Soldier"
+    culture="Culture.vlandia">
+    <face>
+      <face_key_template
+        value="BodyProperty.fighter_brotherhood_of_woods" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="160" />
+      <skill id="Riding" value="110" />
+      <skill id="OneHanded" value="140" />
+      <skill id="TwoHanded" value="95" />
+      <skill id="Polearm" value="95" />
+      <skill id="Bow" value="150" />
+      <skill id="Crossbow" value="65" />
+      <skill id="Throwing" value="110" />
+    </skills>
+    <upgrade_targets />
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lowland_yew_bow" />
+        <equipment slot="Item1" id="Item.barbed_arrows" />
+        <equipment slot="Item2" id="Item.barbed_arrows" />
+        <equipment slot="Item3" id="Item.vlandia_sword_3_t4" />
+        <equipment slot="Head" id="Item.cervelliere_over_laced_coif" />
+        <equipment slot="Body" id="Item.leather_and_iron_plate_armor" />
+        <equipment slot="Leg" id="Item.leather_cavalier_boots" />
+        <equipment slot="Gloves" id="Item.leather_gloves" />
+        <equipment slot="Cape" id="Item.chainmail_shoulder_armor" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="vlandia_troop_civilian_template_t3"
+        equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
 </NPCCharacters>
 

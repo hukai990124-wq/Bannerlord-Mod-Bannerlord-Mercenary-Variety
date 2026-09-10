@@ -11,12 +11,14 @@ namespace MercenaryVariety
         private bool _isGuildSponsor;
         private bool _isHonoraryGuildmaster;
         private bool _isGoldenBoarBoughtOut;
+        private bool _isBrotherhoodOfWoodsBoughtOut;
 
         public bool IsBasicMember => _isBasicMember;
         public bool IsAdvancedMember => _isAdvancedMember;
         public bool IsGuildSponsor => _isGuildSponsor;
         public bool IsHonoraryGuildmaster => _isHonoraryGuildmaster;
         public bool IsGoldenBoarBoughtOut => _isGoldenBoarBoughtOut;
+        public bool IsBrotherhoodOfWoodsBoughtOut => _isBrotherhoodOfWoodsBoughtOut;
 
         public WesternMercenaryGuildProgressBehavior()
         {
@@ -44,6 +46,9 @@ namespace MercenaryVariety
             dataStore.SyncData(
                 "mv_western_mercenary_golden_boar_bought_out",
                 ref _isGoldenBoarBoughtOut);
+            dataStore.SyncData(
+                "mv_western_mercenary_brotherhood_of_woods_bought_out",
+                ref _isBrotherhoodOfWoodsBoughtOut);
         }
 
         public void GrantBasicMembership()
@@ -75,6 +80,11 @@ namespace MercenaryVariety
         public void MarkGoldenBoarBoughtOut()
         {
             _isGoldenBoarBoughtOut = true;
+        }
+
+        public void MarkBrotherhoodOfWoodsBoughtOut()
+        {
+            _isBrotherhoodOfWoodsBoughtOut = true;
         }
     }
 }

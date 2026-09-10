@@ -1,80 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item
-    id="mv_the_tribune"
-    name="{=MVTheTribune}The Tribune"
-    is_merchandise="false"
-    body_name="bo_mace_a"
-    recalculate_body="true"
-    mesh="tripo_node_2d0d6006"
-    culture="Culture.empire"
-    value="50000"
-    weight="2.15"
-    difficulty="0"
-    tier_override="6"
-    Type="OneHandedWeapon"
-    item_holsters="sword_left_hip">
+  <Item id="mv_the_tribune" name="{=MVTheTribune}The Tribune" is_merchandise="false" body_name="bo_mace_a" recalculate_body="true" mesh="tripo_node_2d0d6006" culture="Culture.empire" weight="2.15" difficulty="0" appearance="1" Type="OneHandedWeapon" item_holsters="sword_left_hip_3:sword_left_hip:sword_left_hip_2:sword_back">
     <ItemComponent>
-      <Weapon
-        weapon_class="OneHandedSword"
-        weapon_balance="100"
-        thrust_speed="79"
-        speed_rating="94"
-        physics_material="wood_weapon"
-        missile_speed="0"
-        weapon_length="78"
-        thrust_damage="6"
-        thrust_damage_type="Blunt"
-        swing_damage="65"
-        swing_damage_type="Blunt"
-        item_usage="onehanded_block_shield_swing">
-        <WeaponFlags
-          MeleeWeapon="true" />
+      <Weapon weapon_class="OneHandedSword" weapon_balance="100" thrust_speed="88" speed_rating="98" physics_material="metal_weapon" missile_speed="0" weapon_length="98" thrust_damage="42" thrust_damage_type="Pierce" swing_damage="92" swing_damage_type="Cut" item_usage="onehanded_block_shield_swing_thrust" modifier_group="sword">
+        <WeaponFlags MeleeWeapon="true" />
       </Weapon>
     </ItemComponent>
     <Flags />
   </Item>
-  <Item
-    id="mv_the_unification"
-    name="{=MVTheUnification}The Unification"
-    is_merchandise="false"
-    body_name="bo_cap_sturgia_old_shield"
-    shield_body_name="bo_sturgia_old_shield"
-    recalculate_body="false"
-    mesh="mv_shield_unification"
-    culture="Culture.empire"
-    using_tableau="true"
-    weight="4.2"
-    difficulty="0"
-    appearance="1"
-    Type="Shield"
-    item_holsters="shield_round:shield_4"
-    has_lower_holster_priority="true"
-    holster_position_shift="0,0,0.01">
+  <Item id="mv_fasces" name="{=MVFasces}The Lictor" is_merchandise="false" body_name="bo_axe_longer_b" recalculate_body="true" mesh="mv_fasces" culture="Culture.empire" weight="0.56" difficulty="0" appearance="1" Type="TwoHandedWeapon" item_holsters="axe_back:axe_back_2:axe_back_3:axe_back_4" holster_position_shift="0,0,-0.65">
     <ItemComponent>
-      <Weapon
-        weapon_class="LargeShield"
-        body_armor="1"
-        thrust_speed="82"
-        thrust_damage="5"
-        thrust_damage_type="Blunt"
-        speed_rating="82"
-        physics_material="wood_shield"
-        item_usage="hand_shield"
-        position="-0.02, 0.0, 0.0"
-        rotation="-15.0,-90.0,-10.0"
-        weapon_length="80"
-        center_of_mass="0, 0, 0"
-        hit_points="800"
-        modifier_group="shield">
-        <WeaponFlags
-          CanBlockRanged="true"
-          HasHitPoints="true" />
+      <Weapon weapon_class="TwoHandedAxe" weapon_balance="100" thrust_speed="66" speed_rating="103" physics_material="metal_weapon" missile_speed="0" weapon_length="120" thrust_damage="0" thrust_damage_type="Blunt" swing_damage="83" swing_damage_type="Cut" item_usage="twohanded_axe" modifier_group="axe">
+        <WeaponFlags MeleeWeapon="true" NotUsableWithOneHand="true" BonusAgainstShield="true" TwoHandIdleOnMount="true" />
       </Weapon>
     </ItemComponent>
-    <Flags
-      WoodenParry="true"
-      ForceAttachOffHandPrimaryItemBone="true"
-      HeldInOffHand="true" />
+    <Flags WoodenParry="true" />
+  </Item>
+  <Item id="mv_the_dominus" name="{=MVDominus}The Dominus" is_merchandise="false" body_name="bo_spear_a" recalculate_body="true" mesh="mv_trident_dominus" culture="Culture.empire" weight="3.4" difficulty="0" appearance="1" Type="Polearm" item_holsters="polearm_back:polearm_back_2:polearm_back_3:polearm_back_4" holster_position_shift="0,0,-0.65">
+    <ItemComponent>
+      <Weapon weapon_class="TwoHandedPolearm" weapon_balance="100" thrust_speed="82" speed_rating="82" physics_material="metal_weapon" missile_speed="0" weapon_length="140" thrust_damage="47" thrust_damage_type="Pierce" swing_damage="150" swing_damage_type="Cut" item_usage="polearm_block_swing_thrust" modifier_group="polearm">
+        <WeaponFlags MeleeWeapon="true" NotUsableWithOneHand="true" WideGrip="true" TwoHandIdleOnMount="true" BonusAgainstShield="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags WoodenParry="true" />
+  </Item>
+  <Item id="mv_the_domina" name="{=MVDomina}The Domina" is_merchandise="false" body_name="bo_spear_a" recalculate_body="true" mesh="mv_trident_domina" culture="Culture.empire" weight="2.8" difficulty="0" appearance="1" Type="Polearm" item_holsters="polearm_back:polearm_back_2:polearm_back_3:polearm_back_4" holster_position_shift="0,0,-0.65">
+    <ItemComponent>
+      <Weapon weapon_class="TwoHandedPolearm" weapon_balance="100" thrust_speed="82" speed_rating="82" physics_material="metal_weapon" missile_speed="0" weapon_length="205" thrust_damage="37" thrust_damage_type="Pierce" swing_damage="80" swing_damage_type="Cut" item_usage="polearm_block_long_shield_swing_thrust" modifier_group="polearm">
+        <WeaponFlags MeleeWeapon="true" WideGrip="true" TwoHandIdleOnMount="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags WoodenParry="true" />
+  </Item>
+
+  <Item id="mv_the_unification" name="{=MVTheUnification}The Wish of Unification" is_merchandise="false" body_name="bo_cap_sturgia_old_shield" shield_body_name="bo_sturgia_old_shield" recalculate_body="false" mesh="mv_shield_unification" culture="Culture.empire" using_tableau="true" weight="4.2" difficulty="0" appearance="1" Type="Shield" item_holsters="shield_round:shield_4" has_lower_holster_priority="true" holster_position_shift="0,0,0.01">
+    <ItemComponent>
+      <Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage="5" thrust_damage_type="Blunt" speed_rating="82" physics_material="wood_shield" item_usage="hand_shield" position="-0.02, 0.0, 0.0" rotation="-15.0,-90.0,-10.0" weapon_length="80" center_of_mass="0, 0, 0" hit_points="800" modifier_group="shield">
+        <WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags WoodenParry="true" ForceAttachOffHandPrimaryItemBone="true" HeldInOffHand="true" />
+  </Item>
+  <Item id="mv_the_custos" name="{=MVCustos}The Custos" is_merchandise="false" body_name="bo_cap_sturgia_old_shield" shield_body_name="bo_sturgia_old_shield" recalculate_body="false" mesh="mv_shield_custos" culture="Culture.empire" using_tableau="true" weight="4.2" difficulty="0" appearance="1" Type="Shield" item_holsters="shield_round:shield_4" has_lower_holster_priority="true" holster_position_shift="0,0,-0.10">
+    <ItemComponent>
+      <Weapon weapon_class="LargeShield" body_armor="1" thrust_speed="82" thrust_damage="5" thrust_damage_type="Blunt" speed_rating="82" physics_material="wood_shield" item_usage="hand_shield" position="-0.02, 0.0, 0.0" rotation="-15.0,-90.0,-10.0" weapon_length="80" center_of_mass="0, 0, 0" hit_points="800" modifier_group="shield">
+        <WeaponFlags CanBlockRanged="true" HasHitPoints="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags WoodenParry="true" ForceAttachOffHandPrimaryItemBone="true" HeldInOffHand="true" />
   </Item>
 </Items>

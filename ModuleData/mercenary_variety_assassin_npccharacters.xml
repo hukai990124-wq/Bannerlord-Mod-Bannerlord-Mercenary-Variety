@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <NPCCharacter
+    id="mv_assassin_apprentice_t4"
+    default_group="Infantry"
+    is_hero="false"
+    level="21"
+    name="{=MVAssassinApprentice}Assassin Apprentice"
+    occupation="Mercenary"
+    culture="Culture.aserai">
+    <face>
+      <face_key_template value="BodyProperty.fighter_aserai" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="280" />
+      <skill id="Riding" value="0" />
+      <skill id="OneHanded" value="280" />
+      <skill id="TwoHanded" value="0" />
+      <skill id="Polearm" value="0" />
+      <skill id="Bow" value="0" />
+      <skill id="Crossbow" value="0" />
+      <skill id="Throwing" value="250" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.mv_assassin_t5" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.aserai_sword_5_t4" />
+        <equipment slot="Item1" id="Item.celtic_throwing_dagger" />
+        <equipment slot="Item2" id="Item.celtic_throwing_dagger" />
+        <equipment slot="Item3" id="Item.celtic_throwing_dagger" />
+        <equipment slot="Head" id="Item.assassin_hood" />
+        <equipment slot="Cape" id="Item.assassin_shoulder" />
+        <equipment slot="Body" id="Item.assassin_armor" />
+        <equipment slot="Gloves" id="Item.hybrid_armor_gloves_b" />
+        <equipment slot="Leg" id="Item.assassin_boot" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="aserai_troop_civilian_template_t3"
+        equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter
+    id="mv_assassin_t5"
+    default_group="Infantry"
+    is_hero="false"
+    level="26"
+    name="{=MVAssassinVeteran}Assassin Veteran"
+    occupation="Mercenary"
+    culture="Culture.aserai">
+    <face>
+      <face_key_template value="BodyProperty.fighter_aserai" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="330" />
+      <skill id="Riding" value="0" />
+      <skill id="OneHanded" value="330" />
+      <skill id="TwoHanded" value="0" />
+      <skill id="Polearm" value="0" />
+      <skill id="Bow" value="0" />
+      <skill id="Crossbow" value="0" />
+      <skill id="Throwing" value="300" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.mv_assassin_master_t6" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.aserai_sword_5_t4" />
+        <equipment slot="Item1" id="Item.celtic_throwing_dagger" />
+        <equipment slot="Item2" id="Item.celtic_throwing_dagger" />
+        <equipment slot="Item3" id="Item.celtic_throwing_dagger" />
+        <equipment slot="Head" id="Item.improved_assassin_hood_q5" />
+        <equipment slot="Cape" id="Item.improved_assassin_shoulder_q5" />
+        <equipment slot="Body" id="Item.improved_assassin_armor_q5" />
+        <equipment slot="Gloves" id="Item.hybrid_armor_gloves_b" />
+        <equipment slot="Leg" id="Item.improved_assassin_boot_q5" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="aserai_troop_civilian_template_t3"
+        equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+
+  <NPCCharacter
+    id="mv_assassin_master_t6"
+    default_group="Infantry"
+    is_hero="false"
+    level="31"
+    name="{=MVAssassinMaster}Assassin Master"
+    occupation="Mercenary"
+    culture="Culture.aserai">
+    <face>
+      <face_key_template value="BodyProperty.fighter_aserai" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="380" />
+      <skill id="Riding" value="0" />
+      <skill id="OneHanded" value="380" />
+      <skill id="TwoHanded" value="0" />
+      <skill id="Polearm" value="0" />
+      <skill id="Bow" value="0" />
+      <skill id="Crossbow" value="0" />
+      <skill id="Throwing" value="350" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.aserai_noble_sword_2_t5" />
+        <equipment slot="Item1" id="Item.desert_throwing_knife" />
+        <equipment slot="Item2" id="Item.desert_throwing_knife" />
+        <equipment slot="Item3" id="Item.desert_throwing_knife" />
+        <equipment slot="Head" id="Item.improved_assassin_hood_q5" />
+        <equipment slot="Cape" id="Item.improved_assassin_shoulder_q5" />
+        <equipment slot="Body" id="Item.improved_assassin_armor_q5" />
+        <equipment slot="Gloves" id="Item.hybrid_armor_gloves_b" />
+        <equipment slot="Leg" id="Item.improved_assassin_boot_q5" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="aserai_troop_civilian_template_t3"
+        equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

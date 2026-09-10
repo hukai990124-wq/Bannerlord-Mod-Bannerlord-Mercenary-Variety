@@ -22,4 +22,50 @@
     </ItemComponent>
     <Flags UseTeamColor="false" />
   </Item>
+  <Item
+    id="mv_victrix_helmet"
+    name="{=MVVictrixHelmet}The Victrix"
+    subtype="head_armor"
+    mesh="mv_victrix_helmet"
+    culture="Culture.empire"
+    weight="4"
+    difficulty="0"
+    appearance="1"
+    value="75000"
+    Type="HeadArmor">
+    <ItemComponent>
+      <Armor
+        head_armor="62"
+        has_gender_variations="false"
+        hair_cover_type="type3"
+        modifier_group="plate"
+        material_type="Plate"
+        beard_cover_type="none" />
+    </ItemComponent>
+    <Flags UseTeamColor="false" />
+  </Item>
+  <Item
+    id="mv_vaegir_commander_armor"
+    name="{=MVVaegirCommanderArmor}维吉亚指挥官战甲"
+    subtype="body_armor"
+    mesh="mv_vaegir_captain_armor"
+    culture="Culture.sturgia"
+    weight="18"
+    difficulty="0"
+    appearance="1"
+    value="60000"
+    is_merchandise="false"
+    Type="BodyArmor">
+    <ItemComponent>
+      <Armor
+        body_armor="60"
+        leg_armor="25"
+        arm_armor="25"
+        has_gender_variations="false"
+        covers_body="true"
+        modifier_group="plate"
+        material_type="Plate" />
+    </ItemComponent>
+    <Flags UseTeamColor="false" />
+  </Item>
 </Items>

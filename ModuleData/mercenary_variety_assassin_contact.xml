@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <NPCCharacter
+    id="mv_altair"
+    default_group="Infantry"
+    is_hero="false"
+    level="31"
+    name="{=MVAltair}Altair"
+    occupation="Mercenary"
+    culture="Culture.aserai">
+    <face>
+      <BodyProperties version="4" age="21" weight="0.5" build="0.8" key="0029C80FC0001A148A75674553337787F6C7863B414494662153C5347AA314270F00060308BC35E8C8FAD7012600A08000000000000000080000000043143002" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="380" />
+      <skill id="Riding" value="0" />
+      <skill id="OneHanded" value="380" />
+      <skill id="TwoHanded" value="0" />
+      <skill id="Polearm" value="0" />
+      <skill id="Bow" value="0" />
+      <skill id="Crossbow" value="0" />
+      <skill id="Throwing" value="350" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.aserai_noble_sword_2_t5" />
+        <equipment slot="Item1" id="Item.desert_throwing_knife" />
+        <equipment slot="Item2" id="Item.desert_throwing_knife" />
+        <equipment slot="Item3" id="Item.desert_throwing_knife" />
+        <equipment slot="Head" id="Item.improved_assassin_hood_q5" />
+        <equipment slot="Cape" id="Item.improved_assassin_shoulder_q5" />
+        <equipment slot="Body" id="Item.improved_assassin_armor_q5" />
+        <equipment slot="Gloves" id="Item.hybrid_armor_gloves_b" />
+        <equipment slot="Leg" id="Item.improved_assassin_boot_q5" />
+      </EquipmentRoster>
+      <EquipmentSet
+        id="aserai_troop_civilian_template_t3"
+        equipmentType="Civilian" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

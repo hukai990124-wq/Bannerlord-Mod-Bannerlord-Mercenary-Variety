@@ -46,12 +46,13 @@
     <Equipments>
       <EquipmentRoster>
         <equipment slot="Item0" id="Item.mv_the_tribune" />
-        <equipment slot="Item1" id="Item.mv_the_unification" />
-        <equipment slot="Head" id="Item.empire_battle_crown_west" />
-        <equipment slot="Cape" id="Item.imperial_lamellar_shoulders" />
-        <equipment slot="Body" id="Item.imperial_scale_armor" />
+        <equipment slot="Item1" id="Item.mv_the_custos" />
+        <equipment slot="Item2" id="Item.mv_the_domina" />
+        <equipment slot="Head" id="Item.mv_victrix_helmet" />
+        <equipment slot="Cape" id="Item.varangian_bra_scale" />
+        <equipment slot="Body" id="Item.aserai_full_scale_armor_on_chain" />
         <equipment slot="Gloves" id="Item.decorated_imperial_gauntlets" />
-        <equipment slot="Leg" id="Item.decorated_imperial_boots" />
+        <equipment slot="Leg" id="Item.lamellar_plate_boots" />
         <equipment slot="Horse" id="Item.noble_horse_western" />
         <equipment slot="HorseHarness" id="Item.imperial_scale_barding" />
       </EquipmentRoster>

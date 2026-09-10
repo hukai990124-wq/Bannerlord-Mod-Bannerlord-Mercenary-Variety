@@ -491,7 +491,7 @@ namespace MercenaryVariety
                    !progress.IsTheodoraForestBanditQuestCompleted &&
                    !IsAnyTheodoraQuestActive() &&
                    Hero.MainHero.GetRelation(theodora) >= 20 &&
-                   TryFindForestBanditHideout(out _);
+                   TryPrepareForestBanditHideout(out _);
         }
 
         private static bool IsTheodoraForestBanditQuestActive()
@@ -581,7 +581,7 @@ namespace MercenaryVariety
                 return;
             }
 
-            if (TryFindForestBanditHideout(out Settlement targetHideout))
+            if (TryPrepareForestBanditHideout(out Settlement targetHideout))
             {
                 new TheodoraForestBanditQuest(theodora, targetHideout).StartQuest();
             }
@@ -781,7 +781,7 @@ namespace MercenaryVariety
             return null;
         }
 
-        private static bool TryFindForestBanditHideout(out Settlement targetHideout)
+        private static bool TryPrepareForestBanditHideout(out Settlement targetHideout)
         {
             targetHideout = null;
             Settlement danustica = null;
@@ -801,10 +801,12 @@ namespace MercenaryVariety
             }
 
             float closestDistance = float.MaxValue;
+            Settlement fallbackHideout = null;
+            float fallbackDistance = float.MaxValue;
             foreach (Hideout hideout in Hideout.All)
             {
                 Settlement settlement = hideout.Settlement;
-                if (settlement == null || !settlement.IsActive || !settlement.IsHideout)
+                if (settlement == null || !settlement.IsHideout)
                 {
                     continue;
                 }
@@ -823,19 +825,31 @@ namespace MercenaryVariety
                 }
 
                 float distance = settlement.GetPosition2D.Distance(danustica.GetPosition2D);
-                if (distance > MaxForestBanditHideoutDistanceFromDanustica)
+                if (distance < fallbackDistance)
                 {
-                    continue;
+                    fallbackDistance = distance;
+                    fallbackHideout = settlement;
                 }
 
-                if (distance < closestDistance)
+                if (settlement.IsActive && distance <= MaxForestBanditHideoutDistanceFromDanustica &&
+                    distance < closestDistance)
                 {
                     closestDistance = distance;
                     targetHideout = settlement;
                 }
             }
 
-            return targetHideout != null;
+            targetHideout ??= fallbackHideout;
+            if (targetHideout == null || targetHideout.Hideout == null)
+            {
+                return false;
+            }
+
+            targetHideout.IsActive = true;
+            targetHideout.IsVisible = true;
+            targetHideout.Hideout.IsSpotted = true;
+            targetHideout.Hideout.SetNextPossibleAttackTime(CampaignTime.Zero);
+            return true;
         }
 
         private static bool TryFindOrCreateRebelPartyNearLycaron(out MobileParty targetParty)

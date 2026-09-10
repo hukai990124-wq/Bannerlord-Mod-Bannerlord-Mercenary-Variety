@@ -12,7 +12,42 @@
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)' == 'Editor'">
+    <DefineConstants>$(DefineConstants);MV_EDITOR</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(Configuration)' != 'Editor'">
+    <Reference Include="TaleWorlds.GauntletUI">
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.GauntletUI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.GauntletUI.Data">
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.GauntletUI.Data.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade.GauntletUI.Widgets">
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.MountAndBlade.GauntletUI.Widgets.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.CampaignSystem.ViewModelCollection">
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.CampaignSystem.ViewModelCollection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.Core.ViewModelCollection">
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.Core.ViewModelCollection.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
   <ItemGroup>
+    <Reference Include="TaleWorlds.SaveSystem">
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.SaveSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TaleWorlds.DotNet">
+      <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.DotNet.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="NavalDLC">
       <HintPath>..\..\..\..\Modules\NavalDLC\bin\$(BannerlordRuntimeFolder)\NavalDLC.dll</HintPath>
       <Private>false</Private>
@@ -39,6 +74,10 @@
     </Reference>
     <Reference Include="TaleWorlds.MountAndBlade">
       <HintPath>..\..\..\..\bin\$(BannerlordRuntimeFolder)\TaleWorlds.MountAndBlade.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SandBox">
+      <HintPath>..\..\..\..\Modules\SandBox\bin\$(BannerlordRuntimeFolder)\SandBox.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="TaleWorlds.ObjectSystem">
