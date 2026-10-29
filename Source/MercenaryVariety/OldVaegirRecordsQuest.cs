@@ -63,7 +63,7 @@ namespace MercenaryVariety
                 InformationManager.DisplayMessage(
                     new InformationMessage(
                         new TextObject(
-                            "{=MVVaegirCommanderHelmetRewardMessage}Vasevolod entrusts the Vaegir Guard Commander's Helmet to you as proof that the Guard's service has been restored to the record.")
+                            "{=MVVaegirCommanderHelmetRewardMessage}Vasevolod entrusts you with an old helmet of the Guard as proof that their service has been restored to the record.")
                         .ToString()));
             }
         }
