@@ -56,7 +56,7 @@ namespace MercenaryVariety
             Clan.PlayerClan.AddRenown(30f);
 
             ItemObject commanderHelmet = MBObjectManager.Instance.GetObject<ItemObject>(
-                "mv_vaegir_guard_commander_helmet");
+                "sturgia_heavy_cavalary_helmet");
             if (commanderHelmet != null && MobileParty.MainParty != null)
             {
                 MobileParty.MainParty.ItemRoster.AddToCounts(commanderHelmet, 1);

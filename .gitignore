@@ -1,0 +1,22 @@
+# 美术资源与引擎缓存 —— 体积庞大，且与代码无关，不纳入版本控制
+AssetPackages/
+AssetSources/
+Assets/
+RuntimeDataCache/
+Media/
+Backups/
+_asset_backups/
+*.tpac
+*.rdc
+*.rtemp
+*.fbx
+
+# 编译中间产物
+**/obj/
+*.candidate.dll
+bin/**/Win64_Shipping_wEditor/
+
+# 备份与临时文件
+*.bak
+*.before_*
+*.log

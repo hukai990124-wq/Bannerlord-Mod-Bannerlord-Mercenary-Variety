@@ -27,47 +27,7 @@
     </SubModule>
   </SubModules>
   <Xmls>
-    <XmlNode>
-      <XmlName id="CraftingPieces" path="mv_rome_crafting_pieces" />
-      <IncludedGameTypes>
-        <GameType value="Campaign" />
-        <GameType value="CampaignStoryMode" />
-        <GameType value="CustomGame" />
-      </IncludedGameTypes>
-    </XmlNode>
-    <XmlNode>
-      <XmlName id="WeaponDescriptions" path="mv_rome_weapon_descriptions" />
-      <IncludedGameTypes>
-        <GameType value="Campaign" />
-        <GameType value="CampaignStoryMode" />
-        <GameType value="CustomGame" />
-      </IncludedGameTypes>
-    </XmlNode>
-    <XmlNode>
-      <XmlName id="CraftingTemplates" path="mv_rome_crafting_templates" />
-      <IncludedGameTypes>
-        <GameType value="Campaign" />
-        <GameType value="CampaignStoryMode" />
-        <GameType value="CustomGame" />
-      </IncludedGameTypes>
-    </XmlNode>
 
-    <XmlNode>
-      <XmlName id="Items" path="mv_rome_weapons" />
-      <IncludedGameTypes>
-        <GameType value="Campaign" />
-        <GameType value="CampaignStoryMode" />
-        <GameType value="CustomGame" />
-      </IncludedGameTypes>
-    </XmlNode>
-    <XmlNode>
-      <XmlName id="Items" path="mercenary_variety_rome_items" />
-      <IncludedGameTypes>
-        <GameType value="Campaign" />
-        <GameType value="CampaignStoryMode" />
-        <GameType value="CustomGame" />
-      </IncludedGameTypes>
-    </XmlNode>
     <XmlNode>
       <XmlName id="NPCCharacters" path="mercenary_variety_valkyrie_npccharacters" />
       <IncludedGameTypes>

@@ -63,8 +63,8 @@ namespace MercenaryVariety
                 return;
             }
 
-            ItemObject tribune = MBObjectManager.Instance.GetObject<ItemObject>("mv_the_tribune");
-            ItemObject unification = MBObjectManager.Instance.GetObject<ItemObject>("mv_the_unification");
+            ItemObject tribune = MBObjectManager.Instance.GetObject<ItemObject>("empire_sword_4_t4");
+            ItemObject unification = MBObjectManager.Instance.GetObject<ItemObject>("studded_bound_kite_shield");
 
             if (tribune != null)
             {
