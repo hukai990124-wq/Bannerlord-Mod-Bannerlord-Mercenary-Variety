@@ -40,10 +40,6 @@
 <string id="MVAltairTurnInTrial" text="吾以手中之剑，证明了吾之武力。" />
 <string id="MVAltairTrialComplete" text="神见证了你的一切，某人的近况我们有所耳闻。" />
 <string id="MVAltairLeave" text="离开。" />
-    <string id="MVTheTribune" text="护民官" />
-    <string id="MVCustos" text="护国者" />
-    <string id="MVDomina" text="贵妇" />
-    <string id="MVDominus" text="尊主" />
     <string id="MVTheodoraTribuneRewardMessage" text="你的勇气与正义被人们所赞赏，他们称你为护民官，并认为你是那个能带领人们再次统一帝国，终结这个乱世的人。" />
     <string id="MVVaegirCommanderHelmetRewardMessage" text="瓦塞沃洛德将维吉亚近卫指挥官头盔托付给你，作为你为维吉亚卫队寻回服役记录的证明。" />
     <string id="0gi5Fp8c" text="资深女剑士" />
@@ -427,10 +423,6 @@
     <string id="MVRusArmour1" text="维吉亚板甲外衣" />
     <string id="MVRusArmour2" text="维吉亚板甲外衣" />
     <string id="MVVaegirNorthernLordHelmet" text="北境领主头盔" />
-    <string id="MVVaegirGuardCommanderHelmet" text="维吉亚禁军指挥官头盔" />
-    <string id="MVVictrixHelmet" text="胜利女士" />
-    <string id="MVTheUnification" text="统一之愿" />
-    <string id="MVFasces" text="执法吏" />
     <string id="MVBrotherhoodOfWoodsAncient" text="古木" />
     <string id="MVAltairWisdomOffer" text="我现在应该不再是一个学徒了吧？" />
     <string id="MVAltairWisdomExplanation" text="通常来说，我们除了武艺之外，很多成员都会各自的技能，而你，嗯，你似乎是一个胸怀伟大志向的人，向我们证明你如何领导一支队伍？" />
@@ -471,7 +463,6 @@
     <string id="MVAltairManpowerDecline" text="这次不必了。" />
     <string id="MVAltairExilesJoined" text="10名沙漠强盗、10名海寇和5名海寇首领加入了你的队伍。" />
     <string id="MVAltairApprenticesJoined" text="10名阿萨辛学徒加入了你的队伍。" />
-    <string id="MVVaegirCommanderArmor" text="维吉亚指挥官战甲" />
     <string id="MVJavidan" text="不死军" />
     <string id="MVJavidanBlade" text="不死军刀刃" />
     <string id="MVJavidanHandle" text="不死军握柄" />
